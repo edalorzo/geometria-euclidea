@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.75]
+    % Define the points of the triangle
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(-2,3){C}
+    
+    % Draw the triangle
+    \tkzDrawPolygon(A,B,C)
+    %\tkzDrawPoints(A,B,C)
+
+    \tkzLabelPoint[left](A){$A$}
+    \tkzLabelPoint[above](C){$B$}
+    \tkzLabelPoint[right](B){$C$}
+    
+    % Draw the central angle
+    \tkzMarkAngle[size=1cm](B,A,C)
+    \tkzLabelAngle[pos=0.5](B,A,C){$\theta$}
+    
+    % Draw the ticks on the sides of the included angle
+    \tkzMarkSegment[mark=|](A,B)
+    \tkzMarkSegment[mark=||](A,C)
+\end{tikzpicture}

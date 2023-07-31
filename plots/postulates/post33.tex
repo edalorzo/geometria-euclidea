@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    % Define los puntos
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(0,3){C}
+    \tkzDefPoint(3,3){D}
+    
+    % Dibuja las líneas AB, BC y BD
+    \tkzDrawSegment[Latex-](A,B)
+    \tkzDrawSegment[-Latex](B,C)
+    \tkzDrawSegment[-Latex](B,D)
+
+    \tkzDefMidPoint(A,B) \tkzGetPoint{MAB}
+    \tkzDefMidPoint(B,C) \tkzGetPoint{MBC}
+    \tkzDefMidPoint(B,D) \tkzGetPoint{MBD}
+
+    % Marca los puntos
+    \tkzLabelPoint[below left](MAB){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above right](MBC){$C$}
+    \tkzLabelPoint[above right](MBD){$D$}
+
+    \tkzDrawPoints(MAB,MBC,MBD)
+
+\end{tikzpicture}

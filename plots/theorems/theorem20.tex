@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=0.5,rotate=30]
+
+    \tkzDefPoint(2,1.5){E}
+    \tkzDefPoint(6,1.5){F}
+    
+    \tkzDefPoint(2,3.5){C}
+    \tkzDefPoint(6,3.5){D}
+
+    \tkzDefPoint(4,5){H}
+    \tkzDefPoint(4,0){G}
+        
+    \tkzInterLL(E,F)(H,G)
+        \tkzGetPoint{B}
+    \tkzInterLL(C,D)(H,G)
+        \tkzGetPoint{A}
+
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](E,F)
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](C,D)
+    \tkzDrawLine[add=0.2 and 0.2,Latex-Latex](H,G)
+
+    \tkzLabelLine[pos=1.25,right](H,G){$l$}
+    \tkzLabelLine[pos=1.65](C,D){$m$}
+    \tkzLabelLine[pos=1.65](E,F){$n$}
+
+    \tkzMarkRightAngle[size=0.3](D,A,H)
+    \tkzMarkRightAngle[size=0.3](F,B,H)
+    
+\end{tikzpicture}
+
+

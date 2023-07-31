@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](45:\radius){A}
+    \tkzDefShiftPoint[O](-45:\radius){C}
+    \tkzDrawCircle(O,A)
+
+    \tkzLabelPoint[above](A){$A$}
+    \tkzLabelPoint[below](C){$C$}
+
+    \tkzDefPoint(-\radius,0){B}
+    \tkzLabelPoint[left](B){$B$}
+
+    \tkzDefPoint(\radius+0.1,0){P}
+    \tkzLabelPoint(P){$\alpha$}
+
+    \tkzLabelPoint[below](O){$O$}
+
+    \tkzMarkAngle[size=1.5](C,B,A)
+    \tkzLabelAngle(C,B,A){$\frac{\alpha}{2}$}
+
+    \tkzDrawSegment[add=0 and 0.3,-Latex](B,A)
+    \tkzDrawSegment[add=0 and 0.3,-Latex](B,C)
+
+    \tkzDrawPoints[fill=black](A,B,C,O)
+\end{tikzpicture}

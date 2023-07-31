@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+    % Definir los puntos del triángulo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(2.5,4.33){C}
+
+    % Dibujar el triángulo
+    \tkzDrawPolygon(A,B,C)
+
+    % Dibujar rayos extendiéndose desde los ángulos
+    \tkzDefPointBy[rotation= center A angle 180](C) \tkzGetPoint{D}
+    \tkzDefPointBy[rotation= center B angle 180](A) \tkzGetPoint{E}
+    \tkzDefPointBy[rotation= center C angle 180](A) \tkzGetPoint{F}
+
+    % Redefinir E para hacer los rayos más cortos
+    \tkzDefPointWith[linear normed, K=1.5](B,E) \tkzGetPoint{E2}
+    
+    \tkzDrawSegments[dashed,-Latex](B,E2)
+
+    % Marcar ángulos con letras griegas
+    \tkzLabelAngle[pos = 0.3](E,B,C){$\beta$}
+
+    \tkzMarkAngle[arc=l,size=0.6](E,B,C)
+
+    \tkzLabelAngle[pos = 0.4](B,A,C){$x$}
+    \tkzLabelAngle[pos = 0.4](A,C,B){$y$}
+
+    \tkzMarkAngle[arc=l,size=0.6](B,A,C)
+    \tkzMarkAngle[arc=l,size=0.6](A,C,B)
+
+    % Marcar los puntos
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above left](C)
+\end{tikzpicture}

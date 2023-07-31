@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+    % Define los puntos
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(3,0){B}
+    \tkzDefPoint(1,2){C}
+
+    \tkzDefPoint(-2,0){D}
+    \tkzDefPoint(1.5,1.5){H1}
+    
+    % Dibuja los rayos AB y AC
+    \tkzDrawSegment[-Latex](A,B)
+    \tkzDrawSegment[-Latex](A,C)
+
+    \tkzDefMidPoint(A,B) \tkzGetPoint{AMP}
+    \tkzDefMidPoint(A,C) \tkzGetPoint{AMC}
+
+    % Marca el vértice A
+    \tkzLabelPoint[below](A){$A$}
+    \tkzLabelPoint[below](AMP){$B$}
+    \tkzLabelPoint[above left](AMC){$P$}
+
+    \tkzLabelPoint(H1){$\scriptsize{H_1}$}
+
+    \tkzDrawPoints(A,AMP,AMC)
+    
+    % Dibuja el ángulo BAC
+    \tkzMarkAngle[arc=l, size=0.5cm](B,A,C)
+    \tkzLabelAngle[pos = 0.9](B,A,C){$\degs{r}$}
+
+    \tkzDrawSegment[dashed,-Latex](A,D)
+\end{tikzpicture}

@@ -1,0 +1,148 @@
+
+\begin{theorem}
+    Si una recta paralela a un lado de un triángulo, corta a los otros dos lados en puntos distintos, entonces determina sobre ellos segmentos proporcionales.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem21}
+        \caption{$DE \parallel BC \imply \dfrac{AB}{AD} = \dfrac{AC}{AE}$}
+        \label{fig:theorem21}
+    \end{figure}
+\end{theorem}
+
+\begin{theorem}[Recíproco del teorema anterior]
+    Si una recta interseca dos lados de un triángulo y determina sobre ellos segmentos proporcionales, entonces la recta es paralela al tercer lado.    
+\end{theorem}
+
+\begin{theorem}[\textbf{Teorema de Thales}]
+    Si tres o más rectas paralelas son interesecadas por dos rectas transversales, los segmentos de las rectas transversales determinados por las rectas paralelas son proporcionales.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem22}
+        \caption{$\dfrac{AB}{BC} = \dfrac{DE}{EF} = \dfrac{DH}{HC}$}
+        \label{fig:theorem22}
+    \end{figure}    
+\end{theorem}
+
+\clearpage
+
+\begin{definition}[\textbf{Paralela media}]
+    El segmento paralelo a uno de los lados de un triángulo y que contiene los puntos medios de los otros dos lados, recibe el nombre de \textit{paralela media}.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/paralela-media}
+        \label{fig:paralela-media}
+    \end{figure}    
+    
+\end{definition}
+
+\subsection{Triángulos Semejantes}
+
+\begin{definition}[\textbf{Triángulos semejantes}]
+    Dada una correspondencia entre dos triángulos, estos son \textit{semejantes} si cumplen que:
+
+    \begin{itemize}
+        \item Sus lados correspondientes son proporcionales.
+        \item Sus ángulos correspondientes son congruentes.
+    \end{itemize}
+    
+\end{definition}
+
+\begin{definition}[\textbf{Razón de semejanza}]
+    La \textit{razón de semejanza} es el cociente de las medidas de los dos lados correspondientes en triángulos semejantes.
+\end{definition}
+
+
+\subsection{Teoremas de Semejanza Triangular}
+
+\begin{theorem}[\textbf{Ángulo,Ángulo,Ángulo: a-a-a}]
+    Dada una correspondencia entre dos triángulos, si los tres pares de ángulos correspondientes son congruentes entonces los triángulos son semejantes.
+\end{theorem}
+
+
+\begin{theorem}[\textbf{Ángulo,Ángulo: a-a}]
+    Dada una correspondencia entre dos triángulos, si dos pares de ángulos correspondientes son congruentes entonces los triángulos son semejantes.
+\end{theorem}
+
+
+\begin{theorem}[\textbf{Lado,Ángulo,Lado: l-a-l}]
+    Dada una correspondencia entre dos triángulos, si dos pares de lados correspondientes son proporcionales y el ángulo comprendido entre ellos es congruente, entonces los triángulos son semejantes.
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}[\textbf{Paralela media es mitad de la base}]
+    El segmento que interseca dos lados de un triángulo en sus puntos medios es paralelo al tercer lado y mide la mitad de este.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/paralela-media}
+        \caption{$DE = \dfrac{1}{2}BC$}
+        \label{fig:paralela-media}
+    \end{figure}    
+    
+\end{theorem}
+
+\begin{theorem}[\textbf{Lado,Lado,Lado: l-l-l}]
+    Dada una correspondencia entre dos triángulos, si los tres pares de lados correspondientes son proporcionales, entonces los triángulos son semejantes.
+\end{theorem}
+
+\subsection{Semejanza de Polígonos}
+
+\begin{definition}[\textbf{Polígonos semejantes}]
+    Dos \textit{polígonos} son \textit{semejantes} si sus ángulos correspondientes son congruentes y sus lados correspondientes son proporcionales.
+\end{definition}
+
+
+\subsection{Teorema de Pitágoras}
+
+\begin{theorem}[\textbf{Pitágoras}]
+    En todo triángulo rectángulo, el cuadrado de la longitud de la hipotenusa es igual a la suma de los cuadrados de las longitudes de los catetos.
+\end{theorem}
+
+\begin{theorem}[\textbf{Recíproco de Pitágoras}]
+    Si el cuadrado de la longitud de un lado de un triángulo es igual a la suma de los cuadrados de las longitudes de los otros dos lados, entonces el triángulo es rectángulo, con su ángulo recto opuesto al lado de mayor longitud.
+\end{theorem}
+
+\clearpage
+
+\begin{definition}[\textbf{Proyección de la altura sobre la hipotenusa en un triángulo rectángulo}]
+
+    La altura sobre la hipotenusa de un triángulo rectángulo divide a la hipotenusa en dos segementos llamados \textit{proyecciones} de cada uno de los catetos del triángulo sobre la hipotenusa.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/projection-hypothenuse-1}
+        \label{fig:projection-hypothenuse}
+    \end{figure}    
+
+    En la figura, $h$ es la altura sobre la hipotenusa que divide a $c$ en dos segmentos $m$ y $n$ en donde $m$ es la proyección del cateto $\seg{AC}$ sobre la hipoteusa y $n$ es la proyección del cateto $\seg{BC}$ sobre la hipotenusa.
+\end{definition}
+
+\begin{theorem}[\textbf{altura sobre la hipotenusa de un triángulo rectángulo}]
+    El cuadrado de la medida de la altura sobre la hipotenusa en un triángulo rectángulo es igual al producto de la longitud de las proyecciones de los catetos sobre la hipotenusa.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/projection-hypothenuse-1}
+        \caption{$h^2 = m \cdot n$}
+        \label{fig:projection-hypothenuse-theorem}
+    \end{figure}    
+    
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}[\textbf{Del cateto}]
+    El cuadrado de la longitud de un cateto es igual al producto de la longitud de la proyección de dicho cateto sobre la hipotenusa por la logitud de la hipotenusa.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/projection-hypothenuse-2}
+        \caption{$b^2 = m \cdot c$ y $a^2 = n \cdot c$}
+        \label{fig:theorem-leg-hypothenuse-projection}
+    \end{figure}    
+    
+\end{theorem}

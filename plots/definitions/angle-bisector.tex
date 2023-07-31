@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+    % Definir los puntos
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(0,3){D}
+    %\tkzDefPointBisector(A,B,C) \tkzGetPoint{D}
+
+    \tkzDefPointBy[rotation=center A angle 45](B)
+    \tkzGetPoint{C}
+
+    % Dibujar las lineas y puntos
+    \tkzDrawSegment[add=0 and 0.2,-Latex](A,D) 
+    \tkzDrawSegment[add=0 and 0.2,-Latex](A,B)
+
+    \tkzDrawSegment[dashed,-Latex,add=0 and 0.2](A,C)
+    
+    \tkzDrawPoints(A,B,C,D)
+
+    % Etiquetar los puntos
+    \tkzLabelPoint[below](A){$B$}
+    \tkzLabelPoint[below](B){$D$}
+    \tkzLabelPoint[right](D){$A$}
+    
+    \tkzLabelPoint[right](C){$C$}
+    
+
+    % Marcar los ángulos
+    \tkzMarkAngle[arc=l,size=0.8,mark=|](B,A,C)
+    \tkzMarkAngle[arc=l,size=0.8,mark=|](C,A,D)
+
+\end{tikzpicture}

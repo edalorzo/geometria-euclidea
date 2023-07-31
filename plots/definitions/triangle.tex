@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=0.8] 
+%\tkzInit[xmax=6,ymax=2, xstep=1]
+
+\tkzDefPoints{% x    y   name
+                0  /0   /O,
+                2  /4   /N,
+                6  /0   /M}
+
+%\tkzDrawPoints(O,M,N)
+
+\tkzLabelPoint[left](O){$\rm{O}$}
+\tkzLabelPoint[above](N){$\rm{N}$}
+\tkzLabelPoint[right](M){$\rm{M}$}
+
+\tkzDrawPolygon(O,M,N)
+
+\end{tikzpicture}

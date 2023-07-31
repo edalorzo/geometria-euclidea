@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](130:\radius){C}
+    \tkzDefShiftPoint[O](210:\radius){A}
+    \tkzDefShiftPoint[O](70:\radius){B}
+    \tkzDefShiftPoint[O](340:\radius){D}
+
+    \tkzDrawCircle(O,A)
+
+    \tkzDrawSegment(A,B)
+    \tkzDrawSegment(C,D)
+
+    \tkzInterLL(A,B)(C,D)
+        \tkzGetPoint{E}
+
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[above right](B){$B$}
+    \tkzLabelPoint[above left](C){$C$}
+    \tkzLabelPoint[below right](D){$D$}
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[below](E){$E$}
+    
+    \tkzDrawPoints[fill=black](A,B,C,D,E,O)
+
+\end{tikzpicture}    

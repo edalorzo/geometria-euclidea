@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(2,2){A}
+    \tkzDefPoint(6,2){B}
+    
+    \tkzDefPoint(3,1){C}
+    \tkzDefPoint(5,3){D}
+
+    \tkzDefPoint(3,3){E}
+    \tkzDefPoint(5,1){F}
+
+    \tkzInterLL(A,B)(C,D)
+        \tkzGetPoint{M}
+
+    \tkzDrawPoints(A,B,C,D,E,F,M)
+    
+    \tkzLabelPoints(A,B,C,D)
+    \tkzLabelPoints[above right](E,F)
+    \tkzLabelPoint[below](M){$M$}
+
+    \tkzDrawLine[add=0.4 and 0.4,Latex-Latex](A,B)
+    \tkzDrawLine[add=0.4 and 0.4,Latex-Latex](C,D)
+    \tkzDrawLine[add=0.4 and 0.4,Latex-Latex](E,F)
+    
+\end{tikzpicture}
+
+

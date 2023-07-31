@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(6,2){C}
+    \tkzDefPoint(2,2){D}
+
+    % Dibuja paralelogramo
+    \tkzDrawPolygon(A,B,C,D)
+    
+    \tkzDrawSegments(A,C)
+    
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C,D)
+
+    
+    % dots: puntos pequeños.
+    % fivepointed stars: estrellas de cinco puntas.
+    % sixpointed stars: estrellas de seis puntas.
+    % bricks: ladrillos.
+    % checkerboard: tablero de ajedrez.
+    % crosshatch dots: puntos de trama cruzada.
+    % horizontal lines: líneas horizontales.
+    % vertical lines: líneas verticales.
+    % north east lines: líneas en dirección noreste.
+    % north west lines: líneas en dirección noroeste.
+    % grid: cuadrícula.
+    % crosshatch: trama cruzada.
+
+    \tkzDrawPolygon[pattern=dots, pattern color=gray](A,C,D)
+    \tkzDrawPolygon[pattern=crosshatch dots, pattern color=gray](A,C,B)
+\end{tikzpicture}

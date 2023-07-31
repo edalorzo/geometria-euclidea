@@ -1,0 +1,30 @@
+% TEOREMA DE PITÀGORAS SIN TERMINAR
+\begin{tikzpicture}
+    % define outer square points
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(4,4){C}
+    \tkzDefPoint(0,4){D}
+    
+    % draw outer square
+    \tkzDrawPolygon(A,B,C,D)
+    
+    % define inner square points
+    \tkzDefPoint(0,2){E}
+    \tkzDefPoint(2,4){F}
+    \tkzDefPoint(4,2){G}
+    \tkzDefPoint(2,0){H}
+    
+    % draw inner square
+    \tkzDrawPolygon[dashed](E,F,G,H)
+    
+    % label the points
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above right](C){$C$}
+    \tkzLabelPoint[above left](D){$D$}
+    \tkzLabelPoint[left](E){$E$}
+    \tkzLabelPoint[above](F){$F$}
+    \tkzLabelPoint[right](G){$G$}
+    \tkzLabelPoint[below](H){$H$}
+\end{tikzpicture}

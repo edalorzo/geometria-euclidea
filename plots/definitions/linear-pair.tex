@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+    % Definir los puntos del ángulo
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(-2,0){A}
+    \tkzDefPoint(2,0){D}
+    \tkzDefPoint(1,2){C}
+
+    % Dibujar los ángulos
+    \tkzDrawSegment[add=0.2 and 0.2,Latex-Latex](A,D)
+    \tkzDrawSegment[add=0 and 0.2,-Latex](B,C)
+
+    % Marcar los puntos
+    \tkzDrawPoints(A,B,C,D)
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzLabelPoint[left](C){$C$}
+    \tkzLabelPoint[below right](D){$D$}
+
+    % Marcar los ángulos
+    \tkzMarkAngle[size=0.8](D,B,C)
+    \tkzLabelAngle[pos=0.6](D,B,C){$\alpha$}
+
+    \tkzMarkAngle[size=0.8](C,B,A)
+    \tkzLabelAngle[pos=0.4](C,B,A){$\beta$}
+
+\end{tikzpicture}
+

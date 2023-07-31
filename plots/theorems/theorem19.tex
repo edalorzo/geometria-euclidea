@@ -1,0 +1,46 @@
+\begin{tikzpicture}[scale=0.8]
+
+    \tkzDefPoint(2,3){A}
+    \tkzDefPoint(6,3.5){B}
+
+    \tkzDefPoint(2,1.5){C}
+    \tkzDefPoint(6,2){D}
+    
+    \tkzDefPoint(4,4.5){H}
+    \tkzDefPoint(4.5,0){G}
+        
+    \tkzInterLL(A,B)(H,G)
+        \tkzGetPoint{P}
+    \tkzInterLL(C,D)(H,G)
+        \tkzGetPoint{Q}
+
+    \tkzDrawPoints(A,B,C,D,P,Q)
+
+    \tkzLabelPoints[above](A,B)
+    \tkzLabelPoints[below](C,D)
+    \tkzLabelPoints[above left](P)
+    \tkzLabelPoints[below right](Q)
+
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](A,B)
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](C,D)
+    \tkzDrawLine[add=0.2 and 0.2,Latex-Latex](H,G)
+
+    \tkzLabelLine[pos=1.25,right](H,G){$l$}
+    \tkzLabelLine[pos=1.25,above right](A,B){$l_1$}
+    \tkzLabelLine[pos=1.25,above right](C,D){$l_2$}
+
+    \tkzMarkAngle[arc=l, size=0.65cm, color=blue](Q,P,B)
+    \tkzMarkAngle[arc=l, size=0.65cm, color=blue](P,Q,C)
+
+    \tkzMarkAngle[arc=l, size=0.65cm, color=red](A,P,Q)
+    \tkzMarkAngle[arc=l, size=0.65cm, color=red](D,Q,P)
+
+    \tkzLabelAngle[pos=0.38,color=blue](Q,P,B){$\alpha$}
+    \tkzLabelAngle[pos=0.38,color=blue](P,Q,C){$\alpha$}
+
+    \tkzLabelAngle[pos=0.38,color=red](A,P,Q){$\beta$}
+    \tkzLabelAngle[pos=0.38,color=red](D,Q,P){$\beta$}
+    
+\end{tikzpicture}
+
+

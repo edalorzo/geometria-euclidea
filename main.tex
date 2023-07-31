@@ -1,0 +1,136 @@
+\documentclass[12pt,titlepage]{article}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tgbonum}
+\usepackage{parskip}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{multirow}
+\usepackage{amsmath,amsthm,newtxmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{xcolor}
+\usepackage[many]{tcolorbox}
+
+\usepackage{tkz-base}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,intersections,through,backgrounds,patterns}
+\usepackage{tkz-euclide}
+
+\usepackage[noabbrev,capitalize,spanish]{cleveref}
+\usepackage{caption,subcaption}
+
+\usepackage{blindtext}
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\segment}[1]{\overline{\rm #1}}
+\newcommand{\ray}[1]{\overrightarrow{\rm #1}}
+\newcommand{\eline}[1]{\overleftrightarrow{\rm #1}}
+\newcommand{\degrees}[1]{#1^{\circ}}
+
+\newcommand{\pt}[1]{\rm #1}
+\newcommand{\seg}[1]{\overline{\rm #1}}
+\newcommand{\dist}[1]{\rm #1}
+\newcommand{\lne}[1]{\overleftrightarrow{\rm #1}}
+\newcommand{\degs}[1]{#1^{\circ}}
+\newcommand{\imply}{\Rightarrow}
+\newcommand{\iif}{\Leftrightarrow}
+
+\theoremstyle{plain}% default
+\newtheorem{axiom}{Axioma}
+\newtheorem{postulate}{Postulado}
+\newtheorem{theorem}{Teorema}
+\newtheorem{corolary}{Corolario}
+\newtheorem{lemma}{Lema}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}
+
+\theoremstyle{remark}% default
+\newtheorem{example}{Ejemplo}[section]
+
+\renewcommand\qedsymbol{QED}
+
+\begin{document}
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+       \Large \textbf{Geometría Euclidea I}
+
+%       \vspace{0.5cm}
+%        Thesis Subtitle
+            
+       \vspace{1.5cm}
+
+       \textbf{Edwin Dalorzo}
+
+       \vfill
+            
+       Geometría Euclidea \\
+       (03420)
+                   
+       \vspace{0.8cm}
+     
+
+            
+       Cátedra de Matemáticas \\ Universidad Estatal a Distancia \\ Centro Universitario de Heredia \\ \today \end{center}
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Conceptos Básicos}
+\subfile{sections/basics}
+
+\clearpage
+
+\section{Ángulos}
+\subfile{sections/angles}
+
+\clearpage
+
+\section{Triángulos}
+\subfile{sections/triangles}
+
+\clearpage
+
+\section{Rectas Paralelas y Perpendiculares}
+\subfile{sections/lines}
+
+\clearpage
+
+\section{Cuadriláteros}
+\subfile{sections/quadrilaterals}
+
+\clearpage
+
+\section{Semejanza}
+\subfile{sections/similarity}
+
+\clearpage
+
+\section{Círculo y Circunferencia}
+\subfile{sections/circles}
+
+\clearpage
+\appendix
+
+\section{Apéndice}
+\subfile{sections/questions}
+
+% \section{Dudas y Comentarios}
+% \subfile{sections/feedback}
+
+
+
+% \section{Dudas y Fes de Erratas}
+% \subfile{sections/feedback}
+
+\end{document}

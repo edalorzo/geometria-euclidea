@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+    % Definir los puntos del rectángulo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(5,3){C}
+    \tkzDefPoint(0,3){D}
+
+    % Dibujar el rectángulo
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above right](C){$C$}
+    \tkzLabelPoint[above left](D){$D$}
+
+    % Marcar los lados
+    \tkzLabelSegment[below](A,B){$b$}
+    \tkzLabelSegment[right](C,B){$h$}
+\end{tikzpicture}

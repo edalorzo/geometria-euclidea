@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.8]
+    % Define the points of the triangle
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(3,3){C}
+    
+    % Draw the triangle
+    \tkzDrawPolygon(A,B,C)
+
+    %\tkzDrawPoints(A,B,C)
+    \tkzLabelPoint[left](A){$A$}
+    \tkzLabelPoint[right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}
+    
+    % Mark each side with ticks
+    \tkzMarkSegment[mark=|](A,B)
+    \tkzMarkSegment[mark=||](B,C)
+    \tkzMarkSegment[mark=|||](A,C)
+
+    \tkzMarkAngle[arc=l,size=0.8](B,A,C)
+    \tkzMarkAngle[arc=ll,size=0.8](C,B,A)
+    \tkzMarkAngle[arc=lll,size=0.8](A,C,B)
+    
+\end{tikzpicture}

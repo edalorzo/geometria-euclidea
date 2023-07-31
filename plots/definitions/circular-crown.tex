@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.4]
+    
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](200:\radius){r}
+    \tkzDefShiftPoint[O](350:\radius+3){R}
+
+    \tkzFillCircle[teal!20](O,R)
+    \tkzFillCircle[white!20](O,r)
+    
+    \tkzDrawCircle(O,r)
+    \tkzDrawCircle(O,R)
+
+    \tkzDrawSegment(O,r)
+    \tkzDrawSegment(O,R)
+
+    \tkzLabelSegment(O,r){$r$}
+    \tkzLabelSegment(O,R){$R$}
+
+    \tkzLabelPoint[above](O){$O$}
+    \tkzDrawPoints[fill=black](O)
+
+\end{tikzpicture}    

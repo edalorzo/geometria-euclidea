@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    % Define los puntos U, T y S
+    \tkzDefPoint(0,0){U}
+    \tkzDefPoint(6,0){T}
+    \tkzDefMidPoint(U,T)
+    \tkzGetPoint{S}
+
+    % Define el punto R perpendicular a UT en S
+    \tkzDefPointWith[orthogonal normed, K=-3](S,U)
+    \tkzGetPoint{R}
+
+    % Dibuja la línea UT y la etiqueta como l
+    \tkzDrawSegment(U,T)
+    \tkzLabelSegment[above right,pos=0.5](U,T){$l$}
+    \tkzDrawLine[Latex-Latex](U,T)
+
+    % Dibuja los segmentos RS y RT
+    \tkzDrawSegments(R,S S,T T,R)
+
+    % Marca y etiqueta los puntos
+    \tkzDrawPoints(U,T,S,R)
+    \tkzLabelPoints[below](U,T)
+    \tkzLabelPoints[above](R)
+    \tkzLabelPoints(S)
+
+    % Marca el ángulo RSU como ángulo recto
+    \tkzMarkRightAngle[size=0.3](R,S,U)
+\end{tikzpicture}

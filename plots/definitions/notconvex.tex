@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=0.8] 
+
+
+\tkzDefPoints{% x     y    name
+                0    /3    /A,
+                6    /0    /B,
+                3    /3    /C,
+                5    /5    /D,
+                3.2  /3.7  /R,
+                3.8  /1.8    /S}
+
+\tkzDrawPolygon(A,B,C,D)
+\tkzDrawPoints(R,S)
+\tkzLabelPoints[left](R,S)
+\tkzDrawSegment(R,S)
+
+\end{tikzpicture}

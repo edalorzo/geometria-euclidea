@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+    % Define the center of the circle
+    \tkzDefPoint(0,0){O}
+    
+    % Define a point on the circle
+    \tkzDefPoint(3,0){P}
+    
+    % Draw the circle
+    \tkzDrawCircle(O,P)
+    
+    % Draw the tangent line
+    \tkzDefLine[perpendicular=through P](O,P) 
+        \tkzGetPoint{a}
+        
+    \tkzDrawLine[add=1.4 and 0.3,Latex-Latex](P,a)
+    \tkzLabelLine[right, pos=1.3](P,a){$l$}
+    
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above right](P){$P$}
+
+    \tkzDrawSegment(O,P)
+    \tkzLabelSegment(O,P){$r$}
+
+    \tkzDrawSegment[dashed](O,a)
+
+    % Draw the points
+    \tkzDrawPoints[fill=black](O,P)
+    \tkzDrawPoint(a)
+    \tkzLabelPoint[right](a){$Q$}
+
+    \tkzMarkRightAngle(O,P,a)
+    
+\end{tikzpicture}

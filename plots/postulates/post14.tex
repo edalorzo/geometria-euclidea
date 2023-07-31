@@ -1,0 +1,39 @@
+\begin{tikzpicture}[scale=1] 
+
+% TRIANGLE 1
+\tkzDefPoints{% x    y   name
+                0  /0   /B,
+                0  /2   /A,
+                2  /0   /C,
+                0  /3   /D,
+                3  /0   /E}
+
+\tkzDrawPoints(A,B,C)
+\tkzLabelPoint[left](A){$A$}
+\tkzLabelPoint[below left](B){$B$}
+\tkzLabelPoint[below](C){$C$}
+
+\tkzDrawSegment[-Triangle](B,D)
+\tkzDrawSegment[-Triangle](B,E)
+\tkzMarkRightAngle[size=0.5](A,B,C)
+
+
+% TRIANGLE 2
+\tkzDefPoints{% x    y   name
+                5  /0   /F,
+                5  /1   /G,
+                9  /0   /H,
+                5  /2   /I,
+                10 /0   /J}
+
+
+\tkzDrawPoints(F,G,H)
+\tkzLabelPoint[below left](F){$E$}
+\tkzLabelPoint[left](G){$D$}
+\tkzLabelPoint[below](H){$F$}
+
+\tkzDrawSegment[-Triangle](F,I)
+\tkzDrawSegment[-Triangle](F,J)
+\tkzMarkRightAngle[size=0.5](G,F,H)
+
+\end{tikzpicture}

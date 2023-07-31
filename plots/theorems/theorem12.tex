@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(6,2){C}
+    \tkzDefPoint(2,2){D}
+
+    % Dibuja paralelogramo
+    \tkzDrawPolygon(A,B,C,D)
+    
+    \tkzDrawSegments(A,C B,D)
+
+    % Encuentra el punto de intersección de las diagonales
+    \tkzInterLL(A,C)(B,D) \tkzGetPoint{Q}
+
+    \tkzMarkSegment[mark=|](A,Q)
+    \tkzMarkSegment[mark=|](Q,C)
+
+    \tkzMarkSegment[mark=||](B,Q)
+    \tkzMarkSegment[mark=||](D,Q)
+    
+    
+    \tkzLabelPoints[below](A,B,Q)
+    \tkzLabelPoints[above](C,D)
+    
+\end{tikzpicture}

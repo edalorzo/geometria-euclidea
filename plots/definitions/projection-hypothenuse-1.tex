@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+    % Define points for the triangles
+    \tkzDefPoint(0,4){A}
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(4,0){C}
+
+    %Draw polygon
+    \tkzDrawPolygon(A,B,C)
+
+    \tkzDefSpcTriangle[orthic,name=H](A,B,C){a,b,c}
+    \tkzDrawSegment[dashed](B,Hb)
+
+    \tkzDrawSegment[dim={$c$,0.3cm,above=0.1cm},
+	 	style={sloped,dashed}](A,C)
+    
+       
+    % Label the points
+    \tkzLabelPoint[above left](A){$A$}
+    \tkzLabelPoint[below](B){$C$}
+    \tkzLabelPoint[below right](C){$B$}
+
+    \tkzLabelSegment[below](A,Hb){$m$}
+    \tkzLabelSegment[below](C,Hb){$n$}
+    \tkzLabelSegment[above](B,Hb){$h$}
+    
+
+    \tkzMarkRightAngle(A,Hb,B)
+
+
+\end{tikzpicture}

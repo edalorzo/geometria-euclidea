@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+    
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](30:\radius){E}
+    \tkzDefShiftPoint[O](-40:\radius){D}
+
+    \tkzDefShiftPoint[O](180:\radius){A}
+    \tkzDefShiftPoint[O](240:\radius){C}
+
+    \tkzInterLL(A,D)(C,E)
+        \tkzGetPoint{B}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,A)
+
+    \tkzLabelPoint[below left](A){$A$}
+    \tkzLabelPoint[below right](D){$D$}
+    \tkzLabelPoint[below](C){$C$}
+    \tkzLabelPoint[right](E){$E$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzLabelPoint[above](O){$O$}
+
+    \tkzDrawLine[Latex-Latex](A,D)
+    \tkzDrawLine[Latex-Latex](C,E)
+    
+    \tkzDrawPoints[fill=black](A,B,C,D,E,O)
+
+\end{tikzpicture}    

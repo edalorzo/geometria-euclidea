@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=1.3]
+    % Definir el centro
+    \tkzDefPoint(0,0){O}
+
+    % Definir los puntos del heptágono
+    \foreach \i in {0,1,...,4} {
+        \tkzDefPoint({\i*360/5}:2){P\i}
+    }
+
+    % Dibujar el heptágono
+    \tkzDrawPolygon(P0,P1,P2,P3,P4)
+
+    %\tkzDrawPoints(P0,P1,P2,P3,P4)
+    %\tkzLabelPoints(P0,P1,P2,P3,P4)
+
+    \tkzDrawSegment(P0,P2)
+    \tkzDrawSegment(P2,P4)
+    
+    % Dibujar los triángulos
+    \tkzDrawPolygon[fill=gray!25](P0,P1,P2)
+    \tkzDrawPolygon[fill=blue!10](P2,P3,P4)
+    
+\end{tikzpicture}

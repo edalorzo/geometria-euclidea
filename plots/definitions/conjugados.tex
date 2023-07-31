@@ -1,0 +1,42 @@
+\begin{tikzpicture}[scale=0.8]
+
+    \tkzDefPoint(2,1.5){E}
+    \tkzDefPoint(6,1){F}
+    
+    \tkzDefPoint(2,3){C}
+    \tkzDefPoint(6,3.5){D}
+
+    \tkzDefPoint(4,4.5){H}
+    \tkzDefPoint(4.5,0){G}
+        
+    \tkzInterLL(E,F)(H,G)
+        \tkzGetPoint{B}
+    \tkzInterLL(C,D)(X,Y)
+        \tkzGetPoint{A}
+
+    \tkzDrawPoints(A,B,C,D,E,F,G,H)
+
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below left](B)
+    \tkzLabelPoints[above](C,D)
+    \tkzLabelPoints[below](E,F)
+    \tkzLabelPoints[right](G,H)
+
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](E,F)
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](C,D)
+    \tkzDrawLine[add=0.2 and 0.2,Latex-Latex](H,G)
+
+    \tkzLabelLine[pos=1.25,right](H,G){$l$}
+    \tkzLabelLine[pos=1.25,above right](C,D){$m$}
+    \tkzLabelLine[pos=1.25,above right](E,F){$n$}
+
+    \tkzMarkAngle[arc=l, size=0.5cm, color=blue, mark=|](B,A,D)
+    \tkzMarkAngle[arc=l, size=0.5cm, color=blue, mark=||](F,B,A)
+    
+
+    %\tkzMarkAngle[arc=l, size=0.5cm, color=red, mark=|](C,A,B)
+    %\tkzMarkAngle[arc=l, size=0.5cm, color=red, mark=||](A,B,E)
+    
+\end{tikzpicture}
+
+

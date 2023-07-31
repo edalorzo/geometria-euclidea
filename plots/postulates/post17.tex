@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=1] 
+
+\tkzDefPoints{0/0/W,4/0/X,5/2/Y} 
+\tkzDefParallelogram(W,X,Y)
+
+\tkzGetPoint{Z}
+\tkzDrawPolygon(W,X,Y,Z)
+
+\tkzDefPoints{% x     y     name                
+                2    /0     /A,
+                3    /2     /B,
+                4.2  /1.9   /P,
+                1    /0.5   /H1,
+                3    /0.5   /H2,
+                1.5  /1.5   /R,
+                3.8  /0.8   /S}
+
+\tkzDrawPoints(R,S)
+\tkzLabelPoint[below](R){$A$}
+\tkzLabelPoint[below](S){$B$}
+\tkzDrawSegment(R,S)
+
+\tkzDrawLine[black,Latex-Latex](A,B)
+\tkzLabelLine[style={below right}, pos=1](A,B){$m$}
+
+\tkzLabelPoint[below right](P){$\pi$}
+\tkzLabelPoint[below](H1){\scriptsize{$H1$}}
+\tkzLabelPoint[below](H2){\scriptsize{$H2$}}
+
+\end{tikzpicture}

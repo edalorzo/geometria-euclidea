@@ -1,0 +1,372 @@
+\subsection{Rectas}
+
+\begin{postulate}
+    Existe al menos una recta, y se representa por:
+    
+    \begin{figure}[h]
+        \centering
+        \input{plots/postulates/post1}
+        \label{fig:postulate1}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Dada una recta $m$ existe al menos un punto $P$ que no pertenece a $m$.
+    
+    \begin{figure}[h]
+        \centering
+        \input{plots/postulates/post2}
+        \label{fig:postulate2}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Existe una y solo una recta que pasa por dos puntos distintos $A$ y $B$. Se escribe $\lne{AB}$ y se lee ``recta AB''. 
+    
+    \begin{figure}[h]
+        \centering
+        \input{plots/postulates/post3}
+        \label{fig:postulate3}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    En una recta existen al menos dos puntos $A$ y $B$.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post4}
+        \label{fig:postulate4}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}[\textbf{Postulado de rectas paralelas:}]
+    Por un punto exterior a una recta dada se puede trazar una recta única que sea paralela a ella. Dos rectas son paralelas si están en un mismo plano y su intersección es vacía i.e. $l \cap m = \emptyset$.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post15}
+        \label{fig:postulate15}
+    \end{figure}
+
+    Dicho de otra manera, dada una recta $m$ y un punto $P$ exterior a ella, la recta $l$, paralela a ella, y que pasa por el punto exterior $P$, es única.
+    
+\end{postulate}
+
+\clearpage
+
+\begin{theorem}
+
+Si dos rectas distintas se intersecan, su intersección contiene solamente un punto. Es decir, dos rectas no pueden tener más que un solo punto en común, i.e. $l \cap m = \{P\}$.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post19}
+        \label{fig:postulate19}
+    \end{figure}
+    
+\end{theorem}
+
+\clearpage
+
+\subsection{Planos}
+
+\begin{definition}[\textbf{Puntos Coplanares}]
+Cuatro o más puntos son \textit{coplanares} si pertenecen a un mismo plano.
+\end{definition}
+
+\begin{definition}[\textbf{Puntos No Coplanares}]
+Cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos \textit{no complanares}.
+\end{definition}
+
+\begin{postulate}
+    Dados tres puntos no colineales, existe uno y solo un plano que los contiene.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post5}
+        \label{fig:postulate5}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Sobre un plano cualquiera existen al menos tres puntos no colineales.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post6}
+        \label{fig:postulate6}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Para todo plano existe un punto $E$ tal que $E$ no está en el plano.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post7}
+        \label{fig:postulate7}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}[\textbf{Dos puntos, la recta y el plano:}]
+    Si dos puntos de una recta están en un plano, todos los puntos de la recta están en el plano. Simbólicamente si $\pt{A} \in \pi, \pt{B} \in \pi \imply \lne{AB} \in \pi$. En otras palabras, si una recta tiene dos puntos comunes con un plano, toda la recta está contenida en el plano.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post8}
+        \label{fig:postulate8}
+    \end{figure}
+    
+\end{postulate}
+
+\clearpage
+
+\begin{postulate}
+    Si dos planos tiene un punto en común también tiene una recta en común.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post9}
+        \label{fig:postulate9}
+    \end{figure}
+    
+\end{postulate}
+
+\begin{postulate}
+    Así como un punto sobre una recta la separa en dos semirectas, también una recta separa a un plano en dos semiplanos y un plano separa el espacio en dos semiespacios.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post16}
+        \label{fig:postulate16}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Si se tiene un plano $\pi$, una recta $l$ en el plano y un segmento cuyos extremos están en los dos semiplanos que determina $l$ en $\pi$, entonces el segmento interseca a la recta.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post17}
+        \label{fig:postulate17}
+    \end{figure}
+
+    Dicho de otra manera, dada una recta $m$ y un plano $\pi$ que la contiene, los puntos de plano que no están en $m$ forman dos conjuntos tales que:
+
+    \begin{itemize}
+        \item Cada uno de los conjuntos del plano es un conjunto convexo.
+        \item Si un punto $A$ está en uno de los conjuntos, y un punto $B$ está en el otro, entonces el segmento $\seg{AB}$ interseca a la recta $m$.
+    \end{itemize}
+    
+\end{postulate}
+
+\clearpage
+
+\begin{theorem}
+    Dada una recta $m$ y un punto $A$ tal que $A \not \in m$, existe un plano que contiene a $A$ y $m$ y ese plano es único.
+
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem1}
+        \label{fig:theorem1}
+    \end{figure}
+        
+\end{theorem}
+
+\begin{definition}[\textbf{Rectas Coplanares}]
+Dos o más rectas en un mismo plano se denominal coplanares.
+\end{definition}
+
+\begin{definition}[\textbf{Rectas Paralelas}]
+Dos o más rectas que no se intersecan se denominan \textit{paralelas}.
+\end{definition}
+
+\begin{definition}[\textbf{Rectas Concurrents}]
+Dos o mas rectas coplanares que se intersecan en un mismo punto se denominan \textit{concurrentes}.
+\end{definition}
+
+\clearpage
+
+\subsection{Puntos Colineales}
+
+\begin{definition}[\textbf{Puntos Colineales}]
+Tres o más puntos son colineales si pertenecen a una misma recta.
+\end{definition}
+
+\begin{definition}[\textbf{Puntos No Colineales}]
+Si tres o más puntos no pertenecen a la misma recta se denominan \textit{no colineales}.
+\end{definition}
+
+\begin{postulate}
+    Dados tres puntos colineales $A,B$ y $C$, de manera que $AB + BC = AC$, entonces se afirma que $B$ está entre $A$ y $C$.  Si el punto $B$ está entre $A$ y $C$, entonces $A,B,C$ son puntos colineales y distintos entre sí. Para indicar que $B$ está entre $A$ y $C$ se denota $A\,-\,B\,-\,C$.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post10}
+        \label{fig:postulate10}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Si $A$ y $B$ son puntos distintos, existe al menos un punto $C$ tal que $A\,-\,C\,-\,B$ y al menos un punto $D$ tal que $A\,-\,B\,-\,D$.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post11}
+        \label{fig:postulate11}
+    \end{figure}
+\end{postulate}
+
+\begin{postulate}
+    Dados tres puntos colineales distintos, uno y solo uno está entre los otros dos.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post12}
+        \label{fig:postulate12}
+    \end{figure}
+    
+\end{postulate}
+
+\clearpage
+
+\subsection{Distancia entre Puntos}
+
+\begin{postulate}[\textbf{Postulado de la distancia}]
+A cada par de puntos de un plano les corresponde un único número real mayor o igual que o, conocido como la distancia.
+\end{postulate}
+
+\begin{postulate}[\textbf{Postulado de dos puntos:}]
+Si se tiene dos puntos $A$ y $B$, $A = B$, si y solamente si $AB = 0$.
+Si se tienen dos puntos $C$ y $D$, entonces $CD = DC$
+\end{postulate}
+
+\begin{postulate}
+La distancia más corta entre dos puntos es el segmento que les une.
+\end{postulate}
+
+\begin{theorem}
+    Si se tienen tres puntos $F,G$ y $H$, entonces $FG + GH \ge FH$. En caso de que $F,G$ y $H$ no sean colineales se cumple que $FG + GH > FH$.
+
+    \begin{corolary}
+    La distancia más corta entre dos puntos es una línea recta.
+    \end{corolary}
+    
+\end{theorem}
+
+\begin{definition}[\textbf{Estar entre:}]
+    Dados tres puntos colineales, $\pt{A,B,C}$, de manera que $\dist{AB} + \dist{BC} = \dist{AC}$, entonce se afirma que $\pt{B}$ \textit{está entre} $\pt{A}$ y $\pt{C}$ y se escribe $\pt{A \,- \,B \,- \, C}$.
+\end{definition}
+
+\begin{definition}[\textbf{Segmento congruente:}]
+    Dos segmentos con la misma medida reciben el nombre de \textit{segmento congruentes}. Si $\seg{AB}$ es congruente con $\seg{CD}$ se escribe $\seg{AB} \cong \seg{CD}$.
+\end{definition}
+
+\begin{theorem}[\textbf{Teorema de construcción del segmento}]
+    Dado un segmento $\seg{AB}$ y un rayo $\ray{CD}$, hay exactamente un punto $\pt{E}$ de $\ray{CD}$, tal que $\seg{AB} \cong \seg{CE}$.   
+
+\end{theorem}
+
+\clearpage
+
+\subsection{Coordenadas}
+
+\begin{postulate}[\textbf{Postulado de la Regla}]
+    La distancia entre dos puntos dados es el valor absoluto de la diferencia de los dos números reales asociados a ellos (i.e. sus coordenadas).
+
+    Esto se basa en las siguientes afirmaciones:
+    
+    \begin{itemize}
+        \item A cada punto de la recta le corresponde un número real único, denominado coordenada de ese punto.
+        \item A cada número real le corresponde exactamente un punto de la recta.    
+    \end{itemize}
+
+    Supongamos que existe una recta $l$ que contiene al punto $P$, y la coordenada de $P$ en $l$ es $x$, escribimos $c(P) = x$ para denotar su sistema de coordenadas $c$.
+    
+\end{postulate}
+
+\begin{theorem}
+    Sean $A$ y $P$ dos puntos de la recta $\lne{AB}$. Entonces $l = \lne{AB}$ tiene un sistema coordenado en el cual la coordenada de $A$ es $0$ y la de $P$ es un número positivo.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/postulates/post18}
+        \label{fig:postulate18}
+    \end{figure}
+
+\end{theorem}
+
+\clearpage
+
+\subsection{Plano y Espacio}
+
+\begin{definition}[\textbf{Espacio:}]
+El conjunto de todos los puntos recibe el nombre de \textit{espacio}. Se acostumbra denotarlo con la letra $S$.
+\end{definition}
+
+\begin{postulate}
+El espacio contiene, al menos, cuatro puntos diferentes no coplanares.
+\end{postulate}
+
+\begin{postulate}
+    En el espacio, si se tiene un plano y un segmento con extremos en los dos semiplanos, el segmento interseca al plano.
+\end{postulate}
+
+\begin{definition}[\textbf{Conjunto convexo:}]
+    Un conjunto $A$ se llama \textit{convexo} si para cada par de puntos $\pt{R}$ y $\pt{S}$, que pertenece a él, el segmento $\seg{RS}$ está contenido en $A$.
+
+    \begin{figure}[h!]
+
+        \centering
+
+        \begin{subfigure}[b]{.5\textwidth}
+            \centering
+            \input{plots/definitions/convex}
+            \label{fig:convexset}
+            \caption{Convexo}            
+        \end{subfigure}%
+        \begin{subfigure}[b]{.5\textwidth}
+            \centering
+            \input{plots/definitions/notconvex}
+            \label{fig:notconvexset}
+            \caption{No Convexo}            
+        \end{subfigure}
+        
+        \centering
+        \caption{Convexidad}
+        \label{fig:convexidad}
+    
+    \end{figure}
+    
+\end{definition}
+
+\begin{postulate}[\textbf{Postulado de separación del plano}]
+    Dada una recta $m$ y un plano que la contiene, los puntos del plano que no están en $m$ forman dos conjuntos:
+
+    \begin{itemize}
+        \item Cada uno de los conjuntos del plano es un conjunto convexo.
+        \item Si un punto $\pt{R}$ está en uno de los conjunots y punto $\pt{S}$ está en el otro, entonces el segmentos $\seg{RS}$ interseca a la recta $m$.
+    \end{itemize}
+\end{postulate}
+
+\begin{definition}[\textbf{Arista:}]
+    Una recta en el plano que determina dos conjuntos convexos llamados semiplanos se denomina \textit{arista} o \textit{borde} de cada uno de ellos.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/arista}
+        \label{fig:arista}
+    \end{figure}
+    
+\end{definition}
+
+\begin{postulate}[\textbf{Separación del espacio}]
+    Los puntos del espacio que no están en un plano dado forman dos conjuntos denominados semiespacios tales que:
+
+    \begin{itemize}
+        \item Los dos conjuntos, uno a cada lado del plano, son convexos.
+        \item Si un punto $\pt{R}$ está en uno de los conjuntos y punto $\pt{S}$ está en el otro, entonces el segmentos $\seg{RS}$ interseca al plano en un punto.
+    \end{itemize}
+\end{postulate}

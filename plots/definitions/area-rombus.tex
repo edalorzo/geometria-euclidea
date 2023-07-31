@@ -1,0 +1,30 @@
+\begin{tikzpicture}[rotate=-45]
+    % Definir los puntos del rombo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(2,4){B}
+    \tkzDefPoint(4,0){C}
+    \tkzDefPoint(2,-4){D}
+
+    % Dibujar el rombo
+    \tkzDrawPolygon(A,B,C,D)
+
+    % Encontrar y marcar el punto de intersección
+    \tkzInterLL(A,C)(B,D) \tkzGetPoint{E}
+    %\tkzDrawPoints(E)
+
+    % Dibujar las diagonales
+    \tkzDrawSegment[dashed](A,C)
+    \tkzDrawSegment[dashed](B,D)
+
+    % Marcar las diagonales
+    \tkzLabelSegment[above right](A,E){$d_1$}
+    \tkzLabelSegment[below right](E,B){$d_2$}
+
+    \tkzMarkRightAngle(A,E,B)
+
+    % Marcar los puntos
+    \tkzLabelPoints[above](A)
+    \tkzLabelPoints[above](B)
+    \tkzLabelPoints[right](C)
+    \tkzLabelPoints[below](D)
+\end{tikzpicture}

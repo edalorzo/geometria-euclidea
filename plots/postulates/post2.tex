@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=1] 
+\tkzInit[xmax=6,ymax=2, xstep=1]
+
+\tkzDefPoints{% x    y   name
+                0  /0   /A,
+                6  /0   /B,
+                2  /1   /P}
+
+\tkzDrawPoint(P)
+\tkzLabelPoint[right](P){$P$}
+\tkzDrawLine[black,Latex-Latex](A,B)
+\tkzLabelLine[style={above}, pos=1](A,B){$m$}
+
+\end{tikzpicture}

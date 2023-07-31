@@ -1,0 +1,254 @@
+\subsection{Página 5}
+
+\subsubsection{Puntos No Colineales}
+
+La definición de puntos no colineales dice que ``si tres o más puntos no pertenecen a la misma recta entonces se denominan \textit{no colineales}''.
+
+Ahora bien, si tengo una recta \(m\) que contiene los puntos \(A\) y \(B\), y un punto no colineal \(C\) fuera de la recta, se podría afirmar que puesto que \(C \notin m\), los puntos \(A,B\) y \(C\) no son colineales.
+
+En este caso, bastó con que un punto  no perteneciera a la recta para que pudieran catalogarse como no colineal. ¿Estoy entiendo algo mal o quiso el autor decir algo que aún no capto?
+
+Creo que el error está en la forma en que se redactó la afirmación. Ciertamente se requieren tres puntos para determinar si son colineales o no, pero no necesariamente se necesita que los tres no pertenezcan a la recta. Basta con que uno de ellos no pertenezca a la recta formada por los otros dos para determinar que no son colineales. ¿No es así?.
+
+Tal vez sería mejor decir: ``Tres puntos se consideran colineales si hay una recta que los contenga, de otra manera se llaman no colineales''.
+
+\textbf{Respuesta de la tutoría:}
+
+Creo que con la explicación de la tutoría ya lo comprendí.
+
+Si consideramos 3 puntos, podemos tomar cualesquiera dos puntos y podrás formar una recta con ellos, pero si los 3 puntos no están en la misma recta, entonces no son colineales. Entonces, tiene sentido decir que si 3 o más puntos no están en la misma recta, serían no colineales.
+
+Ahora sí ya me quedó claro.
+
+\subsubsection{Puntos No Coplanares}
+
+La definición de puntos no coplanares adolce del mismo problema resaltado en la sección anterior. Dice ``cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos \textit{no coplanares}''.
+
+Sin embargo, si los puntos \(A,B,C\) están en el plano \(\alpha\) y \(D\) en el plano  \(\beta\), entonces basta con que uno de los cuatro puntos esté en un plano diferente para que no sean coplanares y no como parece sugerir la afirmación del libro que sugiere que todos los puntos deberían estar en diferentes planos para ser \textit{no coplanares}.
+
+Tal vez sería mejor decir: ``Cuatro puntos se consideran coplanares si hay un solo plano que los contenga, de otra manera se llaman no coplanares''.
+
+\subsection{Página 6}
+
+\subsubsection{Rectas Concurrentes}
+
+De la figura 1.6 se dice que las rectas concurrentes son $q,r$ y $t$. Sin embargo, dada la definición que se dio solo unos párrafos antes basada en la figura 1.4, que muestra dos rectas $l$ y $m$ que son concurrentes, es obvio que en la figura 1.6 hay muchas otras rectas concurrentes, p.ej. $p$ y $r$, $p$ y $s$, $p$ y $t$ y, $q$ y $s$.
+
+\subsubsection{Figura 1.7}
+
+La figura 1.7 menciona una cierta recta $m$, que no está descrita en la figura, y que se asume es la que interseca a $r$ y $p$. Claramente, esta omisión es un error en el a figura.
+
+\subsection{Página 9}
+
+En la sección 2 de ``Postulados del Plano'', se dice que ``el plano es un conjunto de puntos''.
+
+Consideremos el plano \(\alpha\) que contiene a los puntos \(\{A_1,A_2,A_3,\dots,A_n\}\) y el plano \(\beta\) que contiene a los puntos \(\{B_1,B_2,B_3,\dots,B_n\}\).
+
+Entonces yo podría formar el conjunto \(\delta = \alpha \cup \beta\), que de acuerdo con el libro sería un nuevo plano, pues un plano es un conjunto de puntos.
+
+Sin embargo, si suponemos que los puntos \(A_1,A_2,A_3\) son colineales, solo puede haber un plano que los contenga.
+
+Creo que el libro debió decir que el plano es un conjunto de puntos siempre y cuando esos puntos sean coplanares. No sé si será redundante la definición, pero ciertamente la actual parece intuitivamente errónea para mí.
+
+\subsection{Página 12}
+
+\subsubsection{Fe de Erratas}
+
+La Fe de Erratas dice que el libro debió decir que cuando ``se tienen tres puntos \textbf{distintos} \(F, G\) y \(H\), entonces, \(FG + GH \ge FH\)''. 
+
+Sin embargo, yo no puedo discernir porqué necesitan ser distintos para que el teorema se cumpla. Suponiendo que \(F = G = H\), entonces \(FG =0\) y \(GH = 0\), por lo tanto \(FG + GH = 0\), lo que implica que \(FG + GH \ge FH\) es verdad aunque los puntos sean iguales a cero y no se justificaría la modificación sugerida en la fe de erratas.
+
+\subsection{Página 13}
+
+\subsubsection{Definición del Teorema}
+
+\textbf{Respuesta errónea si} \(\mathbf{A=P}\):
+La definición del teorema dice: ``sean \(A\) y \(P\) dos puntos de la recta \(\overleftrightarrow{AB}\)...'' y luego pasa a hacer una demostración que para mi está incorrecta, a menos que se especifique que los puntos \(A\) y \(P\) son distintos.
+
+Según la demostración actual en el libro, tanto el sistema de coordenadas $g$ como el $h$ arrojarían, respectivamente, \(g(P) = 0\) y \(h(P)=0\) si \(A=P\), lo cual contradice la especificación del teorema donde dice que \(P\) debe ser un número positivo, i.e. \(P > 0\).
+
+\textbf{Sistema g erróneo si} \(\mathbf{A>P}\): En ninguna parte de la definición del teorema se especifica si la posición de \(P\) está entre \(A\) y \(B\). En tal caso yo pienso que la solución del sistema de coordenadas no pueden ser ni \(g\) ni \(h\) por sí solas. 
+
+¿No hubiera sido más sencillo simplemente definir el sistema $g$ de la siguiente manera?
+
+\[
+g(P) = \begin{cases}
+            f(P)-a \; \text{,\,si} \; f(P) >= a \\
+            a-f(P) \; \text{,\,si} \; f(P) < a
+        \end{cases}    
+\]
+
+De esta manera no haría falta un sistema de coordenadas \(h\).
+
+\subsection{Página 17}
+\subsubsection{Teorema de Construcción del Segmento}
+
+La demostración parece tener un error al hacer hacer una congruencia entre el segmento \(\overline{CE}\) y una longitud de segmento \(AB\).
+
+El libro dice:
+
+\[\overline{CE} \cong AB \Rightarrow f(E) = AB \Rightarrow E = f^{-1}(AB)\]
+
+Sin embargo, probablemente debería haber sido:
+
+\[\overline{CE} \cong \overline{AB} \Rightarrow f(E) = AB \Rightarrow E = f^{-1}(AB)\]
+
+\subsection{Página 18}
+\subsubsection{Ejemplo 16}
+
+En el libro se dice que \(\segment{QP} \cap  \ray{PQ} = \left\{Q\right\}\).
+
+Pero esto no parece tener sentido, suponiendo que el segmento \(\segment{QP}\) contenga los puntos \(\{P_1,P_2,P_3,...,P_n\}\) y que el rayo \(\ray{PQ}\) contiene los puntos \(\{P_1,P_2,P_3,...\}\), entonces \(\segment{QP} \cap \ray{PQ} = \segment{QP}\).
+
+Asimismo, hay un ejemplo que dice \(\segment{RT} \cap \ray{TS} = T\), me parece que debió decir \(\{T\}\).
+
+\subsection{Página 20}
+\subsubsection{Rectas Paralelas}
+
+El primer teorema de la página 20 dice:
+
+    ``Dada un recta y un punto exterior a ella, existe, \emph{al menos}, una recta paralela a la recta dada que pasa por ese punto''.
+
+Seguido de un postulado que dice:
+
+    ``Dada una recta y un punto exterior a ella, la recta paralela a ella que pasa por el punto exterior es única''.
+
+No me queda claro porque el teorema dice ``al menos una recta paralela'' mientras que el postulado dice que es ``única''. ¿No debería el teorema decir que existe \emph{una y solo una} recta paralela en vez de decir que existe \emph{al menos una}?. Al decir, al menos una sugiere que podrían haber más, y esto parece contradecir el postulado.
+
+\subsection{Página 22}
+\subsubsection{Postulados de Separación de Espacio}
+
+El libro dice que ``toda recta en el espacio es arista de un infinito número de semiplanos, pero todo plano en el espacio es `cara' de solamente dos semiplanos``.
+
+No me queda claro porque una recta en el espacio es arista de un número infinito de planos, ni como un plano es cara de dos semiplanos, ¿no habrá querido decir el autor de dos `semiespacios'?.
+
+\subsection{Página 50}
+\subsubsection{Ejemplo 5: Ejercicio B}
+
+Hay un error en la respuesta que brinda el libro. Explícitamente se explica que \(m\angle{AFB} = x\).
+
+Luego se resuelve que \(x=20^{\circ}\).
+
+Sin embargo, en su conclusión el libro dice que \(m\angle{AFB} = 160^{\circ}\).
+
+Probablemente el autor quiso decir que: \(m\angle{AFD} = 160^{\circ}\).
+
+Creo que esto es un error y no está actualmente en la fe de erratas.
+
+\subsection{Página 52}
+\subsubsection{Teorema de la Construcción de Ángulos}
+
+Se menciona en el teorema la existencia de un plano \(\alpha\), sin embargo en la figure 2.23, que pretende hacer una representación del teorema se usa una letra \(a\) que asumo se uso en lugar de \(\alpha\).
+
+Es el mismo tipo de error que mencioné para la figura 1.43, en donde se usó una letra \(a\) en lugar de la letra griega \(\gamma\).
+
+Este tipo de errores hace que la lectura de los gráficos sea confusa, porque uno no encuentra en el gráfico lo que los postulados, teoremas o hipótesis mencionan.
+
+Este caso también debería agregarse a la fe de erratas.
+
+\subsection{Página 64}
+\subsubsection{Teorema de la Ángulo, Lado, Ángulo}
+
+He intentando, infructuosamente, de entender la demostración del teorema en la página 64. En términos generales, entiendo lo que el autor está intentando, sin embargo, su demostración no es clara para mí.
+
+Comencemos por los puntos 1, 2. Me parecen repetitivos: En 1 dice que \(\triangle{DEF} \cong \triangle{MPN}\) por el postulado l-a-l, lo cual está claro para mí. Lo que no entiendo es la necesidad de decir en 2 que \(\triangle{DFE} \cong \triangle{MNP}\). Si ya quedó demostrado en 1 que el triángulo es congruente, ¿cuál es la necesidad de demostrar que el triángulo es congruente por un orden inverso de puntos?
+
+Luego en el punto 3, autor hace un congruencia entre dos rayos al decir \(\overrightarrow{\rm NO} \cong\ \overrightarrow{\rm NP}\). Sin embargo, no está para nada claro que sería una congruencia entre rayos. ¿Son acaso rayos que comienza en el mismo origen independientemente de su dirección? No creo que sea muy común en mi breve encuentro con geometría ver congruencias entre objetos geométricos infinitos. 
+
+Finalmente, en 4, el autor dice \(O=P\) porque \(\overleftrightarrow{\rm MO}\) y \(\overleftrightarrow{\rm NO}\) solo se pueden intersercar en un punto. Pero yo he fallado en ver el argumento explica la conclusión.
+
+\subsection{Página 65}
+\subsubsection{Ejemplo 25}
+
+En el punto 3 de la demostración se argumenta que la medida los ángulos internos de un triángulo es \(\degrees{180}\), lo cual no se ha postulado o demostrado hasta el momento. Al hacer el ejercicio, aunque conocía este punto, decidí no usarlo porque no se ha demostrado en ningún momento en el libro. Así las cosas, la demostración usa un teorema no demostrado en el libro. Yo creo que es un aspecto a mejorar la redacción del capítulo.
+
+\subsection{Ejercicios de Aplicación de Regla y Distancia}
+\subsubsection{Problema 1.4}
+
+En al caso 2 se establece que $0 \leq x < 2$, pero no me queda claro porque se excluye el $2$ del intervalo si $A=0$ y $B=2$, ¿de dónde se deduce que el punto $B$ debería estar excluído del intervalo?
+
+Debo decir, adicionalmente, que un aspecto que me confundió inicialmente en el ejercicio y que me tomó tiempo captar es que el uso de letras mayúsculas aquí representa distancia entre puntos, es decir, cuando dice $2AX$, $AX$ es la distancia entre el punto $A$ y el punto $X$ y no la multiplicación de las coordenadas de $A$ y $X$. Esto me tuvo confundido largo rato, cuando intenté resolver el problema porque yo interprete que $AX$ sería equivalente a $0X = 0$ y no se me hacía obvio de donde procedían las restas en la solución provista. Lo menciono como feedback y para el beneficio de otros que pudieran haberse confundido en este punto y malinterpretan que esto es un producto en vez de distancia entre puntos.
+
+\subsection{Teorema de Perpendicularidad}
+\subsubsection{Demostración página 88}
+
+Creo que la figura 3.4 de la página 88 tiene un error porque parece denotar dos puntos \(B\). Creo que el problema es que probablemente usaron una letra \(B\) para denotar el plano \(\beta\), lo cual podría causar confusión al leer la demostración de la página 88. Sobre todo porque algunas demostraciones por contradicción suelen representar objetos contradictorios en el plano para demostrar alguna cosa.
+
+Por otro lado, la demostración dice que la recta \(l\) determina dos semiplanos \(\alpha\) y \(\beta\), si ese es el caso, esa \(B\) que representa a \(\beta\) está en el mismo semiplano que \(\alpha\), ¿no es así?
+
+Entonces queda la duda, ¿cual es el plano \(\beta\)?.
+
+\subsubsection{Demostración página 90}
+
+La demostración habla de un punto \(M\) que no està en la figura que se usó para la demostración. Parece que el punto \(A\) debió haber sido \(M\).
+
+
+\subsection{Definición de ángulos internos no contiguos}
+\subsubsection{Figura 3.8, página 92}
+
+Creo que la figura 3.8 de la página 92 y la descripción de la definición tienen contradicciones insuperables. La definición dice que \(B-C-E\), pero en la figura en cuestión los puntos son \(B-E-C\).  Si entiendo bien, cuando se dicen que ciertos puntos son colineales, eso implica su orden también. ¿No es así?
+
+Cuando la definición habla de los ángulos \(\angle{CAB}\) y \(\angle{ABC}\) no me queda claro si la figura está bien y la definición está mal o viceversa. 
+
+Creo que lo confuso es que la imagen sale junto a la definición, pero parece ser la imagen usada mas adelante en la demostración. En mi interpretación, la imagen de la definición debió ser algo como lo siguiente:
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/definitions/intext-angles}
+    \label{fig:intext-angles}
+\end{figure}
+
+\subsection{Teorema de congruencia a-a-l}
+\subsubsection{Página 93}
+
+En la definición del libro sobre congruencia a-a-l de la página 93 dice:
+
+Si en un triángulo dos ángulos y un lado son congruentes con sus correspondientes ángulos y lado de un segundo triángulo, entonces los dos triángulos son congruentes.
+
+Sin embargo esta definición me parece imprecisa, por ejemplo, ¿cómo se diferencia esta de a-l-a?
+
+Me parece que le definición debió dejar en claro que el lado debe ser un lado no contenido entre los dos ángulos para dejar las cosas suficientemente claras. ¿No les parece?.
+
+\subsection{Teoremas Relativos a Paralelogramos}
+\subsubsection{Páginas 144 y 147}
+
+El teorema de que los lados opuestos de un paraleloggramo son congruentes está repetido en estas dos páginas.
+
+\subsection{Teoremas de Áreas}
+\subsubsection{Páginas 165 y 166}
+
+En la página 165 hay un teorema descrito como:
+
+Teorema del área de una región determinada por un paralelogramo:
+El área de un trapecio es la mitad del producto de su altura y la suma de sus bases.
+
+Luego en la página 166 hay otro teorema del mismo nombre que dice:
+
+Teorema del Área de una región determinada por un para paralelogramo:
+El área de una región determinada por un paralelogramo es el producto de cualquier base por la altura correspondiente.
+
+A menos que me equivoque el primer teorema debió llamarse "teorema del área de una región determinada por un trapecio".
+
+¿No es verdad?
+
+\subsection{Triángulos Semejantes}
+\subsubsection{Definición de Razón de Semejanza, p.201}
+
+La definición tiene una oración que omite el verbo y suena extraño.
+
+
+\subsection{Polígonos Semejantes}
+\subsubsection{Ejemplo 10, p.211}
+
+Al polígno le falta la distancia del lado \(BC\) para poder comprobar si realmente es semejante.
+
+\subsection{Teorema de Pitágoras}
+\subsubsection{Definicion de Proyecciones de la Altura sobre la Hipotenusa de un Triángulo Rectángulo, p.217}
+
+Debió decir cateto \(\overline{BC}\) en vez de solo \(BC\).
+
+\subsection{Secantes a la Circunferencia}
+\subsubsection{Primer teorema pág. 264}
+
+Solo se cumple si la recta $PT$ es tangente al círculo, pero eso no es lo que dice el teorema.
+

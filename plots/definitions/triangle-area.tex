@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+    % Definir los puntos del triángulo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(0,3){C}
+
+    % Dibujar el triángulo
+    \tkzDrawPolygon(A,B,C)
+
+    % Marcar los catetos
+    \tkzLabelSegment[below](A,B){$b$}
+    \tkzLabelSegment[left](A,C){$h$}
+
+    \tkzMarkRightAngle(C,A,B)
+
+    % Marcar los puntos
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above left](C)
+\end{tikzpicture}

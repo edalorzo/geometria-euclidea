@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    % Define points A and B on the circle
+    \tkzDefPoint(\radius,0){P}
+    
+    \tkzDefShiftPoint[O](50:\radius){B}
+    \tkzDefShiftPoint[O](180:\radius){A}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,B)
+    
+    \tkzLabelPoint[above left](A){$A$}
+    \tkzLabelPoint[above right](B){$B$}
+    \tkzLabelPoint[below left](O){$O$}
+
+    \tkzDrawSegment(A,B)
+    \tkzDefMidPoint(A,B)
+        \tkzGetPoint{M}
+
+    \tkzInterLC(O,M)(O,B)  \tkzGetPoints{D}{E}
+    \tkzDrawSegment[add=0.2 and 0.2,Latex-Latex](D,E)
+
+    \tkzMarkRightAngle(E,M,B)
+
+    \tkzMarkSegment[mark=||](A,M)
+    \tkzMarkSegment[mark=||](M,B)
+
+    % Fill the points O, A, and B
+    \tkzDrawPoints[fill=black](O,A,B,D,E)
+\end{tikzpicture}

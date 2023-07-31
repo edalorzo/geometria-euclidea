@@ -1,0 +1,29 @@
+\begin{tikzpicture}[rotate=25,scale=0.8]
+% Define the center O and radius r
+\tkzDefPoint(0,0){O}
+\def\radius{3}
+
+% Define points A, B and M on the circle
+\tkzDefShiftPoint[O](-\radius,0){A}
+\tkzDefShiftPoint[O](\radius,0){B}
+\tkzDefMidPoint(O,B) \tkzGetPoint{M}
+
+% Draw the circle with center O and radius r
+\tkzDrawCircle(O,A)
+
+% Draw the diameter AB
+\tkzDrawSegment(A,B)
+
+% Mark the radius segments
+\tkzLabelSegment[auto](O,B){$r$}
+\tkzLabelSegment[auto](A,O){$r$}
+
+% Label the points
+\tkzLabelPoint[below](O){$O$}
+\tkzLabelPoint[left](A){$A$}
+\tkzLabelPoint[right](B){$B$}
+
+% Fill the points O, A, and B
+\tkzDrawPoints[fill=black](O,A,B)
+
+\end{tikzpicture}

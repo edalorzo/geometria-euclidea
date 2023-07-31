@@ -1,0 +1,34 @@
+\begin{tikzpicture}[scale=0.5,rotate=50]
+
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](120:\radius){B}
+    \tkzDefShiftPoint[O](-120:\radius){C}
+    \tkzDefShiftPoint[O](0:\radius+2){D}
+    
+    \tkzDrawCircle(O,B)
+    
+    \tkzInterLL(B,D)(C,D)
+        \tkzGetPoint{A}
+
+    \tkzInterLC(A,B)(O,B)
+        \tkzGetPoints{D}{d}
+
+    \tkzInterLC(A,C)(O,B)
+        \tkzGetPoints{e}{E}        
+            
+        
+    \tkzDrawLine[add=0.2 and 0,Latex-](B,A)
+    \tkzDrawLine[add=0.2 and 0,Latex-](C,A)
+
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[below right](C){$C$}
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above](A){$A$}
+
+    \tkzLabelPoint[below](D){$D$}
+    \tkzLabelPoint[right](E){$E$}
+    
+    \tkzDrawPoints[fill=black](A,B,C,D,E,O)
+\end{tikzpicture}

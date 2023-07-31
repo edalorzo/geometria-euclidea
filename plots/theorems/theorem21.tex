@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+
+    % Define the points of the triangle ABC
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(6,0){B}
+    \tkzDefPoint(3,4){C}
+
+    % Draw the triangle ABC
+    \tkzDrawPolygon(A,B,C)
+
+    % Define the points of the segment DE
+    \tkzDefPointWith[linear,K=0.5](A,C) \tkzGetPoint{D}
+    \tkzDefPointWith[linear,K=0.5](B,C) \tkzGetPoint{E}
+
+    % Draw the segment DE
+    \tkzDrawSegment(D,E)
+
+    % Mark the points
+    %\tkzDrawPoints(A,B,C,D,E)
+
+    % Label the points
+    \tkzLabelPoint[below](A){$B$}
+    \tkzLabelPoint[below](B){$C$}
+    \tkzLabelPoint[above](C){$A$}
+    \tkzLabelPoints[left](D)
+    \tkzLabelPoints[right](E)
+    
+\end{tikzpicture}

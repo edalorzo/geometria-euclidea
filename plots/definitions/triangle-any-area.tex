@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+    % Definir los puntos del triángulo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(2.5,4.33){C}
+
+    % Dibujar el triángulo
+    \tkzDrawPolygon(A,B,C)
+
+    % Marcar la base
+    \tkzLabelSegment[below](A,B){$b$}
+
+    % Dibujar y marcar la altura
+    \tkzDefPoint(2.5,0){D}
+    \tkzDrawSegment[dashed, color=gray](C,D)
+    \tkzLabelSegment[right](C,D){$h$}
+
+    \tkzMarkRightAngle(C,D,A)
+
+    % Marcar los puntos
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C)
+\end{tikzpicture}

@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    % Define points A and B on the circle
+    \tkzDefPoint(\radius,0){P}
+    
+    \tkzDefShiftPoint[O](40:\radius){A}
+    \tkzDefShiftPoint[O](-40:\radius){B}
+
+    \tkzDefShiftPoint[O](160:\radius){C}
+    \tkzDefShiftPoint[O](240:\radius){D}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,A)
+    
+    \tkzDrawSegment[dashed](O,A)
+    \tkzDrawSegment[dashed](O,B)
+
+    \tkzDrawSegment[dashed](O,C)
+    \tkzDrawSegment[dashed](O,D)
+
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above right](A){$A$}
+    \tkzLabelPoint[below right](B){$B$}
+    \tkzLabelPoint[above left](C){$C$}
+    \tkzLabelPoint[below left](D){$D$}
+
+    \tkzDrawSegment(A,B)
+    \tkzDrawSegment(C,D)
+
+    \tkzDefMidPoint(A,B)
+        \tkzGetPoint{M}
+
+    \tkzDefMidPoint(C,D)
+        \tkzGetPoint{N}
+
+    \tkzLabelPoint[right](M){$M$}
+    \tkzLabelPoint[left](N){$N$}
+
+    \tkzDrawSegment(O,N)
+    \tkzDrawSegment(O,M)
+
+    \tkzMarkSegment[mark=//](O,N)
+    \tkzMarkSegment[mark=//](O,M)
+
+    \tkzMarkRightAngle(O,N,C)
+    \tkzMarkRightAngle(O,M,A)
+
+    \tkzMarkSegment[mark=||](O,N)
+    \tkzMarkSegment[mark=||](O,M)
+
+    % Fill the points O, A, and B
+    \tkzDrawPoints[fill=black](O,A,B,C,D,M,N)
+\end{tikzpicture}

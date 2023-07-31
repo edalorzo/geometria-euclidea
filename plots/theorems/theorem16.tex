@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A} 
+    \tkzDefPoint(6,0){B} 
+    \tkzDefPoint(5,3){C} 
+    \tkzDefPoint(1,3){D} 
+
+    \tkzDrawPolygon(A,B,C,D) 
+
+    % Marca los segmentos paralelos
+    \begin{scope}[decoration={markings,mark=at position .55 with          {\arrow[scale=2,color=red]{Stealth}};}]
+    \tkzDrawSegments[postaction={decorate},color=black](A,B D,C)
+    \end{scope}
+
+    % Marca los ángulos
+    \tkzMarkAngle[arc=l,size=0.5](B,A,D)
+    \tkzMarkAngle[arc=l,size=0.5](C,B,A)
+    \tkzMarkAngle[arc=ll,size=0.5](A,D,C)
+    \tkzMarkAngle[arc=ll,size=0.5](D,C,B)
+
+    % Etiqueta los puntos
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C,D)
+\end{tikzpicture}

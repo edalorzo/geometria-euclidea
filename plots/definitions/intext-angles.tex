@@ -1,0 +1,34 @@
+\begin{tikzpicture}[scale=0.7]
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(6,0){C}
+
+    \tkzDefPoint(8,0){E}
+    \tkzDefPoint(6.6723596418323,-1.8472929336867){D}
+    
+    \tkzDefTriangle[two angles = 50 and 70](B,C)
+    \tkzGetPoint{A}
+    
+    \tkzDrawPolygons(A,B,C)
+
+    \tkzLabelPoint[above](A){$A$}
+    \tkzLabelPoint[left](B){$B$}
+    \tkzLabelPoint[below right](C){$C$}
+    \tkzLabelPoint[below](E){$E$}
+    \tkzLabelPoint[right](D){$D$}
+
+    \tkzDrawPoints(A,B,C,D,E)
+
+    \tkzDrawSegment[dashed,add=0 and 0.5,-Latex](C,D)
+    \tkzDrawSegment[dashed,add=0 and 0.5,-Latex](C,E)
+  
+    %\tkzMarkSegments[mark=||](A,B B,C C,A)
+
+  %     % Mark the angles with ticks
+    \tkzMarkAngle[arc=l, size=0.5, mark=|](B,A,C)
+    \tkzMarkAngle[arc=l, size=0.5, mark=||](C,B,A)
+
+    \tkzMarkAngle[arc=l, size=0.5, mark=|||](E,C,A)
+    \tkzMarkAngle[arc=l, size=0.5, mark=|||](B,C,D)
+    
+\end{tikzpicture}
+

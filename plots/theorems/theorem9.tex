@@ -1,0 +1,19 @@
+\begin{tikzpicture}[rotate=90]
+    \tkzDefPoint(0,0){A} % Define el primer punto
+    \tkzDefPoint(2,1){B} % Define el segundo punto
+    \tkzDefPoint(3,3){C} % Define el tercer punto
+    \tkzDefPoint(1,4){D} % Define el cuarto punto
+
+    \tkzDrawPolygon(A,B,C,D) % Dibuja el cuadrilátero
+     % Dibuja las diagonales
+    \tkzDrawSegments(A,C B,D)
+
+    % Encuentra el punto de intersección de las diagonales
+    \tkzInterLL(A,C)(B,D) \tkzGetPoint{E}
+    \tkzDrawPoint(E)
+       
+    % Etiqueta los puntos
+    \tkzLabelPoints[below](A,D,E)
+    \tkzLabelPoints[above](C,B)
+
+\end{tikzpicture}

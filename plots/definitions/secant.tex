@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=0.8]
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    % Define points A and B on the circle
+    \tkzDefPoint(\radius,0){A}
+    \tkzDefShiftPoint[O](140:\radius){B}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,A)
+
+    % Draw the chord AB
+    \tkzDrawSegment[add=0.2 and 0.2,Latex-Latex](A,B)
+
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above right](A){$B$}
+    \tkzLabelPoint[above left](B){$A$}
+
+    % Fill the points O, A, and B
+    \tkzDrawPoints[fill=black](O,A,B)
+\end{tikzpicture}

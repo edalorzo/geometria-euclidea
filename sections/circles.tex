@@ -1,0 +1,460 @@
+\subsection{Definiciones básicas}
+
+\begin{definition}[\textbf{Circunferencia}]
+    Una \textit{circunferencia} es un conjunto de puntos en el plano que están situados a una misma distancia de un punto fijo llamado centro.
+\end{definition}
+
+\begin{definition}[\textbf{Círculo}]
+    Un \textit{círculo} es el conjunto de puntos coplanares cuya distancia a un punto fijo llamado centro es menor o igual que el radio.
+\end{definition}
+
+\begin{definition}[\textbf{Radio}]
+    Un \textit{radio} de un círculo es un segmento cuyos extremos son el centro del círculo y un punto de la circunferencia. El término radio tiene dos acepciones: segmento y medida del segmento.
+\end{definition}
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/definitions/circle}
+    \caption{$O|r$}
+    \label{fig:circle}
+\end{figure}
+
+\begin{definition}[\textbf{Interior de una circunferencia}]
+    Se llama \textit{interior de la circunferencia} al conjunto de todos los puntos del plano cuyas distancias del centro son menores que el radio.
+\end{definition}
+
+\begin{definition}[\textbf{Exterior de una circunferencia}]
+    Se llama \textit{exterior de la circunferencia} al conjunto de todos los puntos del plano cuyas distancias del centro son mayores que el radio.
+\end{definition}
+
+\clearpage
+
+\begin{definition}[\textbf{Cuerda}]
+    Una \textit{cuerda} es un segmento cuyos extremos son dos puntos de una circunferencia.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/cord}
+        \label{fig:cord}
+    \end{figure}
+    
+\end{definition}
+
+
+\begin{definition}[\textbf{Diámetro}]
+    Un diámetro es una cuerda que contiene al centro de la circunferencia.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/diameter}
+        \label{fig:diameter}
+    \end{figure}
+    
+\end{definition}
+
+\begin{definition}[\textbf{Secante de una circunferencia}]
+    Una recta que interseca a la circunferencia en dos puntos se llama \textit{secante} a la circunferencia.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/secant}
+        \label{fig:secant}
+    \end{figure}
+    
+\end{definition}
+
+\clearpage
+
+\begin{definition}[\textbf{Ángulo central}]
+    Un \textit{ángulo central} es un ángulo cuyo vértce es el centro de la circunferencia.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/central-angle}
+        \label{fig:central-angle}
+    \end{figure}
+    
+\end{definition}
+
+\begin{definition}[\textbf{Arco menor / mayor}]
+    Un \textit{arco menor} está en el interior de un ángulo central, en caso contrario se le llama \textit{arco mayor}.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/arcs}
+        \label{fig:arcs}
+    \end{figure}
+\end{definition}
+
+\begin{definition}[\textbf{Semicircunferencia}]
+    Una \textit{semicircunferencia} es cada una de las partes en las que un diámetro divide a la circunferencia.
+\end{definition}
+
+\begin{definition}[\textbf{Medida de una semicircunferencia}]
+    La \textit{medida de una semicircunferencia es} $180^{\circ}$.
+\end{definition}
+
+\begin{definition}[\textbf{Medida de un arco menor}]
+    La \textit{medida de un arco menor} es igual a la medida del ángulo central que lo subtiende.
+\end{definition}
+
+\begin{definition}[\textbf{Medida de un arco mayor}]
+    La \textit{medida de un arco mayor} es igual a $\degs{360}$ menos la medida del arco menor.
+\end{definition}
+
+
+\begin{definition}[\textbf{Circunferencias congruentes}]
+    Dos o más \textit{circunferencias} son \textit{congruentes} si sus radios tiene la misma medida.
+\end{definition}
+
+\begin{definition}[\textbf{Arcos congruentes}]
+    En una circunferencia o en circunferencias congruentes, si dos \textit{arcos} tienen la misma medida, entonces son congruentes.
+\end{definition}
+
+\clearpage
+
+\subsection{Cuerdas y Arcos}
+
+\begin{theorem}
+    En una circunferencia o en cincunferencias congruentes, si dos cuerdas son congruentes, entonces también lo serán los arcos que las subtienden.
+\end{theorem}
+
+\begin{theorem}
+    En una circunferencia o en cincunferencias congruentes, si dos arcos son congruentes, entonces también lo serán las cuerdas que las subtienden.
+\end{theorem}
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/theorems/theorem24}
+    \caption{$\seg{AB} \cong \seg{CD} \iff \widearc{AB} \cong \widearc{CD}$}
+    \label{fig:congruent-arcs-cords}
+\end{figure}
+
+\begin{definition}[\textbf{Arcos consecutivos}]
+    Dos arcos son consecutivos si tienen un extremo en común.
+\end{definition}
+
+\begin{postulate}[\textbf{Adición de arcos}]
+    La medida de un arco formado por dos arcos consecutivos es la suma de las medidas de los dos arcos.
+\end{postulate}
+
+\begin{theorem}
+    En una circunferencia, o en circunferencias congruentes, las cuerdas congruentes equidistan del centro.
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}
+    En una circunferencia, o en circunferencias congruentes, las cuerdas equidistantes del centro también son congruentes.
+\end{theorem}
+
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/theorems/theorem25}
+    \caption{$\seg{AB} \cong \seg{CD} \iff \seg{ON} \cong \seg{OM}$}
+    \label{fig:equidistant-to-center-cords-congruent}
+\end{figure}
+
+\begin{theorem}
+    La mediatriz de una cuerda contiene al centro de la circunferencia.
+\end{theorem}
+
+\begin{theorem}
+    Si una reta que pasa por el centro de una circunferencia es perpendicular a una cuerda, entonces la recta biseca la cuerda y el arco que ésta subtiende.
+\end{theorem}
+
+\begin{theorem}
+    Si una recta que pasa por el centro de una circunferencia biseca a una cuerda, entonces esa recta es perpendicular a la cuerda.
+\end{theorem}
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/theorems/theorem26}
+    \label{fig:circle-cord-bisector}
+\end{figure}
+
+\clearpage
+
+\subsection{Tangentes a la Circunferencia}
+
+\begin{definition}[\textbf{Tangente a la Circunferencia}]
+    Una recta \textit{tangente a una circunferencia} está en el mismo plano que dicha circunferencia y la intercepta en un solo punto llamado punto de tangencia o de contacto.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/tangent}
+        \label{fig:circle-tangent}
+    \end{figure}
+    
+\end{definition}
+
+\begin{definition}[\textbf{Segmento Tangente}]
+    Si $\lne{AB}$ es una recta tangente a la circunferencia $(O|r)$ en un punto $\pt{B}$, entonces $\seg{AB}$ se llama \textit{segmento tangente} desde $\pt{B}$ a dicha circunferencia. 
+\end{definition}
+
+\begin{theorem}
+    Toda tangente a una circunferencia es perpendicular al radio trazado por el punto de contacto.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem27}
+        \label{fig:theorem27}
+    \end{figure}
+    
+\end{theorem}
+
+\begin{theorem}
+    Los segmentos tangentes trazados desde un punto exterior de una circunferencia son congruentes.
+\end{theorem}
+
+\begin{theorem}
+    La recta que une el centro de una circunferencia con un punto exterior es bisectriz del ángulo que forman los segmentos tangentes trazados por ese punto a dicha circunferencia.
+\end{theorem}
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/theorems/theorem28}
+    \label{fig:theorem28}
+\end{figure}
+
+\clearpage
+
+\subsection{Ángulos en la Circunferencia}
+
+\begin{definition}[\textbf{Arco interceptado}]
+    Un ángulo intercepta a un arco si los puntos extremos del arco pertenecen al ángulo, todos los puntos del arco pertenecen al interior del ángulo y cada lado del ángulo contiene un extremo del arco.
+\end{definition}
+
+\begin{definition}[\textbf{Ángulo inscrito}]
+    Un ángulo está inscrito en una circunferencia si su vértice es un punto de ella y cada una de las semirectas que constituyen sus lados son secantes a dicha circunferencia.
+\end{definition}
+
+\begin{definition}[\textbf{Arco interceptado de un ángulo inscrito}]
+    El arco interceptado de un ángulo inscrito $\angle{ABC}$ es el arco $\widearc{AC}$ que está en el interior del ángulo.
+\end{definition}
+
+\begin{theorem}
+    La medida de un ángulo inscrito es la mitad del arco interpectado.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem29}
+        \label{fig:theorem29}
+    \end{figure}
+    
+\end{theorem}
+
+\begin{theorem}
+    Todo ángulo inscrito en una semicircunferencia es recto.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem30}
+        \label{fig:theorem30}
+    \end{figure}
+    
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}
+    Dos ángulos inscritos en el mismo arco son congruentes.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem31}
+        \label{fig:theorem31}
+    \end{figure}
+    
+\end{theorem}
+
+\begin{definition}[\textbf{Ángulo semi-inscrito}]
+    Un ángulo semi-inscrito es una circunferencia si su vétice es un punto de ella y las semirectas que determinan sus lados son tales que, una es tangente a la circunferencia y la otra es secante.
+\end{definition}
+
+\begin{theorem}
+    La medida de un ángulo semi-inscrito es igual a la mitad de la medida del arco interceptado.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem32}
+        \label{fig:theorem32}
+    \end{figure}
+    
+\end{theorem}
+
+\clearpage
+
+\begin{definition}[\textbf{Ángulo interior}]
+    Un ángulo es interior a una circunferencia si es coplanar a ella y su vértice pertenece al interior de la circunferencia.
+\end{definition}
+
+\begin{theorem}
+    Un ángulo formado por dos cuerdas que se intersecan en el interior de una circunferencia mide igual a la semisuma de los arcos interceptados.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem34}
+        \caption{$m\angle{ABC} = \dfrac{m\widearc{AC} + m\widearc{ED}}{2}$}
+        \label{fig:theorem34}
+    \end{figure}
+    
+\end{theorem}
+
+\clearpage
+
+\begin{definition}[\textbf{Ángulo exterior}]
+    Un ángulo es exterior a una circunferencia si es coplanar a ella y su vértice pertenece al exterior de la circunferencia.
+\end{definition}
+
+\begin{theorem}
+    El ángulo formado por dos rectas secantes, o dos rectas tangentes, o una recta tangente y una secante, trazadas desde un mismo punto exterior a una circunferencia, tiene por medida la semidiferencia de los arcos interceptados.
+
+
+    \begin{figure}[h!]
+
+        \centering
+
+        \begin{subfigure}[b]{.33\textwidth}
+            \centering
+            \input{plots/theorems/theorem36}
+            \label{fig:theorem36}
+            \caption{$m\angle{A}=\dfrac{m\widearc{BC}-m\widearc{DE}}{2}$}
+        \end{subfigure}%
+        \begin{subfigure}[b]{.33\textwidth}
+            \centering
+            \input{plots/theorems/theorem35}
+            \label{fig:theorem35}
+            \caption{$m\angle{A}=\dfrac{m\widearc{BDC}-m\widearc{BC}}{2}$}
+        \end{subfigure}%
+        \begin{subfigure}[b]{.33\textwidth}
+            \centering
+            \input{plots/theorems/theorem37}
+            \label{fig:theorem37}
+            \caption{$m\angle{A}=\dfrac{m\widearc{BEC}-m\widearc{BD}}{2}$}
+        \end{subfigure}
+
+        \centering
+        \caption{Medida del Ángulo Exterior}
+        \label{fig:exterior-angle-measure}
+        
+    \end{figure}        
+   
+    
+\end{theorem}
+
+\clearpage
+
+\subsection{Secantes a la Circunferencia}
+
+\begin{theorem}[\textbf{Potencia de un Punto}]
+    Sea la circunferencia $(O|r)$ y un punto $\pt{P}$ en su exterior, tal que $A-P-B$. Sea $l$ una recta secante que pasa por $P$ e interseca a la circunferencia en los puntos $\pt{A}$ y $\pt{B}$, y sea $m$ otra secante que también pasa por $\pt{P}$ e interseca a la circunferencia en los puntos $\pt{E}$ y $\pt{D}$, con $E-D-P$, entonces se cumple que $PA \cdot PB = PE \cdot PD$.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem38}
+        \caption{$PA \cdot PB = PE \cdot PD$}
+        \label{fig:theorem38}
+    \end{figure}
+
+
+    También se cumple que:
+
+    $$\dfrac{PA}{PE}=\dfrac{PD}{PB}$$
+
+    Y que 
+
+    $$\dfrac{PA}{PD}=\dfrac{PE}{PB}$$
+    
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}
+
+    Sea $\pt{P}$ un punto exterior a una circunferencia $(O|r)$, tal que $\pt{T,A}$ y $\pt{B}$ son puntos de las circunferencia y $B-A-P$, y $\lne{TP}$ es tangente a la cirfunferencia.
+
+    Entonces se cumple que $(PT)^2 = PA \cdot PB$.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem39}
+        \caption{$(PT)^2 = PA \cdot PB$}
+        \label{fig:theorem39}
+    \end{figure}
+
+\end{theorem}
+
+
+\begin{theorem}
+
+Si dos cuerdas de una circunferencia se intersecan en su interior, entonces el producto de las medidas de los segmentos determinados en una cuerda es igual al producto de las medidas de los segmentos determinados en la otra cuerda.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/theorems/theorem40}
+        \caption{$\dfrac{CE}{AE}=\dfrac{EB}{ED} = CE \cdot ED = AE \cdot EB$}
+        \label{fig:theorem40}
+    \end{figure}
+    
+\end{theorem}
+
+\clearpage
+
+\subsection{Longitud y Área}
+
+\begin{theorem}
+    La longitud de una circunferencia del radio $r$ viene dada por $C=2\pi r$.
+\end{theorem}
+
+\begin{theorem}
+    El área de un círculo de radio $r$ viene dada por $C=\pi r^2$.
+\end{theorem}
+
+\begin{definition}[\textbf{Sector Circular}]
+    Un sector circular es una región del plano limitada por dos radios de una circunferencia y el arco determinado por ellos.
+
+    Si $\alpha$ es la medida del ángulo del sector circular, su área está dada por:
+
+    $$A = \dfrac{\alpha}{360} \cdot \pi r^2$$
+    
+\end{definition}
+
+\begin{definition}[\textbf{Segmento Circular}]
+    Un segmento circular es la región del plano limitada por una cuerda de la circunferencia y el arco que la subtiende.
+
+    $$A =  A_{\text{sector cricular}} - A_{\text{triángulo}}$$
+\end{definition}
+
+\begin{definition}[\textbf{Corona Circular}]
+    Una corona circular es la región del plano limitada por dos circunferencias concéntricas.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/definitions/circular-crown}
+        %\caption{}
+        \label{fig:circular-crown}
+    \end{figure}
+
+    El área del anillo circular está dada por:
+
+    $$A = \pi R^2 - \pi r^2 = \pi(R^2-r^2)$$
+    
+\end{definition}
+
+\begin{definition}[\textbf{Trapecio Circular}]
+    Sean $C_1$ y $C_2$ dos circunferencias concéntricas, $A$ y $B$ dos puntos en $C_1$ y $E$ y $F$ dos puntos en $C_2$, entonces se llama trapecio circular a la región del plano limitada por los segmentos $\seg{AE},\seg{BF}$ y los arcos $\widearc{AB}$ y $\widearc{EF}$.
+
+    El área del precio circular viene dada por:
+
+    $$
+    A = \dfrac{\pi R^2 \alpha}{360} - \dfrac{\pi r^2 \alpha}{360} = \pi(R^2 - r^2)\dfrac{\alpha}{360}
+    $$
+\end{definition}
+
+\begin{theorem}
+    Si un arco de longitud $l$ en una circunferencia $(O|r)$ subtiende un ángulo central $\alpha$, entonces:
+
+    $$l = \dfrac{\pi r \alpha}{180}$$
+\end{theorem}

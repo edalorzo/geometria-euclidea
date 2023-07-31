@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+    % Define los puntos A y B
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+
+    % Calcula el punto medio O de AB
+    \tkzDefMidPoint(A,B)
+    \tkzGetPoint{O}
+
+    % Define el punto M perpendicular a AB en O
+    \tkzDefPointWith[orthogonal normed, K=-3](O,A)
+    \tkzGetPoint{M}
+
+    % Dibuja las líneas AB y MO
+    \tkzDrawSegment(A,B)
+    \tkzDrawSegment(M,O)
+
+    \tkzDrawLine[Latex-Latex](A,B)
+    \tkzDrawLine[Latex-Latex](M,O)
+
+    % Dibuja los puntos con su etiqueta
+    \tkzDrawPoints(A,B,O,M)
+    \tkzLabelPoint[below](A){$A$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzLabelPoint[below left](O){$O$}
+    \tkzLabelPoint[right](M){$M$}
+
+    % Marca el ángulo recto MOB
+    \tkzMarkRightAngle[size=0.3](M,O,B)
+
+    \tkzMarkSegment[mark=||](A,O)
+    \tkzMarkSegment[mark=||](O,B)
+    
+\end{tikzpicture}
+
+

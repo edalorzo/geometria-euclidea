@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A} % Define el primer punto
+    \tkzDefPoint(4,0){B} % Define el segundo punto
+    \tkzDefPoint(6,2){C} % Define el tercer punto
+    \tkzDefPoint(2,2){D} % Define el cuarto punto
+
+    \tkzDrawPolygon(A,B,C,D) % Dibuja el paralelogramo
+
+    % Dibuja los ángulos marcados
+    \tkzMarkAngle[arc=l,size=0.5cm](B,A,D)
+    \tkzMarkAngle[arc=l,size=0.5cm](D,C,B)
+    
+    \tkzMarkAngle[size=0.3cm](A,D,C)
+    \tkzMarkAngle[size=0.4cm](A,D,C)
+    
+    \tkzMarkAngle[size=0.3cm](C,B,A)
+    \tkzMarkAngle[size=0.4cm](C,B,A)
+
+    % Marca los lados congruentes
+    \tkzMarkSegment[mark=||](A,B)
+    \tkzMarkSegment[mark=||](C,D)
+    \tkzMarkSegment[mark=|](A,D)
+    \tkzMarkSegment[mark=|](B,C)
+
+    % Etiqueta los puntos
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C,D)
+\end{tikzpicture}

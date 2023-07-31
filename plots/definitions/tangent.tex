@@ -1,0 +1,23 @@
+\begin{tikzpicture}[rotate=40]
+    % Define the center of the circle
+    \tkzDefPoint(0,0){O}
+    
+    % Define a point on the circle
+    \tkzDefPoint(3,0){P}
+    
+    % Draw the circle
+    \tkzDrawCircle(O,P)
+    
+    % Draw the tangent line
+    \tkzDefLine[perpendicular=through P](O,P) 
+        \tkzGetPoint{a}
+        
+    \tkzDrawLine[add=1.4 and 0.3,Latex-Latex](P,a)
+    
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above right](P){$P$}
+    
+    % Draw the points
+    \tkzDrawPoints[fill=black](O,P)
+\end{tikzpicture}

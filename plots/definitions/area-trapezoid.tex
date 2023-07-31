@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+    % Definir los puntos del trapecio
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(6,0){B}
+    \tkzDefPoint(5,4){C}
+    \tkzDefPoint(2,4){D}
+
+    % Dibujar el trapecio
+    \tkzDrawPolygon(A,B,C,D)
+
+    % Encontrar y dibujar la altura
+    \tkzDefLine[orthogonal=through D](A,B)
+    \tkzGetPoint{E}
+    \tkzInterLL(D,E)(A,B) \tkzGetPoint{F}
+    \tkzDrawSegment[dashed,gray!80](D,F)
+
+    \tkzMarkRightAngle(D,F,A)
+
+    % Marcar la altura, las bases y los lados
+    \tkzLabelSegment[below](A,B){$b_1$}
+    \tkzLabelSegment[above](C,D){$b_2$}
+    \tkzLabelSegment[left](D,F){$h$}
+
+    % Marcar los puntos
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[below right](B)
+    \tkzLabelPoints[above right](C)
+    \tkzLabelPoints[above left](D)
+\end{tikzpicture}

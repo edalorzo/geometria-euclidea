@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale=0.8]
+    % Define the points of the triangle
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(2.5,4){C} % Change the coordinates as needed to make the triangle isosceles
+    
+    % Draw the triangle
+    \tkzDrawPolygon(A,B,C)
+    \tkzLabelPoint[left](A){$A$}
+    \tkzLabelPoint[right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}        
+    
+    % Mark the equal sides with ticks
+    \tkzMarkSegment[mark=||](A,C)
+    \tkzMarkSegment[mark=||](B,C)
+
+    % Mark the angles between the base and the sides with ticks
+    \tkzMarkAngle[arc=l, size=0.6cm, mark=|](B,A,C)
+    \tkzMarkAngle[arc=l, size=0.6cm, mark=|](C,B,A)
+\end{tikzpicture}

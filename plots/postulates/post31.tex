@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=0.8]
+    % Define the points of the triangle
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefPoint(0,3){C}
+    
+    % Draw the triangle
+    \tkzDrawPolygon(A,B,C)
+
+    %\tkzDrawPoints(A,B,C)
+    \tkzLabelPoint[left](A){$A$}
+    \tkzLabelPoint[right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}    
+    
+    % Mark the hypotenuse with ticks
+    \tkzMarkSegment[mark=||](A,B)
+    
+    % Mark one side with ticks
+    \tkzMarkSegment[mark=|](C,B)
+    
+    % Draw the right angle symbol at A
+    \tkzMarkRightAngle(C,A,B)
+\end{tikzpicture}

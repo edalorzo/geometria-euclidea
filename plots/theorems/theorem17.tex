@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+    % Definir los puntos del triángulo
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(5,0){B}
+    \tkzDefPoint(2.5,4.33){C}
+
+    % Dibujar el triángulo
+    \tkzDrawPolygon(A,B,C)
+
+    % Dibujar rayos extendiéndose desde los ángulos
+    \tkzDefPointBy[rotation= center A angle 180](C) \tkzGetPoint{D}
+    \tkzDefPointBy[rotation= center B angle 180](A) \tkzGetPoint{E}
+    \tkzDefPointBy[rotation= center C angle 180](A) \tkzGetPoint{F}
+
+    % Redefinir D, E y F para hacer los rayos más cortos
+    \tkzDefPointWith[linear normed, K=1.5](A,D) \tkzGetPoint{D2}
+    \tkzDefPointWith[linear normed, K=1.5](B,E) \tkzGetPoint{E2}
+    \tkzDefPointWith[linear normed, K=1.5](C,F) \tkzGetPoint{F2}
+
+
+    \tkzDrawSegments[dashed,-Latex](A,D2 B,E2 C,F2)
+
+    % Marcar ángulos con letras griegas
+    \tkzLabelAngle[pos = 0.3](D,A,B){$\alpha$}
+    \tkzLabelAngle[pos = 0.3](E,B,C){$\beta$}
+    \tkzLabelAngle[pos = 0.3](B,C,F){$\gamma$}
+
+    \tkzMarkAngle[arc=l,size=0.6](D,A,B)
+    \tkzMarkAngle[arc=l,size=0.6](E,B,C)
+    \tkzMarkAngle[arc=l,size=0.6](B,C,F)
+
+
+    \tkzLabelAngle[pos = 0.4](B,A,C){$x$}
+    \tkzLabelAngle[pos = 0.4](C,B,A){$y$}
+    \tkzLabelAngle[pos = 0.4](A,C,B){$z$}
+
+    \tkzMarkAngle[arc=l,size=0.6](B,A,C)
+    \tkzMarkAngle[arc=l,size=0.6](C,B,A)
+    \tkzMarkAngle[arc=l,size=0.6](A,C,B)
+
+    % \tkzFillAngle[fill=gray!35, size=0.6, opacity=0.5](C,B,A)
+    % \tkzFillAngle[fill=gray!35, size=0.6, opacity=0.5](B,A,C)
+    % \tkzFillAngle[fill=gray!35, size=0.6, opacity=0.5](A,C,B)
+
+    
+
+    % Marcar los puntos
+    \tkzLabelPoints[left](A)
+    \tkzLabelPoints[below](B)
+    \tkzLabelPoints[above left](C)
+\end{tikzpicture}

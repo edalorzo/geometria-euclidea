@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    % Define points A and B on the circle
+    \tkzDefPoint(\radius,0){P}
+    
+    \tkzDefShiftPoint[O](30:\radius){A}
+    \tkzDefShiftPoint[O](-30:\radius){B}
+
+    \tkzDefShiftPoint[O](170:\radius){C}
+    \tkzDefShiftPoint[O](230:\radius){D}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,A)
+
+    
+    \tkzDrawSegment[add=0 and 0.2,-Latex](O,A)
+    \tkzDrawSegment[add=0 and 0.2,-Latex](O,B)
+
+    \tkzDrawSegment[add=0 and 0.2,-Latex](O,C)
+    \tkzDrawSegment[add=0 and 0.2,-Latex](O,D)
+
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[auto](A){$A$}
+    \tkzLabelPoint[above right](B){$B$}
+
+    \tkzLabelPoint[above right=0.05](C){$C$}
+    \tkzLabelPoint[right=0.15](D){$D$}
+    
+    \tkzDrawSegment(A,B)
+    \tkzDrawSegment(C,D)
+
+    \tkzMarkAngle[arc=l, size=0.70](B,O,A)
+    \tkzMarkAngle[arc=l, size=0.70](C,O,D)
+  
+    \tkzLabelAngle[pos=0.38,color=blue](B,O,A){$\alpha$}
+    \tkzLabelAngle[pos=0.38,color=blue](C,O,D){$\alpha$}
+
+    \tkzMarkSegment[mark=|](A,B)
+    \tkzMarkSegment[mark=|](C,D)
+
+    % Fill the points O, A, and B
+    \tkzDrawPoints[fill=black](O,A,B,C,D)
+\end{tikzpicture}

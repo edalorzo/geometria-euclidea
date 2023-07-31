@@ -1,0 +1,28 @@
+\begin{tikzpicture}[rotate=30,scale=0.8]
+    \tkzDefPoint(0,0){A} 
+    \tkzDefPoint(2,4){B} 
+    \tkzDefPoint(5,0){C} 
+    \tkzDefPoint(3,-4){D} 
+
+    \tkzDrawPolygon(A,B,C,D) 
+
+    \tkzDrawSegments(A,C B,D) % Dibuja las diagonales
+
+    \tkzInterLL(A,C)(B,D) \tkzGetPoint{Q}
+
+    % Marca los ángulos rectos
+    \tkzMarkRightAngle(A,Q,B)
+
+    \tkzMarkSegment[mark=|](A,Q)
+    \tkzMarkSegment[mark=|](Q,C)
+
+    \tkzMarkSegment[mark=||](B,Q)
+    \tkzMarkSegment[mark=||](Q,D)
+
+    % Etiqueta los puntos
+    \tkzLabelPoints[below left](A)
+    \tkzLabelPoints[above left](B)
+    \tkzLabelPoints[above right](C)
+    \tkzLabelPoints[below right](D)
+
+\end{tikzpicture}

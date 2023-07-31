@@ -1,0 +1,53 @@
+\begin{tikzpicture}
+
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](60:\radius){B}
+    \tkzDefShiftPoint[O](-60:\radius){A}
+    \tkzDrawCircle(O,B)
+    
+    % Draw the tangent line
+    \tkzDefLine[perpendicular=through B](O,B) 
+        \tkzGetPoint{OB}
+
+    \tkzDefLine[perpendicular=through A](O,A) 
+        \tkzGetPoint{OA}
+
+    \tkzInterLL(A,OA)(B,OB)
+        \tkzGetPoint{P}
+        
+    \tkzDrawLine[add=0.7 and 0,Latex-](A,P)
+    \tkzDrawLine[add=0.7 and 0,Latex-](B,P)
+
+    \tkzLabelPoint[above right](B){$B$}
+    \tkzLabelPoint[below right](A){$A$}
+    \tkzLabelPoint[left](O){$O$}
+    \tkzLabelPoint[right](P){$P$}
+
+    \tkzDrawSegments(B,O O,A)
+    \tkzDrawSegment(O,P)
+
+    \tkzMarkRightAngle(P,A,O)
+    \tkzMarkRightAngle(P,B,O)
+
+    \tkzLabelAngle(P,O,B){$\beta$}
+    \tkzLabelAngle(A,O,P){$\beta$}
+
+    \tkzLabelAngle(B,P,O){$\alpha$}
+    \tkzLabelAngle(O,P,A){$\alpha$}
+
+    \tkzMarkSegment[mark=||](A,P)
+    \tkzMarkSegment[mark=||](B,P)
+
+    \tkzMarkSegment[mark=|||](O,B)
+    \tkzMarkSegment[mark=|||](O,A)
+
+    \tkzInterLC(O,P)(O,A)
+        \tkzGetPoints{q}{Q}
+
+    \tkzMarkArc[mark=|](O,Q,B)
+    \tkzMarkArc[mark=|](O,A,Q)
+    
+    \tkzDrawPoints[fill=black](A,B,O,P)
+\end{tikzpicture}

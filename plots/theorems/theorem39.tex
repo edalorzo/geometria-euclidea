@@ -1,0 +1,31 @@
+\begin{tikzpicture}[scale=0.9]
+
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    \tkzDefShiftPoint[O](80:\radius){T}
+    \tkzDefShiftPoint[O](-120:\radius){B}
+    \tkzDefShiftPoint[O](0:\radius){A}
+
+    \tkzDefLine[perpendicular=through T](O,T)
+        \tkzGetPoint{Q}
+    
+    \tkzDrawCircle(O,T)
+    
+    \tkzInterLL(T,Q)(B,A)
+        \tkzGetPoint{P}
+        
+    \tkzDrawLine[add=0.5 and 0.2,Latex-Latex](T,P)
+    \tkzDrawLine[add=0.2 and 0.2,Latex-Latex](B,P)
+
+    %\tkzLabelLine[right,pos=1.21](B,P){$l$}
+    %\tkzLabelLine[right,pos=1.21](D,P){$m$}
+
+    \tkzLabelPoint[below](T){$T$}
+    \tkzLabelPoint[below](B){$B$}
+    \tkzLabelPoint[below right](A){$A$}
+    \tkzLabelPoint[above](P){$P$}
+    \tkzLabelPoint[below](O){$O$}
+    
+    \tkzDrawPoints[fill=black](A,B,O,P,T)
+\end{tikzpicture}

@@ -1,0 +1,22 @@
+\begin{tikzpicture}[rotate=45,scale=0.8]
+
+    % Define the center O and a point A on the circle
+    \tkzDefPoint(0,0){O}
+    \tkzDefPoint(3,0){A}
+
+    % Draw the circle with center O and radius OA
+    \tkzDrawCircle(O,A)
+
+    % Draw the radius
+    \tkzDrawSegment(O,A)
+
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    %\tkzLabelPoint[below](A){$A$}
+    
+    % Label the radius
+    \tkzLabelSegment[above](O,A){$r$}
+    
+    % Fill the points O and A
+    \tkzDrawPoints[fill=black](O,A)
+\end{tikzpicture}

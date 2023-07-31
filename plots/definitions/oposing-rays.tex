@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+    % Define the points
+    \tkzDefPoint(0,0){C}
+    \tkzDefPoint(3,0){A}
+    \tkzDefPoint(6,0){B}
+    
+    % Draw the line l
+    \tkzDrawLine[add=0.5 and 0.5,Latex-Latex](C,B) % Add a bit at both ends of the line
+    \tkzLabelLine[above,pos=1.2](C,B){$l$} % Label the line
+
+    % Label the points
+    \tkzLabelPoint[below](C){$C$}
+    \tkzLabelPoint[below](A){$A$}
+    \tkzLabelPoint[below](B){$B$}
+
+    \tkzDrawPoints(C,A,B)
+
+    % Draw and label the segments CA and AB
+    \tkzDrawSegment(C,A)
+    \tkzLabelSegment[above](C,A){$\ray{AC}$}
+    \tkzDrawSegment(A,B)
+    \tkzLabelSegment[above](A,B){$\ray{AB}$}
+\end{tikzpicture}

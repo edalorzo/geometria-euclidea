@@ -1,0 +1,26 @@
+\begin{tikzpicture}[scale=0.8]
+    % Define the center O and radius r
+    \tkzDefPoint(0,0){O}
+    \def\radius{3}
+    
+    % Define points A, B on the circle
+    \tkzDefPoint(\radius,0){A}
+    \tkzDefShiftPoint[O](60:\radius){B}
+
+    % Draw the circle with center O and radius r
+    \tkzDrawCircle(O,A)
+
+    % Draw the angles
+    \tkzDrawSegments[add=0 and 0.2,-Latex](O,A O,B)
+    
+    % Mark the angle
+    \tkzMarkAngle[size=0.8](A,O,B)
+
+    % Label the points
+    \tkzLabelPoint[below](O){$O$}
+    \tkzLabelPoint[above left](A){$A$}
+    \tkzLabelPoint[below](B){$B$}
+
+    % Fill the points O, A, and B
+    \tkzDrawPoints[fill=black](O,A,B)
+\end{tikzpicture}
