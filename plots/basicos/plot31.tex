@@ -1,10 +1,11 @@
 \begin{tikzpicture}[scale=0.8]
-    % Define the points of the triangle
+    
+    % Define los puntos de un triángulo
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(4,0){B}
     \tkzDefPoint(0,3){C}
     
-    % Draw the triangle
+    % Dibuja el triángulo
     \tkzDrawPolygon(A,B,C)
 
     %\tkzDrawPoints(A,B,C)
@@ -12,12 +13,13 @@
     \tkzLabelPoint[right](B){$B$}
     \tkzLabelPoint[above](C){$C$}    
     
-    % Mark the hypotenuse with ticks
+    % Marca la hipotenusa con barras
     \tkzMarkSegment[mark=||](A,B)
     
-    % Mark one side with ticks
+    % Marca un lado con barras
     \tkzMarkSegment[mark=|](C,B)
     
-    % Draw the right angle symbol at A
+    % Marca el ángulo como un ángulo recto.
     \tkzMarkRightAngle(C,A,B)
+    
 \end{tikzpicture}

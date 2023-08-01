@@ -1,10 +1,11 @@
 \begin{tikzpicture}[scale=0.75,rotate=203]
-    % Define the points of the triangle
+
+    % Define puntos del triángulo
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(5,0){B}
     \tkzDefPoint(-2,3){C}
     
-    % Draw the triangle
+    % Dibuja el triángulo
     \tkzDrawPolygon(A,B,C)
     %\tkzDrawPoints(A,B,C)
 
@@ -12,11 +13,11 @@
     \tkzLabelPoint[right](C){$E$}
     \tkzLabelPoint[left](B){$F$}
     
-    % Draw the central angle
+    % Dibuja ángulo cnetral
     \tkzMarkAngle[size=1cm](B,A,C)
     \tkzLabelAngle[pos=0.5](B,A,C){$\theta$}
     
-    % Draw the ticks on the sides of the included angle
+    % Dibuja las barras en los lados del angulo incluído.
     \tkzMarkSegment[mark=|](A,B)
     \tkzMarkSegment[mark=||](A,C)
 \end{tikzpicture}

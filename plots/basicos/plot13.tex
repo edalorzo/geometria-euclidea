@@ -1,22 +1,19 @@
 \begin{tikzpicture}[scale=1] 
-
-
-\tkzDefPoints{% x    y   name
-                0  /0   /A,
-                2  /0   /B,
-                6  /0   /O,
-                8  /0   /P}
-
-\tkzDrawPoints(A,B,O)
-\tkzLabelPoints[below](A,B)
-\tkzLabelPoint[left](O){$O$}
-
-\tkzDrawSegment(A,B)
-\tkzLabelSegment[style={above}](A,B){$r$}
-
-\tkzDrawSegment[dashed](O,P)
-\tkzLabelSegment[style={above}](O,P){$r$}
-
-\tkzDrawCircle(O,P)
-
+    \tkzDefPoints{% x    y   nombre
+                    0  /0   /A,
+                    2  /0   /B,
+                    6  /0   /O,
+                    8  /0   /P}
+    
+    \tkzDrawPoints(A,B,O)
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoint[left](O){$O$}
+    
+    \tkzDrawSegment(A,B)
+    \tkzLabelSegment[style={above}](A,B){$r$}
+    
+    \tkzDrawSegment[dashed](O,P)
+    \tkzLabelSegment[style={above}](O,P){$r$}
+    
+    \tkzDrawCircle(O,P)
 \end{tikzpicture}

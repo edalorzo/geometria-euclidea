@@ -1,10 +1,11 @@
 \begin{tikzpicture}[scale=0.8]
-    % Define the points of the triangle
+    
+    % Define los puntos del triángulo
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(5,0){B}
     \tkzDefPoint(3,3){C}
     
-    % Draw the triangle
+    % Dibuja el triángulo
     \tkzDrawPolygon(A,B,C)
 
     %\tkzDrawPoints(A,B,C)
@@ -12,7 +13,7 @@
     \tkzLabelPoint[right](B){$B$}
     \tkzLabelPoint[above](C){$C$}
     
-    % Mark each side with ticks
+    % Marca cada lado con barritas
     \tkzMarkSegment[mark=|](A,B)
     \tkzMarkSegment[mark=||](B,C)
     \tkzMarkSegment[mark=|||](A,C)

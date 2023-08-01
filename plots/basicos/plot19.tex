@@ -1,19 +1,18 @@
 \begin{tikzpicture}[scale=1] 
-\tkzInit[xmax=6,ymax=2, xstep=1]
-
-\tkzDefPoints{% x    y   name
-                0  /0    /A,
-                6  /1    /B,
-                0  /2    /C,
-                6  /0    /D,
-                4  /0.67 /P}
-
-\tkzDrawLine[black,Latex-Latex](A,B)
-\tkzDrawLine[black,Latex-Latex](C,D)
-\tkzLabelLine[style={above right}, pos=1](A,B){$m$}
-\tkzLabelLine[style={above right}, pos=-0.1](C,D){$l$}
-
-\tkzDrawPoint(P)
-\tkzLabelPoints[above](P)
-
+    \tkzInit[xmax=6,ymax=2, xstep=1]
+    
+    \tkzDefPoints{% x    y   nombre
+                    0  /0    /A,
+                    6  /1    /B,
+                    0  /2    /C,
+                    6  /0    /D,
+                    4  /0.67 /P}
+    
+    \tkzDrawLine[black,Latex-Latex](A,B)
+    \tkzDrawLine[black,Latex-Latex](C,D)
+    \tkzLabelLine[style={above right}, pos=1](A,B){$m$}
+    \tkzLabelLine[style={above right}, pos=-0.1](C,D){$l$}
+    
+    \tkzDrawPoint(P)
+    \tkzLabelPoints[above](P)
 \end{tikzpicture}

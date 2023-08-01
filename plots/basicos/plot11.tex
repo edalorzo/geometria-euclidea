@@ -1,14 +1,13 @@
 \begin{tikzpicture}[scale=1] 
-\tkzInit[xmax=6,ymax=2, xstep=1]
-
-\tkzDefPoints{% x    y   name
-                0  /0   /A,
-                3  /0   /C,
-                6  /0   /B,
-                9  /0   /D}
-
-\tkzDrawPoints(A,B,C,D)
-\tkzLabelPoints[below](A,B,C,D)
-\tkzDrawLine[black,Latex-Latex](A,D)
-
+    \tkzInit[xmax=6,ymax=2, xstep=1]
+    
+    \tkzDefPoints{% x    y   nombre
+                    0  /0   /A,
+                    3  /0   /C,
+                    6  /0   /B,
+                    9  /0   /D}
+    
+    \tkzDrawPoints(A,B,C,D)
+    \tkzLabelPoints[below](A,B,C,D)
+    \tkzDrawLine[black,Latex-Latex](A,D)
 \end{tikzpicture}

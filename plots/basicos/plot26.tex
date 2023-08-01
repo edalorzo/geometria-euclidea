@@ -1,10 +1,11 @@
 \begin{tikzpicture}[scale=0.8,rotate=215]
-    % Define the points of the triangle
+    
+    % Define los puntos del triángulo
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(5,0){B}
     \tkzDefPoint(1,3){C}
     
-    % Draw the triangle
+    % Dibuja el triángulo
     \tkzDrawPolygon(A,B,C)
 
     %\tkzDrawPoints(A,B,C)
@@ -12,16 +13,16 @@
     \tkzLabelPoint[left](B){$E$}
     \tkzLabelPoint[right](C){$F$}
         
-    % Draw the marked angles
+    % Dibuja los ángulos marcados
     \tkzMarkAngle[size=1cm](B,A,C)
     \tkzLabelAngle[pos=0.6](B,A,C){$1$}
     \tkzMarkAngle[size=1.1cm](C,B,A)
     \tkzLabelAngle[pos=0.7](C,B,A){$2$}
     
-    % Draw the ticks on the sides of the included angle
+    % Dibuja las barritas de del ángulo incluídos
     \tkzMarkSegment[mark=|](A,B)
     
-    % Shade the region between the two marked angles
+    % Rellena la región de los ángulos marcados.
     %\tkzFillAngle[fill= gray!40, opacity=.2](B,A,C)
     %\tkzFillAngle[fill= gray!40, opacity=.2](C,B,A)
     

@@ -1,32 +1,31 @@
 \begin{tikzpicture}[scale=1] 
-\tkzInit[xmax=6,ymax=2, xstep=1]
-
-\tkzDefPoints{% x    y   name
-                0  /0   /A,
-                1  /0   /B,
-                2  /0   /C,
-                4  /0   /D,
-                5  /0   /E,
-                6  /0   /F,
-                8  /0   /G,
-                9  /0   /H,
-                10 /0   /I}
-
-\tkzDrawPoints(A,B,C,D,E,F,G,H,I)
-\tkzLabelPoints[below](A,B,C)
-
-\tkzLabelPoint[below](D){$A$}
-\tkzLabelPoint[below](E){$C$}
-\tkzLabelPoint[below](F){$B$}
-
-
-\tkzLabelPoint[below](G){$C$}
-\tkzLabelPoint[below](H){$A$}
-\tkzLabelPoint[below](I){$B$}
-
-
-\tkzDrawLine[black,Latex-Latex](A,C)
-\tkzDrawLine[black,Latex-Latex](D,F)
-\tkzDrawLine[black,Latex-Latex](G,I)
-
+    \tkzInit[xmax=6,ymax=2, xstep=1]
+    
+    \tkzDefPoints{% x    y   nombre
+                    0  /0   /A,
+                    1  /0   /B,
+                    2  /0   /C,
+                    4  /0   /D,
+                    5  /0   /E,
+                    6  /0   /F,
+                    8  /0   /G,
+                    9  /0   /H,
+                    10 /0   /I}
+    
+    \tkzDrawPoints(A,B,C,D,E,F,G,H,I)
+    \tkzLabelPoints[below](A,B,C)
+    
+    \tkzLabelPoint[below](D){$A$}
+    \tkzLabelPoint[below](E){$C$}
+    \tkzLabelPoint[below](F){$B$}
+    
+    
+    \tkzLabelPoint[below](G){$C$}
+    \tkzLabelPoint[below](H){$A$}
+    \tkzLabelPoint[below](I){$B$}
+    
+    
+    \tkzDrawLine[black,Latex-Latex](A,C)
+    \tkzDrawLine[black,Latex-Latex](D,F)
+    \tkzDrawLine[black,Latex-Latex](G,I)
 \end{tikzpicture}

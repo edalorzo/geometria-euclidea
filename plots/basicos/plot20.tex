@@ -1,18 +1,17 @@
 \begin{tikzpicture}[scale=0.8] 
-\tkzInit[xmax=6,ymax=0] % limits the size of the axes \tkzDrawX[>=latex]
-\tkzDrawX
-
-\tkzDefPoints{1/0/FA,4/0/FP,1/1/A,4/1/P,6/1/B}
-\tkzDrawPoints(FA,FP,A,P,B)
-\tkzLabelPoints[above](A,P,B)
-\tkzDrawLine[black,Latex-Latex](A,B)
-
-\tkzDrawPoints(FA,FP,A,B,P)
-\tkzLabelPoint[above](FA){$f(A)$}
-\tkzLabelPoint[above](FP){$f(P)$}
-\tkzLabelPoint[below=12pt](FA){$a$}
-\tkzLabelPoint[below=12pt](FP){$a+p$}
-
-\tkzDrawSegment[dim={$p$,-10pt,below=8pt}](FA,FP)
-
+    \tkzInit[xmax=6,ymax=0]
+    \tkzDrawX
+    
+    \tkzDefPoints{1/0/FA,4/0/FP,1/1/A,4/1/P,6/1/B}
+    \tkzDrawPoints(FA,FP,A,P,B)
+    \tkzLabelPoints[above](A,P,B)
+    \tkzDrawLine[black,Latex-Latex](A,B)
+    
+    \tkzDrawPoints(FA,FP,A,B,P)
+    \tkzLabelPoint[above](FA){$f(A)$}
+    \tkzLabelPoint[above](FP){$f(P)$}
+    \tkzLabelPoint[below=12pt](FA){$a$}
+    \tkzLabelPoint[below=12pt](FP){$a+p$}
+    
+    \tkzDrawSegment[dim={$p$,-10pt,below=8pt}](FA,FP)
 \end{tikzpicture}

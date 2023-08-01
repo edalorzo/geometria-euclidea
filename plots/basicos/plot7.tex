@@ -1,18 +1,15 @@
 \begin{tikzpicture}[scale=1] 
-
-\tkzDefPoints{0/0/W,4/0/X,5/2/Y} 
-\tkzDefParallelogram(W,X,Y)
-
-\tkzGetPoint{Z}
-\tkzDrawPolygon(W,X,Y,Z)
-
-\tkzDefPoints{% x    y    name                
-                2  /3      /E,
-                4.2  /1.9  /P}
-
-\tkzDrawPoints(E)
-\tkzLabelPoint[right](E){$E$}
-\tkzLabelPoint[below right](P){$\pi$}
-
-
+    \tkzDefPoints{0/0/W,4/0/X,5/2/Y} 
+    \tkzDefParallelogram(W,X,Y)
+    
+    \tkzGetPoint{Z}
+    \tkzDrawPolygon(W,X,Y,Z)
+    
+    \tkzDefPoints{% x    y    nombre                
+                    2  /3      /E,
+                    4.2  /1.9  /P}
+    
+    \tkzDrawPoints(E)
+    \tkzLabelPoint[right](E){$E$}
+    \tkzLabelPoint[below right](P){$\pi$}
 \end{tikzpicture}

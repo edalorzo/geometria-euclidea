@@ -1,13 +1,13 @@
 \begin{tikzpicture}[scale=0.8] 
-\tkzInit[xmax=5,ymax=0] % limits the size of the axes \tkzDrawX[>=latex]
-\tkzDrawX
-\tkzDefPoints{0/0/FA,3/0/FP,0/1/A,3/1/P,5/1/B}
-
-\tkzDrawPoints(FA,FP,A,P,B)
-\tkzLabelPoints[above](A,P,B)
-\tkzDrawLine[black,Latex-Latex](A,B)
-\tkzLabelPoint[above](FA){$f(A)$}
-\tkzLabelPoint[above](FP){$f(P)$}
-\tkzLabelPoint[below](FA){$0$}
-\tkzLabelPoint[below](FP){$3$}
+    \tkzInit[xmax=5,ymax=0] 
+    \tkzDrawX
+    \tkzDefPoints{0/0/FA,3/0/FP,0/1/A,3/1/P,5/1/B}
+    
+    \tkzDrawPoints(FA,FP,A,P,B)
+    \tkzLabelPoints[above](A,P,B)
+    \tkzDrawLine[black,Latex-Latex](A,B)
+    \tkzLabelPoint[above](FA){$f(A)$}
+    \tkzLabelPoint[above](FP){$f(P)$}
+    \tkzLabelPoint[below](FA){$0$}
+    \tkzLabelPoint[below](FP){$3$}
 \end{tikzpicture}
