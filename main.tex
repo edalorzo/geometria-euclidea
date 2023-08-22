@@ -1,7 +1,7 @@
 \documentclass[12pt,titlepage]{article}
 \usepackage[spanish]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{tgbonum}
+\usepackage[utf8]{inputenc}
+\usepackage{bookman}
 \usepackage{parskip}
 
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
@@ -11,7 +11,7 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{xcolor}
-\usepackage[many]{tcolorbox}
+\usepackage[many,theorems]{tcolorbox}
 
 \usepackage{tkz-base}
 \usepackage{tikz}
@@ -42,6 +42,10 @@
 \newtheorem{axiom}{Axioma}
 \newtheorem{postulate}{Postulado}
 \newtheorem{theorem}{Teorema}
+
+\newtcbtheorem{tcb-theorem}{Teorema}{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+
 \newtheorem{corolary}{Corolario}
 \newtheorem{lemma}{Lema}
 
