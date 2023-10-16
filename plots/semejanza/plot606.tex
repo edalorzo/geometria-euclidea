@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    % Definir los puntos del triángulo equilátero
+    \tkzDefPoint(0,0){A}
+    \tkzDefShiftPoint[A](60:5){B}
+    \tkzDefShiftPoint[A](0:5){C}
+    
+    % Dibujar el triángulo
+    \tkzDrawPolygon(A,B,C)
+
+    % Calcular el ortocentro (intersección de las alturas)
+    \tkzDefMidPoint(A,C)
+    \tkzGetPoint{H}
+    \tkzDrawSegment[dashed](B,H)
+
+    \tkzLabelSegment[above left](A,B){$a$}
+    \tkzLabelSegment[above right](B,C){$a$}
+    \tkzLabelSegment[right](B,H){$h$}
+    \tkzLabelSegment[below](A,H){$\frac{a}{2}$}
+    \tkzLabelSegment[below](H,C){$\frac{a}{2}$}
+
+    \tkzMarkRightAngle(B,H,A)
+    \tkzMarkRightAngle(B,H,C)
+
+    \tkzMarkAngle[arc=l,size=0.8](A,B,C)
+    \tkzMarkAngle[arc=l,size=0.8](B,C,A)
+    \tkzMarkAngle[arc=l,size=0.8](C,A,B)
+    
+\end{tikzpicture}

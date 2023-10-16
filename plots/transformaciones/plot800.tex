@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=1]
+    \tkzInit[xmin=-1,xmax=5,xstep=1,ymin=-1,ymax=3,ystep=1]
+
+    \tkzDrawX[label=x,noticks=false,font=\scriptsize]
+    \tkzDrawY[label=y,noticks=false,font=\scriptsize]
+
+    \tkzLabelX[step=1,orig=false,font=\scriptsize]
+    \tkzLabelY[step=1,orig=false,font=\scriptsize]
+    
+    \tkzDefPoint(3,1){A}
+    \tkzDefPoint(3,-1){A'}
+
+    \tkzDrawPoints(A,A')
+    
+    \tkzLabelPoint[right](A){$A(3,1)$}
+    \tkzLabelPoint[right](A'){$A'(3,-1)$}
+\end{tikzpicture}

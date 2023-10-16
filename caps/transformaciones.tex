@@ -1,0 +1,72 @@
+Las transformaciones en el plan cartesiano, según las propiedades que conservan, se pueden clasificar en dos tipos: \textbf{isometrías} e \textbf{isomorfismos}.
+
+Las \textbf{isometrías} son transformaciones en las que solo se cambia la posición de la figura, pero se conserva su forma y tamaño. Según su naturaleza, se clasifican en: \textbf{reflexión}, \textbf{traslación}, \textbf{rotación} y \textbf{simetría}.
+
+Los \textbf{isomorfismos} son transformaciones en las que se conserva la forma de la figura, pero su tamaño puede cambiar, entre estas se incluye la \textbf{homotecia}.
+
+En una transformación, la figura original se conoce como la \textbf{preimagen} y la figura resultante como la \textbf{imagen}.
+
+
+\subsection{Reflexión}
+
+Una reflexión sobre una recta $m$ es una transformación que le asigna a cada punto $P$ del plano un punto $P'$ de modo que:
+
+\begin{itemize}
+    \item Si $P$ está sobre la recta $m$, se tiene que $P = P'$.
+    \item Si $P$ no está sobre la recta $m$, entonces $m \perp \overline{PP'}$.
+\end{itemize}
+
+\subsubsection{Reflexión sobre Eje x}
+
+Cuando la reflexión es sobre el eje x, la transformación consiste en multiplicar la coordenada y por $-1$, es decir $(x,y) \to (x,-y)$.
+
+\begin{figure}[h]
+    \centering
+    \input{plots/transformaciones/plot800}
+    \caption{Reflexión Eje x}
+    \label{fig:reflexion-eje-x}
+\end{figure}
+
+
+\subsubsection{Reflexión sobre Eje y}
+
+Cuando la reflexión es sobre el eje y, la transformación consiste en multiplicar la coordenada x por $-1$, es decir $(x,y) \to (-x,y)$.
+
+\begin{figure}[h]
+    \centering
+    \input{plots/transformaciones/plot801}
+    \caption{Reflexión Eje y}
+    \label{fig:reflexion-x-axis}
+\end{figure}
+
+\subsubsection{Reflexión y=x}
+
+Cuando la reflexión es sobre la línea $y=x$, la transformación consiste en reversar el orden de las coordenadas, es decir $(x,y) \to (y,x)$.
+
+\begin{figure}[h]
+    \centering
+    \input{plots/transformaciones/plot802}
+    \caption{Reflexión sobre $y=x$}
+    \label{fig:reflexion-y-x}
+\end{figure}
+
+\clearpage
+
+\subsection{Traslación}
+
+La traslación es una isometría que se realiza a partir de un vector. Un \textbf{vector} $\overrightarrow{OA}$ de origen $O$ y extremo $A$, es un segmento orientado que tiene magnitud y dirección. La dirección del vector corresponde a la de la recta de $O$ $A$ y su magnitud (o módulo) es la longitud $OA$.
+
+Un vector posee coordenadas las cuales definen el desplazamiento requerido, tanto horizontal como vertical, para ir de su origen a su extremo. De esta manera, si se conocen las coordenadas del origen y el extremo de un vector, se pueden calcular sus coordenadas: así para los puntos $P(x_1,Y_1)$ y $Q(x_2,y_2)$ las coordenadas $(a,b)$ del vector $\overrightarrow{PQ}$ son $Q-P$, es decir $(x_2-x_1,y_2-y_1)$.
+
+Una \textbf{traslación} dada por el vector $(a,b)$ es una transformación que, para cada punto $(x,y)$, le asigna el punto $(x + a, y + b)$.
+
+\subsection{Rotación}
+
+La \textbf{rotación} es un tipo de transformación en la que se hace rotar a una figura alrededor de un punto fijo (llamando centro), una cantidad de grados en una dirección específica.
+
+Una rotación con centro $O$ y un ángulo $\alpha$ es una transformación que representa cada punto $P$ del plano en un punto $P'$ tal que:
+
+\begin{itemize}
+    \item Si $P$ es el punto central $O$, entonces $P = P'$.
+    \item Si $P \neq O$, entonces $PO = P'O$ y $m\angle{POP'} = \alpha$.
+\end{itemize}

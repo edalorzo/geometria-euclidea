@@ -1,0 +1,19 @@
+\begin{tikzpicture}[xscale=-1]
+    % Define points for the triangles
+    \tkzDefPoint(0,4){A}
+    \tkzDefPoint(0,0){B}
+    \tkzDefPoint(4,0){C}
+
+    \tkzDrawPolygon(A,B,C)
+
+    \tkzLabelSegment[right](A,B){$a$}
+    \tkzLabelSegment[below](B,C){$a$}
+    \tkzLabelSegment[above left](A,C){$x$}
+
+    \tkzMarkAngle[arc=l,size=0.8](B,A,C)
+    \tkzMarkAngle[arc=l,size=0.8](A,C,B)
+
+    \tkzMarkRightAngle(A,B,C)
+
+
+\end{tikzpicture}
