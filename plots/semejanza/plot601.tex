@@ -4,31 +4,33 @@
     \tkzDefPoint(0,0){A}
     \tkzDefPoint(8,0){B}
     \tkzDefPoint(1,2){C}
-    \tkzDefPoint(7,2){D}
-    \tkzDefPoint(6,2){D'}
+    \tkzDefPoint(7,2){D0}
     \tkzDefPoint(2,4){E}
     \tkzDefPoint(4,4){F}
-    \tkzDefPoint(4.3,4){F'}
 
-    \tkzDrawLine[add=0.4 and 0.4,Latex-Latex](E,F')
-    \tkzDrawLine[add=0.1 and 0.1,Latex-Latex](C,D)
+    \tkzDrawLine[add=0.4 and 0.4,Latex-Latex](E,F)
     \tkzDrawLine[add=0.1 and 0.1,Latex-Latex](A,B)
     
     \tkzDrawLine[add=0.3 and 0.3,Latex-Latex](A,E)
     \tkzDrawLine[add=0.3 and 0.3,Latex-Latex](B,F)
-
     \tkzDrawLine[add=0.2 and 0.2,dashed,Latex-Latex](A,F)
-
 
     \tkzInterLL(C,D)(A,F)
         \tkzGetPoint{H}
+
+    \tkzInterLL(F,B)(C,D0)
+        \tkzGetPoint{D}
+
+    \tkzDrawLine[add=0.2 and 0.2,Latex-Latex](C,D)        
+
+    \tkzDrawPoints(A,B,C,D,E,F,H)
     
     \tkzLabelPoint[above left](E){$A$}
     \tkzLabelPoint[above left](C){$B$}
     \tkzLabelPoint[above left](A){$C$}
 
-    \tkzLabelPoint[above right](F'){$D$}
-    \tkzLabelPoint[above right](D'){$E$}
+    \tkzLabelPoint[above right](F){$D$}
+    \tkzLabelPoint[above right](D){$E$}
     \tkzLabelPoint[above right](B){$F$}
 
     \tkzLabelPoint[below right](H){$H$}
