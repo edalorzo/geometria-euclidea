@@ -1,20 +1,22 @@
-\begin{tikzpicture}[scale=1] 
-    \tkzDefPoints{0/0/W,4/0/X,5/2/Y} 
-    \tkzDefParallelogram(W,X,Y)
+\begin{tikzpicture}[scale=0.8] 
+    \tkzInit[xmax=6,ymax=0] 
+    \tkzDrawX[label={}]
+    \tkzDefPoints{
+        0 /0.0 /CA,
+        3 /0.0 /CM,
+        6 /0.0 /CB,
+        0 /0.2 /A,
+        3 /0.2 /M,
+        6 /0.2 /B}
     
-    \tkzGetPoint{Z}
-    \tkzDrawPolygon(W,X,Y,Z)
+    \tkzDrawPoints(A,M,B)
+    \tkzLabelPoint[above](A){$A$}
+    \tkzLabelPoint[above](M){$M$}
+    \tkzLabelPoint[above](B){$B$}
+    \tkzDrawSegment(A,B)
     
-    \tkzDefPoints{% x    y    nombre
-                    1    /1    /A,
-                    2.5  /1.5  /B,
-                    3.5  /.5   /C,
-                    4.2  /1.9  /P}
+    \tkzLabelPoint[below](CA){$a$}
+    \tkzLabelPoint[below](CM){$m$}
+    \tkzLabelPoint[below](CB){$b$}
     
-    \tkzDrawPoints(A,B,C)
-    \tkzLabelPoint[below](A){$E$}
-    \tkzLabelPoint[right](B){$D$}
-    \tkzLabelPoint[right](C){$F$}
-    
-    \tkzLabelPoint[below right](P){$\sigma$}
 \end{tikzpicture}

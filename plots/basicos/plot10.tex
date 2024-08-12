@@ -1,12 +1,27 @@
-\begin{tikzpicture}[scale=1] 
-    \tkzInit[xmax=6,ymax=2, xstep=1]
+\begin{tikzpicture}[scale=0.8] 
+    %\tkzInit[xmax=6,ymax=0] 
+    %\tkzDrawX[label={}]
+    \tkzDefPoints{
+        0 /0 /RC,
+        3 /0 /RD,
+        6 /0 /RE,
+        0 /1 /SA,        
+        6 /1 /SB}
     
-    \tkzDefPoints{% x    y   nombre
-                    0  /0   /A,
-                    3  /0   /B,
-                    6  /0   /C}
+    \tkzDrawPoints(SA,SB,RC,RD,RE)
     
-    \tkzDrawPoints(A,B,C)
-    \tkzLabelPoints[below](A,B,C)
-    \tkzDrawLine[black,Latex-Latex](A,C)
+    \tkzLabelPoint[above](SA){$A$}
+    \tkzLabelPoint[above](SB){$B$}
+    
+    \tkzLabelPoint[below](RC){$C$}
+    \tkzLabelPoint[below](RD){$D$}
+    \tkzLabelPoint[below](RE){$E$}
+    %\tkzLabelPoint[above](C){$C$}
+
+    \tkzDrawSegment(SA,SB)
+    \tkzDrawSegment[add=0.0 and 0.3, -Latex](RC,RE)
+    
+    \tkzLabelPoint[above](SA){$A$}
+    \tkzLabelPoint[above](SB){$B$}
+    
 \end{tikzpicture}

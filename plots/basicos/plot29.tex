@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=1] 
+    \tkzDefPoints{0/0/W,4/0/X,5/2/Y} 
+    \tkzDefParallelogram(W,X,Y)
+    
+    \tkzGetPoint{Z}
+    \tkzDrawPolygon(W,X,Y,Z)
+    
+    \tkzDefPoints{% x     y     nombre                
+                    1.00  /0.43   /A,
+                    3.70  /1.43   /B,
+                    1.50  /1.70   /C,
+                    3.45  /0.50   /D,
+                    4.20  /1.90   /Pi}
+    
+    \tkzDrawLine[black,Latex-Latex](A,B)
+    \tkzLabelLine[style={below},pos=0.1](A,B){$m$}
+
+    \tkzDrawLine[black,Latex-Latex](C,D)
+    \tkzLabelLine[style={below}, pos=0.1](C,D){$l$}
+
+    \tkzInterLL(A,B)(C,D)
+    \tkzGetPoint{P}
+
+    \tkzDrawPoint(P)
+    \tkzLabelPoint[above](P){$P$}
+    
+    \tkzLabelPoint[below right](Pi){$\pi$}
+\end{tikzpicture}

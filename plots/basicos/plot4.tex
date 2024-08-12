@@ -1,11 +1,15 @@
-\begin{tikzpicture}[scale=1] 
-    \tkzInit[xmax=6,ymax=2, xstep=1]
+\begin{tikzpicture}[scale=0.8] 
+    \tkzInit[xmax=5,ymax=0] 
+    \tkzDrawX[label={}]
+    \tkzDefPoints{0/0/FA,3/0/FP,0/1/A,3/1/P,5/1/B}
     
-    \tkzDefPoints{% x    y   nombre
-                    0  /0   /A,
-                    6  /0   /B}
-    
-    \tkzDrawPoints(A,B)
-    \tkzLabelPoints[below](A,B)
+    \tkzDrawPoints(FA,FP,A,P)
+    \tkzLabelPoint[above](A){$P$}
+    \tkzLabelPoint[above](P){$Q$}
     \tkzDrawLine[black,Latex-Latex](A,B)
+    \tkzLabelLine[above right,pos=1](A,B){$l$}
+    \tkzLabelPoint[above](FA){$c(P)$}
+    \tkzLabelPoint[above](FP){$c(Q)$}
+    \tkzLabelPoint[below](FA){$0$}
+    \tkzLabelPoint[below](FP){$x$}
 \end{tikzpicture}

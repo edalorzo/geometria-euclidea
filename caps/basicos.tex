@@ -1,68 +1,27 @@
 \subsection{Rectas}
 
 \begin{postulate}
-    Existe al menos una recta, y se representa por:
-    
-    \begin{figure}[h]
-        \centering
-        \input{plots/basicos/plot1}
-        \caption{Recta $l$}
-        \label{fig:plot1}
-    \end{figure}
+    Existe al menos una recta.
 \end{postulate}
 
 \begin{postulate}
-    Dada una recta $m$ existe al menos un punto $P$ que no pertenece a $m$.
-    
-    \begin{figure}[h]
-        \centering
-        \input{plots/basicos/plot2}
-        \caption{$P \notin m$}
-        \label{fig:plot2}
-    \end{figure}
+    Toda recta es un conjunto de puntos que contiene al menos dos puntos distintos.
 \end{postulate}
 
-\begin{postulate}
-    Existe una y solo una recta que pasa por dos puntos distintos $A$ y $B$. Se escribe $\lne{AB}$ y se lee ``recta AB''. 
+\begin{postulate}[\textbf{Postulado de la recta}]
+    Si $A$ y $B$ son dos puntos distintos, entonces existe exactamente una recta que los contiene y se denota como $\lne{AB}$.
     
     \begin{figure}[h]
         \centering
         \input{plots/basicos/plot3}
-        \caption{$\lne{AB}$}
+        \caption{La recta $\lne{AB}$}
         \label{fig:plot3}
     \end{figure}
 \end{postulate}
 
-\begin{postulate}
-    En una recta existen al menos dos puntos $A$ y $B$.
-    
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot4}
-        \caption{$\lne{AB}$}
-        \label{fig:plot4}
-    \end{figure}
-\end{postulate}
-
-\begin{postulate}[\textbf{Postulado de rectas paralelas:}]
-    Por un punto exterior a una recta dada se puede trazar una recta única que sea paralela a ella. Dos rectas son paralelas si están en un mismo plano y su intersección es vacía i.e. $l \cap m = \emptyset$.
-    
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot15}
-        \caption{Rectas Paralelas}
-        \label{fig:plot15}
-    \end{figure}
-
-    Dicho de otra manera, dada una recta $m$ y un punto $P$ exterior a ella, la recta $l$, paralela a ella, y que pasa por el punto exterior $P$, es única.
-    
-\end{postulate}
-
-\clearpage
-
 \begin{theorem}
 
-Si dos rectas distintas se intersecan, su intersección contiene solamente un punto. Es decir, dos rectas no pueden tener más que un solo punto en común, i.e. $l \cap m = \{P\}$.
+Si dos rectas distintas se intersecan, su intersección contiene solamente un punto. Es decir, dos rectas distintas no pueden tener más que un solo punto en común: $l \cap m = \{P\}$.
 
     \begin{figure}[!h]
         \centering
@@ -73,53 +32,31 @@ Si dos rectas distintas se intersecan, su intersección contiene solamente un pu
     
 \end{theorem}
 
-\subsection{Planos}
+\subsection{Plano y Espacio}
 
-\begin{definition}[\textbf{Puntos Coplanares}]
-Cuatro o más puntos son \textit{coplanares} si pertenecen a un mismo plano.
-\end{definition}
-
-\begin{definition}[\textbf{Puntos No Coplanares}]
-Cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos \textit{no complanares}.
+\begin{definition}
+    Se dice que los puntos de un conjunto son \textit{colineales} si existe una recta que los contiene a todos, de lo contrario se les llama \textit{no colineales}.
 \end{definition}
 
 \begin{postulate}
-    Dados tres puntos no colineales, existe uno y solo un plano que los contiene.
+    Todo plano es un conjunto de puntos que contiene, al menos, tres puntos no colineales.
+\end{postulate}
+
+\begin{postulate}
+    Si \pt{A, B} y \pt{C} son tres puntos no colineales, entonces existe solo un plano que los contiene a todos.
     
     \begin{figure}[!h]
         \centering
         \input{plots/basicos/plot5}
-        \caption{Plano}
+        \caption{Plano $\pi$}
         \label{fig:plot5}
-    \end{figure}
-\end{postulate}
-
-\begin{postulate}
-    Sobre un plano cualquiera existen al menos tres puntos no colineales.
-    
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot6}
-        \caption{Puntos no colineales y el plano}
-        \label{fig:plot6}
     \end{figure}
 \end{postulate}
 
 \clearpage
 
 \begin{postulate}
-    Para todo plano existe un punto $E$ tal que $E$ no está en el plano.
-    
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot7}
-        \caption{Punto $E$ fuera del plano}
-        \label{fig:plot7}
-    \end{figure}
-\end{postulate}
-
-\begin{postulate}[\textbf{Dos puntos, la recta y el plano:}]
-    Si dos puntos de una recta están en un plano, todos los puntos de la recta están en el plano. Simbólicamente si $\pt{A} \in \pi, \pt{B} \in \pi \imply \lne{AB} \in \pi$. En otras palabras, si una recta tiene dos puntos comunes con un plano, toda la recta está contenida en el plano.
+    Si dos puntos de una recta están en un plano, todos los puntos de la recta están en el plano. Simbólicamente si $\pt{A} \in \pi, \pt{B} \in \pi \imply \lne{AB} \in \pi$.
     
     \begin{figure}[!h]
         \centering
@@ -128,6 +65,21 @@ Cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos
         \label{fig:plot8}
     \end{figure}
     
+\end{postulate}
+
+\begin{definition}
+    Se dice que los puntos de un plano son \textit{coplanares} si existe una plano que los contiene a todos, de lo contrario se les llama \textit{no coplanares}.
+\end{definition}
+
+\begin{postulate}
+    Para todo plano existe un punto $E$ tal que $E$ no está en el plano.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot7}
+        \caption{Punto $E$ fuera del plano $\pi$}
+        \label{fig:plot7}
+    \end{figure}
 \end{postulate}
 
 \begin{postulate}
@@ -156,7 +108,7 @@ Cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos
 \end{postulate}
 
 \begin{postulate}
-    Si se tiene un plano $\pi$, una recta $m$ en el plano y un segmento cuyos extremos están en los dos semiplanos que determina $m$ en $\pi$, entonces el segmento interseca a la recta.
+    Si se tiene un plano $\pi$, una recta $m$ en el plano y un segmento $\seg{AB}$ cuyos extremos, los puntos $A$ y $B$, están en los dos semiplanos que determina $m$ en $\pi$, entonces el segmento $\seg{AB}$ interseca a la recta $m$.
     
     \begin{figure}[!h]
         \centering
@@ -186,150 +138,82 @@ Cuatro o más puntos que no están en el mismo plano reciben el nombre de puntos
         
 \end{theorem}
 
+\clearpage
+
 \begin{definition}[\textbf{Rectas Coplanares}]
 Dos o más rectas en un mismo plano se denominan coplanares.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot27}
+        \caption{Rectas coplanares}
+        \label{fig:plot27}
+    \end{figure}
+    
 \end{definition}
 
-\begin{definition}[\textbf{Rectas Paralelas}]
-Dos o más rectas que no se intersecan se denominan \textit{paralelas}.
+\begin{definition}[\textbf{Rectas paralelas}]
+Dos o más rectas coplanares que no se intersecan se denominan \textit{paralelas}.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot28}
+        \caption{Rectas paralelas}
+        \label{fig:plot28}
+    \end{figure}
+    
 \end{definition}
 
-\begin{definition}[\textbf{Rectas Concurrentes}]
+\begin{definition}[\textbf{Rectas concurrentes}]
 Dos o mas rectas coplanares que se intersecan en un mismo punto se denominan \textit{concurrentes}.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot29}
+        \caption{Rectas concurrentes}
+        \label{fig:plot29}
+    \end{figure}
+
 \end{definition}
 
 \clearpage
 
-\subsection{Puntos Colineales}
-
-\begin{definition}[\textbf{Puntos Colineales}]
-Tres o más puntos son colineales si pertenecen a una misma recta.
-\end{definition}
-
-\begin{definition}[\textbf{Puntos No Colineales}]
-Si tres o más puntos no pertenecen a la misma recta se denominan \textit{no colineales}.
-\end{definition}
-
 \begin{postulate}
-    Dados tres puntos colineales $A,B$ y $C$, de manera que $AB + BC = AC$, entonces se afirma que $B$ está entre $A$ y $C$.  Si el punto $B$ está entre $A$ y $C$, entonces $A,B,C$ son puntos colineales y distintos entre sí. Para indicar que $B$ está entre $A$ y $C$ se denota $A\,-\,B\,-\,C$.
+    Dada una recta $m$ existe al menos un punto $P$ que no pertenece a $m$.
     
-    \begin{figure}[!h]
+    \begin{figure}[h]
         \centering
-        \input{plots/basicos/plot10}
-        \caption{Puntos colineales}
-        \label{fig:plot10}
+        \input{plots/basicos/plot2}
+        \caption{$P \notin m$}
+        \label{fig:plot2}
     \end{figure}
 \end{postulate}
 
-\begin{postulate}
-    Si $A$ y $B$ son puntos distintos, existe al menos un punto $C$ tal que $A\,-\,C\,-\,B$ y al menos un punto $D$ tal que $A\,-\,B\,-\,D$.
+\begin{postulate}[\textbf{Rectas paralelas}]
+    Por un punto exterior a una recta dada se puede trazar una recta única que sea paralela a ella. Dos rectas $l$ y $m$ son paralelas si están en un mismo plano y su intersección es vacía: $l \cap m = \emptyset$.
     
     \begin{figure}[!h]
         \centering
-        \input{plots/basicos/plot11}
-        \label{fig:plot11}
-        \caption{Entre dos puntos}
-    \end{figure}
-\end{postulate}
-
-\begin{postulate}
-    Dados tres puntos colineales distintos, uno y solo uno está entre los otros dos.
-    
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot12}
-        \caption{Entre dos puntos}
-        \label{fig:plot12}
-    \end{figure}
-    
-\end{postulate}
-
-\clearpage
-
-\subsection{Distancia entre Puntos}
-
-\begin{postulate}[\textbf{Postulado de la distancia}]
-A cada par de puntos de un plano les corresponde un único número real mayor o igual que o, conocido como la distancia.
-\end{postulate}
-
-\begin{postulate}[\textbf{Postulado de dos puntos:}]
-Si se tienen dos puntos $A$ y $B$, $A = B$, si y solamente si $AB = 0$.
-Si se tienen dos puntos $C$ y $D$, entonces $CD = DC$
-\end{postulate}
-
-\begin{postulate}
-La distancia más corta entre dos puntos es el segmento que les une.
-\end{postulate}
-
-\begin{theorem}
-    Si se tienen tres puntos $F,G$ y $H$, entonces $FG + GH \ge FH$. En caso de que $F,G$ y $H$ no sean colineales se cumple que $FG + GH > FH$.
-
-    \begin{corolary}
-    La distancia más corta entre dos puntos es una línea recta.
-    \end{corolary}
-    
-\end{theorem}
-
-\begin{definition}[\textbf{Estar entre:}]
-    Dados tres puntos colineales, $\pt{A,B,C}$, de manera que $\dist{AB} + \dist{BC} = \dist{AC}$, entonces se afirma que $\pt{B}$ \textit{está entre} $\pt{A}$ y $\pt{C}$ y se escribe $\pt{A \,- \,B \,- \, C}$.
-\end{definition}
-
-\begin{definition}[\textbf{Segmento congruente:}]
-    Dos segmentos con la misma medida reciben el nombre de \textit{segmento congruentes}. Si $\seg{AB}$ es congruente con $\seg{CD}$ se escribe $\seg{AB} \cong \seg{CD}$.
-\end{definition}
-
-\begin{theorem}[\textbf{Teorema de construcción del segmento}]
-    Dado un segmento $\seg{AB}$ y un rayo $\ray{CD}$, hay exactamente un punto $\pt{E}$ de $\ray{CD}$, tal que $\seg{AB} \cong \seg{CE}$.   
-
-\end{theorem}
-
-\clearpage
-
-\subsection{Coordenadas}
-
-\begin{postulate}[\textbf{Postulado de la Regla}]
-    La distancia entre dos puntos dados es el valor absoluto de la diferencia de los dos números reales asociados a ellos (i.e. sus coordenadas).
-
-    Esto se basa en las siguientes afirmaciones:
-    
-    \begin{itemize}
-        \item A cada punto de la recta le corresponde un número real único, denominado coordenada de ese punto.
-        \item A cada número real le corresponde exactamente un punto de la recta.    
-    \end{itemize}
-
-    Supongamos que existe una recta $l$ que contiene al punto $P$, y la coordenada de $P$ en $l$ es $x$, escribimos $c(P) = x$ para denotar su sistema de coordenadas $c$.
-    
-\end{postulate}
-
-\begin{theorem}
-    Sean $A$ y $P$ dos puntos de la recta $\lne{AB}$. Entonces $l = \lne{AB}$ tiene un sistema coordenado $f$ en el cual la coordenada de $A$ es $0$ y la de $P$ es un número positivo.
-
-    \begin{figure}[!h]
-        \centering
-        \input{plots/basicos/plot18}
-        \caption{Sistema de Coordenadas}
-        \label{fig:plot18}
+        \input{plots/basicos/plot15}
+        \caption{Rectas paralelas: $l \cap m = \emptyset$}
+        \label{fig:plot15}
     \end{figure}
 
-\end{theorem}
+\end{postulate}
 
-\clearpage
-
-\subsection{Plano y Espacio}
-
-\begin{definition}[\textbf{Espacio:}]
-El conjunto de todos los puntos recibe el nombre de \textit{espacio}. Se acostumbra denotarlo con la letra $S$.
+\begin{definition}[\textbf{Espacio}]
+    El espacio es el conjunto de todos los puntos.
 \end{definition}
 
 \begin{postulate}
-El espacio contiene, al menos, cuatro puntos diferentes no coplanares.
+    El espacio contiene, al menos, cuatro puntos no coplanares.
 \end{postulate}
 
 \begin{postulate}
     En el espacio, si se tiene un plano y un segmento con extremos en los dos semiplanos, el segmento interseca al plano.
 \end{postulate}
 
-\begin{definition}[\textbf{Conjunto convexo:}]
+\begin{definition}[\textbf{Conjunto convexo}]
     Un conjunto $A$ se llama \textit{convexo} si para cada par de puntos $\pt{R}$ y $\pt{S}$, que pertenecen a él, el segmento $\seg{RS}$ está contenido en $A$.
 
     \begin{figure}[h!]
@@ -357,6 +241,8 @@ El espacio contiene, al menos, cuatro puntos diferentes no coplanares.
     
 \end{definition}
 
+\clearpage
+
 \begin{postulate}[\textbf{Postulado de separación del plano}]
     Dada una recta $m$ y un plano que la contiene, los puntos del plano que no están en $m$ forman dos conjuntos:
 
@@ -366,9 +252,7 @@ El espacio contiene, al menos, cuatro puntos diferentes no coplanares.
     \end{itemize}
 \end{postulate}
 
-\clearpage
-
-\begin{definition}[\textbf{Arista:}]
+\begin{definition}[\textbf{Arista}]
     Una recta en el plano que determina dos conjuntos convexos llamados semiplanos se denomina \textit{arista} o \textit{borde} de cada uno de ellos.
 
     \begin{figure}[!h]
@@ -388,3 +272,276 @@ El espacio contiene, al menos, cuatro puntos diferentes no coplanares.
         \item Si un punto $\pt{R}$ está en uno de los conjuntos y un punto $\pt{S}$ está en el otro, entonces el segmentos $\seg{RS}$ interseca al plano en un punto.
     \end{itemize}
 \end{postulate}
+
+\subsection{Coordenadas y Distancia}
+
+\begin{postulate}
+    El conjunto de puntos de una recta y el conjunto de números reales se coinciden uno a uno.
+\end{postulate}
+
+\begin{definition}
+    A la correspondencia entre los puntos de una recta y los números reales se le conoce como un \textit{sistema de coordenadas}. Se llama \textit{coordenada} al número real asociado a un punto dado. Al punto con la coordenada cero se le conoce como \textit{origen}.
+\end{definition}
+
+\begin{postulate}[\textbf{Postulado de la regla}]
+    Toda recta tiene un sistema de coordenadas. 
+\end{postulate}
+
+Suponiendo que $\overleftrightarrow{l}$ es un recta con un sistema de coordenadas $c$, si $P \in \overleftrightarrow{l}$, y la coordenada de $P$ es $x$, entonces esto se denota como $c(P) = x$.
+
+\clearpage
+
+\begin{postulate}[\textbf{Postulado de ubicación de la regla}]
+
+    Sea $\overleftrightarrow{l}$ una recta tal que $P \in \overleftrightarrow{l}$ y  $Q \in \overleftrightarrow{l}$, donde $P \neq Q$. Entonces existe un sistema de coordenadas $c$ para $\overleftrightarrow{l}$ tal que $c(P)=0$ y $c(Q)$ es un número positivo.
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot4}
+        \caption{Sistema de coordenadas}
+        \label{fig:plot4}
+    \end{figure}
+
+\end{postulate}
+
+\begin{definition}
+    Sea $\overleftrightarrow{l}$ una recta con un sistema de coordenadas $c$, tal que si $P \in \overleftrightarrow{l}$ y $Q \in \overleftrightarrow{l}$ y $c(P) = x$ y $c(Q) = y$, entones \textit{la distancia} de $P$ a $Q$, denotada como $PQ$, se define como: $$PQ = |y - x|$$.
+
+    Es decir, \textit{la distancia} entre dos puntos dados es el valor absoluto de la diferencia de sus coordenadas.
+\end{definition}
+
+\begin{postulate}[\textbf{Postulado de la distancia}]
+A cada par de puntos de un plano les corresponde un único número real mayor o igual que 0, conocido como la distancia.
+\end{postulate}
+
+\begin{postulate}
+Si se tienen dos puntos $A$ y $B$, $A = B$, si y solamente si $AB = 0$.
+Si se tienen dos puntos $C$ y $D$, entonces $CD = DC$
+\end{postulate}
+
+\begin{theorem}
+    Si se tienen tres puntos $F,G$ y $H$, entonces $FG + GH \ge FH$. En caso de que $F,G$ y $H$ no sean colineales se cumple que $FG + GH > FH$.
+
+    \begin{corolary}
+    La distancia más corta entre dos puntos es una línea recta.
+    \end{corolary}
+    
+\end{theorem}
+
+\begin{definition}[\textbf{Estar entre}]
+    Sea $\overleftrightarrow{l}$ una recta, y $A, B$ y $C$ tres puntos distintos en ella. Se dice que $B$ \textit{está entre} $A$ y $C$, denotado como $A-B-C$ si y solo sí se cumple una de las siguientes condiciones:
+
+    \begin{equation}
+            AB + BC = AC \\
+    \end{equation}
+    \begin{equation}
+        c(A) < c(B) < c(C)
+    \end{equation}
+    \begin{equation}
+        c(A) > c(B) > c(C)
+    \end{equation}
+
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot10}
+        \caption{$B$ entre $A$ y $C$}
+        \label{fig:plot10}
+    \end{figure}
+    
+\end{definition}
+
+\clearpage
+
+\begin{theorem}
+    Si $A$ y $C$ son dos puntos distintos, entonces existe un punto $B$ tal que $A-B-C$.
+\end{theorem}
+
+\begin{theorem}
+    Si $A$ y $B$ son dos puntos distintos, entonces existe un punto $C$ tal que $B$ esté entre $A$ y $C$.
+\end{theorem}
+
+\begin{postulate}
+    Dados tres puntos colineales distintos, uno y solo uno está entre los otros dos.
+    
+    \begin{figure}[!h]
+        \centering
+        \input{plots/basicos/plot12}
+        \caption{Entre dos puntos}
+        \label{fig:plot12}
+    \end{figure}
+    
+\end{postulate}
+
+\begin{definition}[\textbf{Segmento}]
+    Sea $\lne{AB}$ una recta. La unión de $A$ y $B$ con el conjunto de todos los puntos entre $A$ y $B$ se conoce como \textit{segmento} y se denota $\seg{AB}$. A los puntos $A$ y $B$ se los denomina los \textit{extremos} del segmento, y el resto de los puntos se denominan \textit{puntos interiores} del segmento. 
+\end{definition}
+
+\begin{definition}[\textbf{Distancia}]
+    Sea $\seg{AB}$ un segmento, entonces la longitud del segmento $\seg{AB}$ se define como la distancia entre $A$ y $B$, denotada como $AB$.
+\end{definition}
+
+\begin{postulate}
+La distancia más corta entre dos puntos es el segmento que los une.
+\end{postulate}
+
+\begin{definition}[\textbf{Segmento congruente}]
+    Dados dos segmentos $\seg{AB}$ y $\seg{CD}$, se dice que son \textit{congruentes} si $AB = CD$, y se denota  como $\seg{AB} \cong \seg{CD}$.
+\end{definition}
+
+\begin{theorem}
+    La congruencia de segmentos es reflexiva: dado el segmento $\seg{AB}$, entonces $\seg{AB} \cong \seg{AB}$.
+\end{theorem}
+
+\begin{theorem}
+    La congruencia de segmentos es simétrica: si $\seg{AB} \cong \seg{CD}$, entonces $\seg{CD} \cong \seg{AB}$.
+\end{theorem}
+
+\begin{theorem}
+    La congruencia de segmentos es transitiva: si $\seg{AB} \cong \seg{CD}$ y $\seg{CD} \cong \seg{EF}$, entonces $\seg{AB} \cong \seg{EF}$.
+\end{theorem}
+
+\begin{theorem}[\textbf{Teorema de suma de segmentos}]
+    Si $A-B-C$, $R-S-T$, $\seg{AB} \cong \seg{RS}$ y $\seg{BC} \cong \seg{ST}$, entonces $\seg{AC} \cong \seg{RT}$.
+\end{theorem}
+
+\begin{theorem}[\textbf{Teorema de resta de segmentos}]
+    Si $A-B-C$, $R-S-T$, $\seg{AB} \cong \seg{RS}$ y $\seg{AC} \cong \seg{RT}$, entonces $\seg{BC} \cong \seg{ST}$.
+\end{theorem}
+
+\begin{theorem}[\textbf{Teorema de bisección de segmentos}]
+    Si $\seg{AC} \cong \seg{RT}$, $\pt{B}$ el punto medio de $\seg{AC}$, $\pt{S}$ el punto medio de $\seg{RT}$, entonces $\seg{AB} \cong \seg{RS}$.
+\end{theorem}
+
+\begin{definition}[\textbf{Rayo}]
+    Sea $\lne{AB}$ una recta. El rayo $AB$, denotado como $\ray{AB}$ es el conjunto de todos los puntos $C$, tal que $C \in \lne{AB}$ y además $A$ no está entre $B$ y $C$. El punto $A$ se conoce como el \textit{extremo} del rayo, y el resto de los puntos se denominan \textit{puntos interiores}.
+\end{definition}
+
+\clearpage
+
+\begin{definition}[\textbf{Rayos opuestos}]
+    Sea $\lne{AC}$ una recta. Si $A-B-C$, entonces $\ray{BA}$ y $\ray{BC}$ denominan \textit{rayos opuestos}.
+
+    \begin{figure}[h]
+        \centering
+        \input{plots/basicos/plot1}
+        \caption{Rayos opuestos}
+        \label{fig:plot1}
+    \end{figure}
+\end{definition}
+
+\begin{postulate}[\textbf{Postulado de trazado de puntos}]
+    Dados un rayo $\ray{AB}$ y un número real $r$, tal que $r > 0$. Entonces existe exactamente un punto $C$, tal que $C \in \ray{AB}$ y $AC = r$.
+
+    \begin{figure}[h]
+        \centering
+        \input{plots/basicos/plot18}
+        \caption{$C \in \ray{AB}$ y $AC = r$}
+        \label{fig:plot18}
+    \end{figure}
+    
+\end{postulate}
+
+\begin{definition}[\textbf{Punto medio}]
+    Sea $A-B-C$. Se dice que $B$ es el \textit{punto medio} de $\seg{AC}$ si y solo si $AB = BC$. En ese caso se dice que $B$ biseca a $\seg{AC}$.
+
+    En general, cuando un conjunto cualquiera $S$ donde $S \cap \seg{AC} = \{B\}$, se dice que $S$ biseca a $\seg{AC}$.
+\end{definition}
+
+\begin{theorem}[\textbf{Teorema del punto medio}]
+    Cada segmento tiene un único punto medio.
+\end{theorem}
+
+\begin{theorem}
+    Sea $M$ el punto medio de $\seg{AB}$, donde $c(A) = a$, $c(M) = m$ y $c(B) = b$, entonces se cumple que $m = \dfrac{a +b }{2}$.
+
+    \begin{figure}[h]
+        \centering
+        \input{plots/basicos/plot6}
+        \caption{Punto medio}
+        \label{fig:plot6}
+    \end{figure}
+    
+
+    Hay que considerar que si $M$ es el punto medio de $\seg{AB}$, entonces $AM = MB$, y $a < b$, por lo tanto se puede demostrar que:
+
+    \begin{equation*}
+        \begin{split}
+            m - a &= b - m \\
+            2m &= a + b \\
+            m &= \dfrac{a + b}{2}
+        \end{split}
+    \end{equation*}
+\end{theorem}
+
+\clearpage
+
+\begin{theorem}[\textbf{Teorema de construcción del segmento}]
+    Dado un segmento $\seg{AB}$ y un rayo $\ray{CD}$, hay exactamente un punto $\pt{E}$, con $\pt{E} \in \ray{CD}$, tal que $\seg{AB} \cong \seg{CE}$.   
+
+    \begin{figure}[h]
+        \centering
+        \input{plots/basicos/plot10}
+        \caption{Construcción del segmento}
+        \label{fig:plot10}
+    \end{figure}
+    
+\end{theorem}
+
+\subsection{Propiedades del Conjunto de los Números Reales}
+
+Las siguientes propiedades se cumplen para todos los elementos $a,b,c,d$ del conjunto de los números reales. Estas leyes resultan convenientes en el desarrollo de demostraciones.
+
+\vspace{0.5em}
+
+\begin{center}
+    \begin{tabular}{ll}
+        \textit{Ley de reflexividad} & $a = a$ \\
+        \textit{Ley de simetría} & Si $a = b$ entonces $b = a$ \\
+        \textit{Ley de transitividad} &  Si $a = b$, y $b = c$, entonces $a = c$\\
+        \textit{Ley de la suma} & Si $a = b$ y $c = d$, entonces $a + c = b + d$ \\
+        \textit{Ley de la multiplicación} & Si $a = b$ y $c = d$, entonces $ac = bd$\\
+        \textit{Ley de la división} & Si $a = b$ y $c = d \neq 0$, entonces $\dfrac{a}{c} = \dfrac{b}{d}$\\
+    \end{tabular}
+    \label{tab:ralnumprops1}
+\end{center}
+
+\vspace{0.5em}
+
+\begin{center}
+    \begin{tabular}{l m{10em} m{10em}}
+        & \textit{Suma} & \textit{Multiplicación} \\
+        \hline
+        \textit{Ley de clausura} & $a + b$ es un número real para todo $a$ y $b$ & $ab$ es un número real para todo $a$ y $b$ \\
+        \textit{Ley asociativa} & Para todo $a,b,c$, $(a+b)+c = a+(b+c)$ & $(ab)c = a(bc)$ \\
+        \textit{Elemento identidad} & $a + 0 = a$ & $a \cdot 1 = a$ \\
+        \textit{Elemento inverso} & $a + (-a) = 0$ & $a \cdot a^{-1} = 1$
+    \end{tabular}
+    \label{tab:ralnumprops2}
+\end{center}
+
+\vspace{0.5em}
+
+Y vinculando a estas dos operaciones tenemos la \textit{ley distributiva}: $a(b +c) = ab + ac$
+
+\textit{Ley de la sustitución}: si $a$ y $b$ son dos nombres para para el mismo número real, entonces cualquiera puede ser substituido por el otro en cualquier expresión matemática sin alterar la verdad de valor de la expresión.
+
+\begin{center}
+    \begin{tabular}{ll}
+        \textit{Ley de cancelación de la suma} & si $a + b = a + c$ entonces $b = c$ \\
+        \textit{Ley de cancelación de la multiplicación I} & si $ab = ac$ y $a \neq 0$, entonces $b = c$ \\
+        \textit{Ley de cancelación de la multiplicación II} & si $\dfrac{ab}{ac} = \dfrac{b}{c}$
+    \end{tabular}
+    \label{tab:ralnumprops1}
+\end{center}
+
+
+\nocite{MGECED05}
+\nocite{MGECED06}
+\nocite{MGECED07}
+
+\clearpage
+
+
+
+%Bibliografía de esta sección
+\printbibliography[heading=subbibliography,title={Bibliografía}]
