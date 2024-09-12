@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(4,0){B}
+    \tkzDefTriangle[equilateral](A,B)
+    \tkzGetPoint{C}
+    \tkzDrawPolygons(A,B,C)
+
+    \tkzLabelPoint[left](A){$A$}
+    \tkzLabelPoint[right](B){$B$}
+    \tkzLabelPoint[above](C){$C$}        
+  
+    \tkzMarkSegments[mark=|||](A,C C,B)
+
+    %     % Mark the angles with ticks
+    \tkzMarkAngle[arc=l, size=0.5cm, mark=|](B,A,C)
+    \tkzMarkAngle[arc=l, size=0.5cm, mark=|](C,B,A)
+    \tkzMarkAngle[arc=l, size=0.5cm, mark=||](A,C,B)
+    
+\end{tikzpicture}
+

@@ -1,0 +1,688 @@
+\clearpage
+\section{Lógica y Demostraciones}
+
+\subsection{Proposiciones, Conectores Lógicos y Tablas de Verdad}
+
+Un breve estudio de algunos de los aspectos más elementales y fundamentales de la lógica matemática será muy útil para comprender  algunas de las reglas de la lógica que a menudo se usan en los argumentos matemáticos. Las demostraciones geométricas se suelen escribir en lenguaje natural; no obstante, es común estudiar la lógica usando un lenguaje formal llamado \textit{álgebra de proposiciones}. Los mismos principios presentes en el álgebra de proposiciones se pueden extrapolar a la hora de escribir demostraciones geométricas un en lenguaje natural.
+
+Una \textbf{proposición} es un enunciado que se caracteriza como una afirmación de algo que puede ser ``verdadero'' o ``falso''.
+
+\textbf{Ejemplos:}
+
+\begin{enumerate}
+    \item ``El número $\sqrt{2}$ es irracional'' es una proposición verdadera.
+    \item ``Un triángulo isósceles tiene tres lados desiguales'' es una proposición falsa.
+\end{enumerate}
+
+Una proposición usualmente se denota usando variables como $P$,$Q$, $R$, $S$, $T$, etc. Por ejemplo:
+
+$P$: La geometría es interesante.
+
+Una \textbf{proposición compuesta} es aquella en donde hay una yuxtaposición de dos o más proposiciones conectadas por un \textbf{conector lógico}. El valor de verdad de la proposición compuesta depende del valor de verdad de las proposiciones que la componen y del comportamiento de los conectores lógicos involucrados en la expresión. Por lo tanto, es importante comprender el comportamiento de los conectores lógicos, a saber: 
+
+\begin{enumerate}
+    \item $\neg$ (negación, \textit{no})
+    \item $\vee$ (disyunción, \textit{o})
+    \item $\wedge$ (conjunción, \textit{y})
+    \item $\rightarrow$ (condicional, \textit{si...entonces})
+    \item $\leftrightarrow$ (equivalencia, \textit{si y solo si})
+\end{enumerate}
+
+\subsubsection{Negación}
+
+La \textbf{negación} de una proposición $P$ se simboliza con $\neg P$ y su comportamiento se representa en la siguiente \textit{tabla de verdad}:
+
+%\vspace{0.5em}
+\begin{center}
+    \begin{tabular}{c|c}
+        $P$ & $\neg P$ \\
+        \hline
+        V & F \\
+        F & V
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:tabla-negacion}
+\end{center}
+
+\textbf{Ejemplo:}
+\begin{equation*}
+    \begin{split}
+        P &: \textit{Pedro es astuto.} \\
+        \neg P &: \textit{Pedro no es astuto.}
+    \end{split}
+\end{equation*}
+
+\subsubsection{Disyunción}
+
+La \textbf{disyunción} de dos proposiciones $P$ y $Q$ se simboliza como $P \vee Q$ (que se lee ``$P$ o $Q$'') y su comportamiento se representa en la siguiente tabla de verdad:
+                
+\begin{center}
+    \begin{tabular}{c|c|c}
+        $P$ & $Q$ & $P \vee Q$  \\
+        \hline
+        V & V & V \\
+        V & F & V \\
+        F & V & V \\
+        F & F & F
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:disyuncion-tabla}
+\end{center}
+
+\textbf{Ejemplo:}
+\begin{equation*}
+    \begin{split}
+        P &: \textit{Pedro es astuto.} \\
+        Q &: \textit{Pedro es afortunado.} \\
+        P \vee Q &: \textit{Pedro es astuto o Pedro es afortunado.}
+    \end{split}
+\end{equation*}
+
+\subsubsection{Conjunción}
+
+La \textbf{conjunción} de dos proposiciones $P$ y $Q$ se simboliza como $P \wedge Q$ (que se lee ``$P$ y $Q$'') y su comportamiento se representa en la siguiente tabla de verdad:
+
+\begin{center}
+    \begin{tabular}{c|c|c}
+        $P$ & $Q$ & $P \wedge Q$  \\
+        \hline
+        V & V & V \\
+        V & F & F \\
+        F & V & F \\
+        F & F & F
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:conjuncion-tabla}
+\end{center}
+
+\textbf{Ejemplo:}
+\begin{equation*}
+    \begin{split}
+        P &: \textit{Pedro es astuto.} \\
+        Q &: \textit{Pedro saca buenas notas.} \\
+        P \wedge Q &: \textit{Pedro es astuto y Pedro saca buenas notas.}
+    \end{split}
+\end{equation*}
+
+\subsubsection{Condicional}
+
+La \textbf{condicional} de dos proposiciones $P$ y $Q$ se simboliza como $P \rightarrow Q$ (que se lee ``si $P$ entonces $Q$'') y su comportamiento se representa en la siguiente tabla de verdad:
+
+\begin{center}
+    \begin{tabular}{c|c|c}
+        $P$ & $Q$ & $P \rightarrow Q$  \\
+        \hline
+        V & V & V \\
+        V & F & F \\
+        F & V & V \\
+        F & F & V
+    \end{tabular}
+    \label{tab:condicional-tabla}
+\end{center}
+
+En la expresión $P \rightarrow Q$, a $P$ se lo conoce como el \textit{antecedente, hipótesis o suposición}, mientras que a $Q$ como el \textit{consecuente, tesis o conclusión}. 
+
+\textbf{Ejemplo:}
+\begin{equation*}
+    \begin{split}
+        P &: \textit{2 es un número par} \\
+        Q &: \textit{2 + 1 es un número impar.} \\
+        P \rightarrow Q &: \textit{Si 2 es un número par, entonces 2 + 1 es un número impar.}
+    \end{split}
+    \label{eq:condicional-ej01}
+\end{equation*}
+
+Al analizar la tabla de verdad de una condicional de la forma $P \rightarrow Q$ podemos ver que ésta solo es falsa si la hipótesis $P$ es verdadera, pero la conclusión $Q$ es falsa. En todos los demás casos la condicional es verdadera.
+
+Para ilustrar esto, consideremos la siguiente condicional:
+
+\textit{Si 2 es primo, entonces 2 es impar.} 
+
+La \textit{hipótesis} es verdadera, más no así la \textit{conclusión}, por lo tanto la condicional ``si 2 es primo, entonces 2 es impar'' es falsa.
+
+Las dos líneas finales de la tabla de verdad de la condicional son, a menudo, motivo de confusión para los estudiantes, porque si la hipótesis es falsa, sin importar el valor de verdad de la conclusión, la condicional es verdadera. A este resultado se le suele llamar \textbf{verdad vacua}.
+
+A menudo la confusión se agrava cuando se formulan condicionales que, desde el punto de vista del lenguaje natural, suenan totalmente ilógicas, pero que son verdaderas. Por ejemplo:
+
+\textit{``Si las cebras habitan en el planeta Marte, entonces 6 es un número primo''.} 
+
+Sabemos que las cebras no habitan en el planeta Marte, por lo que esta condicional es verdadera, sin importar el valor de verdad de la conclusión o lo ilógico que suena su afirmación. 
+
+Este ejemplo evidencia que, desde el punto de vista de la lógica matemática, $P$ y $Q$ son proposiciones independientes que no necesitan guardar ninguna relación especial entre sí para componer una condicional. En otras palabras, es posible conectar cualesquiera dos proposiciones en una condicional, sin que una guarde ninguna relación ``lógica'' con la otra. En el ejemplo anterior, la hipótesis es falsa, pues no existen las cebras en el planeta Marte, y la conclusión también es falsa, pues 6 no es un número primo. No obstante, la condicional es verdadera. Aunque desde el punto de vista del lenguaje natural este tipo de expresiones no tienen sentido lógico, sí son perfectamente válidas desde una perspectiva lógico matemática. ¿Cómo puede ser tal cosa posible?
+
+Para comprender este tipo de condicional un poco mejor, a veces, ayuda pensar en la condicional como una promesa que se debe cumplir. Mientras la promesa no se rompa, la condicional es verdadera. Solo se torna falsa si la promesa se rompe. 
+
+\textbf{Ejemplo:}
+\begin{equation*}
+    \begin{split}
+        P &: \textit{hoy me pagan.} \\
+        Q &: \textit{hoy cancelo mis deudas.} \\
+        P \rightarrow Q &: \textit{Si hoy me pagan, entonces hoy cancelo mis deudas.}
+    \end{split}
+    \label{eq:condicional-ej02}
+\end{equation*}
+
+Si consideremos a la condicional $P \rightarrow Q$ como una promesa, entonces podemos interpretar su valor de verdad de la siguiente manera:
+
+\begin{center}
+    \begin{tabular}{c|c|c|m{20em}}
+        $P$ & $Q$ & $P \rightarrow Q$ & Interpretación  \\
+        \hline
+        V & V & V & Hoy me pagaron y cancelé mis deudas. La promesa se cumplió. \\
+        V & F & F & Hoy me pagaron, pero no cancelé mis deudas. Se rompió la promesa. \\
+        F & V & V & Hoy no me pagaron, por lo que no estoy obligado a pagar mis deudas (aunque igual las cancelé). La promesa no se rompió. \\
+        F & F & V & Hoy no me pagaron, por lo que no estoy obligado a cancelar mis deudas (así que no las cancelé). La promesa no se rompió.
+    \end{tabular}
+    \label{tab:condicional-tabla}
+\end{center}
+
+Nótese que el individuo solo puede romper la promesa si le pagan (\textit{hipótesis verdadera}), pero si no le pagan (\textit{hipótesis falsa}), no puede romper su promesa, porque la \textit{hipótesis} de la condicional no se cumplió. Es por eso que si no le pagan, sin importar lo que haga (pague o no pague las deudas), su promesa no se rompe y la condicional sigue siendo verdadera.
+
+Un ejemplo similar sería una condicional como la siguiente: el profesor le dijo a Pedro que ``si sacaba un 100 en la tarea comprensiva pasaría el curso''. La única forma para que esta condicional fuera falsa sería que Pedro saque un 100 en la compresiva y que el profesor lo repruebe de todas maneras. No obstante, si Pedro saca 100, y aprueba el curso, entonces la promesa se cumple y la condicional es verdadera. Por otro lado, si Pedro no saca un 100 en la comprensiva (\textit{hipótesis falsa}), entonces el profesor no está en la obligación de aprobarlo: puede aprobarlo o reprobarlo sin faltar a su promesa. Si decide aprobar a Pedro (por cualesquiera otras razones) o si decide reprobarlo (p.ej. por no obtener suficientes puntos en la comprensiva), la promesa no se rompe (pues estaba \textit{condicionada} a que Pedro obtuviera un 100 en la tarea comprensiva). Por lo tanto, si Pedro no saca 100 en la comprensiva, la condicional sería verdadera sin importar lo que decida hacer el profesor.
+
+\subsubsection{Implicación Lógica}
+
+En las demostraciones matemáticas se suele utilizar un tipo de condicional en el que sí se espera que exista una relación lógica entre el antecedente y el consecuente. Este tipo de condicional se suele llamar \textbf{implicación lógica} y se expresa como $P \Rightarrow Q$ (es decir, si $P$ entonces $Q$, o $P$ implica $Q$). Esto significa que $Q$ es una consecuencia lógica de $P$: si $P$ es verdadero, necesariamente $Q$ es verdadero. Por otro lado, si $Q$ resulta ser falso, entonces $P$ no puede ser verdadero. Si en algún momento se demostrara que $P$ es verdadero y $Q$ es falso, se estaría ante una \textit{contradicción}, lo que implicaría que la implicación $P \Rightarrow Q$ sería falsa.
+
+\textbf{Ejemplos:}
+
+\begin{equation*}
+    \begin{split}
+        P &: \textit{Hoy es lunes.} \\
+        Q &: \textit{Mañana es martes.} \\
+        P \Rightarrow Q &: \textit{Si hoy es lunes implica que mañana es martes.}
+    \end{split}
+\end{equation*}
+
+Nótese que sería un contradicción decir que hoy es lunes, pero que mañana no es martes dentro de la definición formal de la secuencia de los días de la semana.
+
+\begin{equation*}
+    \begin{split}
+        P &: \textit{2 es un entero par.} \\
+        Q &: \textit{2 +1 es un entero impar.} \\
+        P \Rightarrow Q &: \textit{Si 2 es un entero par, implica que 2+1 es un entero impar.}
+    \end{split}
+\end{equation*}
+
+Nótese que si $2+1$ no es impar, entonces $2$ no puede ser un número par, pues esto sería una contradicción lógica dentro del sistema formal que define el significado de los números pares e impares.
+
+\subsubsection{Equivalencia}
+
+La \textbf{equivalencia} (también conocida como \textit{bicondicional}) de dos proposiciones $P$ y $Q$ se simboliza como $P \leftrightarrow Q$ (que se lee ``$P$ si y solo si $Q$'') y su comportamiento se representa en la siguiente tabla de verdad:
+
+\begin{center}
+    \begin{tabular}{c|c|c}
+        $P$ & $Q$ & $P \leftrightarrow Q$  \\
+        \hline
+        V & V & V \\
+        V & F & F \\
+        F & V & F \\
+        F & F & V
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:bicondicional-tabla}
+\end{center}
+
+\textbf{Ejemplo:}
+
+\begin{equation*}
+    \begin{split}
+        P &: \textit{Pedro es astuto.} \\
+        Q &: \textit{Pedro saca buenas notas.} \\
+        P \leftrightarrow Q &: \textit{Pedro es astuto si y solo si saca buenas notas.}
+    \end{split}
+\end{equation*}
+
+El uso del símbolo $\leftrightarrow$ sugiere que, en la equivalencia se conectan, de alguna forma, las proposiciones $P \rightarrow Q$  y $Q \rightarrow P$, lo cual se evidencia en su tabla de verdad:
+
+\begin{center}
+    \begin{tabular}{c|c|c|c|c}
+        $P$ & $Q$ & $P \rightarrow Q$ & $Q \rightarrow P$ & $(P \rightarrow Q) \wedge (Q \rightarrow P)$ \\
+        \hline
+        V & V & V & V & V \\
+        V & F & F & V & F \\
+        F & V & V & F & F\\
+        F & F & V & V & V
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:equivalencia-tabla}
+\end{center}
+
+Nótese que la equivalencia solo es verdadera cuando $P$ y $Q$ tienen el mismo valor, de ahí su nombre.
+
+
+\subsubsection{Suficiencia vs Necesidad}
+
+Los enunciados condicionales son especialmente importantes en lógica porque expresan la relación entre condiciones necesarias y suficientes. 
+
+Se dice que $P$ es una \textbf{condición suficiente} para $Q$ cuando la ocurrencia de $P$ es todo lo que se necesita para la ocurrencia de $Q$. Por ejemplo, ser un perro es una condición suficiente para ser un animal.  Por otro lado, se dice que $Q$ es una \textbf{condición necesaria} para $P$ cuando $P$ no puede ocurrir sin la ocurrencia de $Q$. Por ejemplo, para encender el vehículo, el vehículo debe tener combustible.
+
+Para aclarar más la idea, supongamos que te dan una caja de cartón grande y cerrada. Además, supongamos que te dicen que hay un perro en la caja. Entonces sabes con certeza que hay un animal en la caja. No se necesita información adicional para sacar esta conclusión. Esto significa que ser un perro es \textit{suficiente} para ser un animal. Sin embargo, ser un perro no es \textit{necesario} para ser un animal, porque si te dicen que la caja contiene un gato, puedes concluir con la misma certeza que contiene un animal. En otras palabras, no es necesario que la caja contenga un perro para que contenga un animal. Podría igualmente contener un gato, un ratón, una ardilla o cualquier otro animal.
+
+Por otra parte, supongamos que te dicen que cualquier cosa que haya en la caja no es un animal. Entonces sabes con certeza que no hay ningún perro en la caja. La razón por la que puedes llegar a esta conclusión es que ser un animal es \textit{necesario} para ser un perro. Si no hay ningún animal, no hay perro. Sin embargo, ser un animal \textit{no es suficiente} para ser un perro, porque si te dicen que la caja contiene un animal, no puedes, a partir de esta sola información, concluir que contiene un perro. Podría contener un gato, un ratón, una ardilla, etcétera.
+
+En un condicional del tipo $P \Rightarrow Q$, se dice que $P$ es suficiente para $Q$, y que $Q$ es necesario para $P$.
+
+Si al analizar la conversa $Q \Rightarrow P$ se cumple que $Q$ es suficiente para $P$, y que $P$ es necesario para $Q$, entonces estamos ante una equivalencia $P \Leftrightarrow Q$, que significa que $P$ es condición suficiente y necesaria para $Q$ (o $P$ si y solo si $Q$).
+
+Veamos algunos otros ejemplos:
+
+(1) \textit{Ser un cuadrado es suficiente (más no necesaria) condición para ser un rectángulo.} \\
+(2) \textit{Ser un rectángulo es necesaria (más no suficiente) condición para ser un cuadrado. }
+
+En (1) la condición es suficiente, pero no necesaria porque todos los cuadrados son rectángulos, pero no todos los rectángulos son cuadrados. Es decir, $P \Rightarrow Q$ es verdad siempre, pero la conversa $Q \Rightarrow P$ a veces se contradice.
+
+En (2), puesto que todos los cuadrados son rectángulos, es necesario que todo cuadrado lo sea, pero ser un rectángulo no es suficiente para ser un cuadrado, pues hay cuadrados que no son rectángulos.
+
+(3) \textit{Que dos triángulos sean congruentes es suficiente y necesaria condición para que tengan las medidas de su lados y ángulos correspondientes iguales.} \\
+(4) \textit{Que dos triángulos tengan las medidas de su lados y ángulos correspondientes iguales es necesaria y suficiente condición para que sean congruentes.}
+
+En este caso, estamos ante una equivalencia $P \Leftrightarrow Q$. Es decir (3) \textit{dos triángulos son congruentes si y solo si las medidas de sus lados y ángulos correspondientes son iguales}. Como es una equivalencia, también es válida en la dirección opuesta: (4) \textit{los lados y ángulos correspondientes de dos triángulos son iguales si y solo si los dos triángulos son congruentes}. 
+
+Al hacer demostraciones de naturaleza geométrica es muy importante poder hacer este tipo de distinciones en la redacción de postulados, definiciones y axiomas, pues esto permite discernir si éstos se pueden utilizar en una sola dirección o ambas direcciones a la hora de realizar deducciones lógicas en las demostraciones.
+
+\subsubsection{Tautología}
+
+Se denomina \textbf{tautología} a una proposición que es cierta para cualquier valor de verdad de sus componentes.
+                
+Por ejemplo, la expresión $(P \wedge Q) \rightarrow P$ es una tautología:
+
+\begin{center}
+    \centering
+    \begin{tabular}{c|c|c|c}
+        $P$ & $Q$ & $P \wedge Q$ & $(P \wedge Q) \rightarrow P$  \\
+        \hline
+        V & V & V & V \\
+        V & F & F & V \\
+        F & V & F & V \\
+        F & F & F & V
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:tautologia-tabla}
+\end{center}
+
+\subsubsection{Contradicción}
+
+Una \textbf{contradicción} o \textbf{falacia} es la negación de una tautología; es decir, es una proposición falsa sin importar cual sea el valor de verdad de sus componentes.
+                
+Por ejemplo, la expresión $P \wedge \neg P$ es una contradicción:
+
+\begin{center}
+    \centering
+    \begin{tabular}{c|c|c}
+        $P$ & $\neg P$ & $P \wedge \neg P$  \\
+        \hline
+        V & F & F \\
+        F & V & F
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:contradiccion-tabla}
+\end{center}
+
+\subsubsection{Contingencia}
+
+Una \textbf{contingencia} es una proposición que, en algunas ocasiones, es verdadera y falsa en otras.
+               
+Por ejemplo, la expresión $(P \vee R) \leftrightarrow (R \wedge Q)$ es una contingencia:
+
+\begin{center}
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+        $Q$ & $R$ & $Q \vee R$ & $R \wedge Q$ & $(Q \vee R) \leftrightarrow (R \wedge Q)$  \\
+        \hline
+        V & V & V & V & V \\
+        V & F & V & F & F \\
+        F & V & V & F & F \\
+        F & F & F & F & V
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab:contingencia-tabla}
+\end{center}
+
+\subsection{Predicados}
+
+Un enunciado como ``$x$ es par'' no se considera una proposición, pues su valor de verdad no se puede determinar sin conocer el valor de la variable $x$. Sin embargo, la escritura matemática casi siempre tiene que lidiar con este este tipo de enunciados donde se expresan ideas matemáticas en términos de una o más variables desconocidas.
+
+Un \textbf{predicado} (o \textit{función proposicional}) es un enunciado cuyo valor de verdad depende de una o más variables. Una vez que le asignamos valores a dichas variables el enunciado se convierte en una proposición.
+
+Se utiliza una notación de función para denotar un predicado. 
+
+\textbf{Ejemplo:}
+
+\begin{equation*}
+    \begin{split}
+        P(x) &: \textit{x es par} \\
+        Q(x,y) &: \textit{x es más pesado que y.} \\
+    \end{split}
+\end{equation*}
+
+Luego, la proposición $P(8)$ es verdadera, mientras que la proposición $Q(\text{pluma, ladrillo})$ es falsa.
+
+Implícito en el predicado está el \textit{dominio} (o universo) de valores que la(s) variable(s) puede(n) tomar. Para $P(x)$ el dominio podría ser el conjunto de los números enteros; para $Q(x,y)$ su dominio podría ser una colección de objetos físicos. Usualmente se específica el dominio junto con el predicado, a menos que sea evidente de su contexto.
+
+Las ecuaciones son predicados. Por ejemplo, podríamos decir que $E(x)$ representa la ecuación $x^2-x-6=0$. En cuyo caso $E(3)$ es verdadero, y $E(4)$ es falso.
+
+\subsection{Cuantificadores Lógicos}
+
+Por sí solos, los predicados no son proposiciones, pues contienen variables libres. Los podemos convertir en proposiciones por medio de asignarles valores específicos de su dominio, pero, a menudo, nos gustaría poder describir un rango de valores específico para las variables de un predicado. Un \textbf{cuantificador} modifica un predicado para describir si algunos o todos los elementos del dominio satisfacen el predicado.
+
+Solo se necesitan dos cuantificadores: el cuantificador universal y el cuantificador existencial. 
+
+El \textbf{cuantificador universal} ``para todo'' se denota con el símbolo $\forall$. Así, la proposición
+
+\begin{equation*}
+    \forall{x} P(x)
+\end{equation*}
+
+significa que el predicado $P(x)$ es verdadero para todo $x$ en el dominio.
+
+El \textbf{cuantificador existencial} ``existe un'' se denota con el símbolo $\exists$. Así, la proposición
+
+\begin{equation*}
+    \exists{x} P(x)
+\end{equation*}
+
+significa que existe un elemento $x$ del dominio tal que el predicado $P(x)$ es verdadero.
+
+Por ejemplo, si $E(x)$ es la ecuación real $x^2-x-6=0$, entonces la expresión $\exists{x}E(x)$ nos dice que existe un número real $x$ tal que $x^2-x-6=0$, o simplemente que la ecuación $x^2-x-6=0$ tiene una solución.
+
+Con el uso del cuantificador, la variable $x$ deja de ser una variable libre ya que el cuantificador cambia el rol que juega en el enunciado.
+
+\subsubsection{Cuantificador Universal Implícito}
+
+Supongamos que $P(x)$ y $Q(x)$ son predicados sobre un elemento $x \in X$, la expresión $P(x) \rightarrow Q(x)$ se interpreta como si tuviera un cuantificador universal implícito. Es decir, se asume la proposición $\forall x \in X, P(x) \rightarrow Q(x)$.
+
+\textbf{Ejemplo:}
+
+Usando el conjunto de todos los carros como el dominio de $x$: 
+
+\begin{equation*}
+    \begin{split}
+        P(x) &: \textit{x produce un buen kilometraje.} \\
+        Q(x) &: \textit{x es grande.} \\
+    \end{split}
+\end{equation*}
+
+Entonces la expresión $Q(x) \rightarrow \neg P(x)$ se interpreta como $\forall{x}Q(x) \rightarrow \neg P(x)$ que se puede traducir como:
+
+\textit{``Para todos los carros x, si x es grande, entonces x no produce un buen kilometraje.''}
+
+Aunque lo común es encontrarse este tipo de enunciados expresados de formas diferentes. Por ejemplo:
+
+\textit{``Todos los carros grandes tienen mal kilometraje.''}
+
+O alternativamente:
+
+\textit{``No existe un carro grande que tenga buen kilometraje.''}
+
+Este tipo de traducciones de la lógica de predicados al lenguaje natural ejemplifica que la implicación o condicional no siempre es una traducción literal, o que no siempre es visiblemente obvia. Tener presente este aspecto resulta fundamental en el desarrollo de las demostraciones en geometría, pues, a menudo, los postulados, definiciones y teoremas se expresan en lenguaje natural y se requiere de cierta perspicacia y práctica para distinguir que, en el fondo, se tratan de una implicación.
+
+Consideremos, por ejemplo, el teorema que dice que ``la suma de los ángulos internos de un triángulo es igual a 180 grados''.  
+
+Sea $X$ es el conjunto de todas las posibles figuras geométricas en el plano euclideano, tal que $x \in X$:
+
+\begin{equation*}
+    \begin{split}
+        P(x) &: \textit{x es un triángulo.} \\
+        Q(x) &: \textit{la suma de los ángulos internos de x es 180 grados.} \\
+    \end{split}
+\end{equation*}
+
+Usando estos predicados podemos expresar el teorema formalmente en lenguaje natural:
+
+\textit{``Para toda figura geométrica $x$ en el plano euclideano, si $x$ es un triángulo, entones la suma de los ángulos internos de $x$ es igual a 180 grados.''}
+
+Lo que en lógica de predicados sería:
+
+$$\forall{x \in X}, P(x) \rightarrow Q(x)$$ 
+
+Aunque como mencionamos anteriormente, esto se suele abreviar simplemente como $P(x) \rightarrow Q(x)$, lo que en lenguaje natural equivale a la implicación ``Si $x$ es un triángulo, entonces la suma de los ángulos internos de $x$ es igual a 180 grados.''
+
+\subsubsection{Negación de Cuantificadores}
+
+Usualmente una expresión escrita con un cuantificador de un tipo puede ser negada al expresarse en función del cuantificador del tipo opuesto. 
+
+Por ejemplo, si decimos que ``toda las personas son mentirosas'', su negación ``no todas las personas son mentirosas'' equivale a decir que ``existe una persona que no es mentirosa''. A esto se le llaman \textbf{negación universal} y se representa simbólicamente como:
+
+$$\neg \forall{x}P(x) \leftrightarrow \exists{x} \neg P(x)$$
+
+Por otra lado si decimos que ``existe un estudiante extranjero en la clase'', su negación ``no existe un estudiante extranjero en la clase'' equivale a decir que ``todo estudiante de la clase no es extranjero''. A esto se le llaman \textbf{negación existencial} y se representa simbólicamente como: 
+
+$$\neg \exists{x}P(x) \leftrightarrow \forall{x} \neg P(x)$$
+
+\subsection{Argumentos}
+
+Un \textbf{argumento}, en su forma más básica, es un grupo de afirmaciones, de las cuales una o más (\textit{premisas}) respaldan a una de las otras (\textit{conclusión}) o dan razones para creer en ella. Todos los argumentos pueden clasificarse en uno de dos grupos básicos: aquellos en los que las premisas realmente respaldan la conclusión y aquellos en las que no lo hacen. Se dice que los primeros son \textit{buenos argumentos}, y los segundos, \textit{malos argumentos}. El propósito de la lógica, como ciencia que evalúa los argumentos, es, por tanto, desarrollar métodos y técnicas que nos permitan distinguir los buenos argumentos de los malos.
+
+Los enunciados que componen un argumento se dividen en una o más \textit{premisas} y una y sólo una \textit{conclusión}. Las \textbf{premisas} son los enunciados que exponen las razones o evidencias, y la \textbf{conclusión} es el enunciado que las evidencias implican o afirman respaldar. En otras palabras, la conclusión es el enunciado que afirma lo que se desprende de las premisas. A continuación se muestra un ejemplo de un argumento:.
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Todos los estudiantes leen libros.} \\
+        & \textit{Alfredo es un estudiante.} \\
+        & \text{\noindent\rule{15em}{0.4pt}} \\
+        & \textit{Alfredo lee libros}
+    \end{split}
+\end{equation*}
+
+La línea horizontal se puede leer como ``por lo tanto''. 
+
+Es posible seguir este mismo patrón y construir un argumento en donde las premisas no soportan la conclusión, es decir, un mal argumento:
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Algunas estrellas de cine son hombres.} \\
+        & \textit{Cameron Diaz es una estrella de cine.} \\
+        & \text{\noindent\rule{15em}{0.4pt}} \\
+        & \textit{Cameron Diaz es un hombre}
+    \end{split}
+\end{equation*}
+
+Este tipo de argumento, donde las premisas no soportan la conclusión, se conoce como \textit{argumento inválido}. 
+
+Un argumento se considera \textbf{válido} solo si la conclusión se desprende lógicamente de las premisas. Por otro lado, un argumento se considera \textbf{sólido} si es \textit{válido} y además \textit{todas sus premisas son verdaderas}. Si un argumento es sólido, se garantiza que la conclusión es verdadera.
+
+No obstante, es importante señalar que un argumento válido puede tener premisas falsas. Por ejemplo: 
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Todos los seres humanos son inmortales. (premisa falsa)} \\
+        & \textit{Sócrates es un ser humano. (premisa verdadera)} \\
+        & \text{\noindent\rule{24em}{0.4pt}} \\
+        & \textit{Sócrates es inmortal. (conclusión válida)}
+    \end{split}
+\end{equation*}
+
+Este argumento es válido porque si las premisas fueran verdaderas, la conclusión necesariamente se desprendería de ellas. Sin embargo, no es sólido porque la primera premisa es falsa.
+
+Al proceso de razonamiento expresado que se usa para derivar una conclusión de un conjunto de afirmaciones se le conoce también como \textbf{inferencia}. En el sentido amplio del término, “inferencia” y “argumento” se puede utilizar indistintamente. De las premisas del ejemplo anterior se infiere que Sócrates es inmortal.
+
+\subsection{Condicional vs Argumento}
+
+Una proposición condicional no es un argumento, porque no cumple con la definición dada anteriormente. En un argumento, al menos un enunciado debe afirmar que presenta evidencia, y debe haber una afirmación de que esta evidencia implica algo. Sin embargo, en un enunciado condicional, no hay ninguna afirmación de que, ni el antecedente ni el consecuente, presenten evidencia. Es decir, no hay ninguna afirmación de que ni el antecedente ni el consecuente sean verdaderos. Solo hay la afirmación de que si el antecedente fuera verdadero, también lo sería el consecuente. Es decir, la \textit{``promesa''} es la afirmación.
+
+El vínculo entre el antecedente y el consecuente se asemeja al vínculo inferencial entre las premisas y la conclusión de un argumento. Sin embargo, existe una diferencia, ya que se afirma que las premisas de un argumento son verdaderas, mientras que no se hace tal afirmación en el caso del antecedente de una condicional. En consecuencia, las condicionales no son argumentos. 
+
+Por supuesto, una condicional puede representar evidencia, porque afirma una relación entre dos proposiciones, entonces su contenido inferencial se puede utilizar para formar argumentos válidos. Por ejemplo:
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Si Irán está desarrollando armas nucleares, entonces Irán es una amenaza para la paz mundial.} \\
+        & \textit{Irán está desarrollando armas nucleares.} \\
+        & \text{\noindent\rule{38em}{0.4pt}} \\
+        & \textit{Irán es una amenaza para la paz mundial.}
+    \end{split}
+\end{equation*}
+
+Nótese que el argumento se compone de dos premisas que afirman evidencia: una es la proposición condicional, y la otra es la afirmación de su antecedente. Esto nos permite utilizar el contenido inferencial de la proposición condicional para derivar una conclusión a partir de las premisas y formar un argumento válido.
+
+\subsection{Dedución vs Inducción}
+
+Dicho de forma más precisa, un \textbf{argumento deductivo} es un argumento que incorpora la afirmación de que es \textit{imposible} que la conclusión sea falsa dado que las premisas son verdaderas. Los argumentos deductivos son aquellos que implican un \textit{razonamiento necesario}. Por otro lado, un \textbf{argumento inductivo} es un argumento que incorpora la afirmación de que es \textit{improbable} que la conclusión sea falsa dado que las premisas son verdaderas. Los argumentos inductivos implican un \textit{razonamiento probabilístico}.
+
+El \textbf{razonamiento inductivo} se usa para construir conjeturas (explicaciones) a partir de un conjunto de observaciones. La \textbf{conjetura} es una afirmación no comprobada basada en patrones u observaciones, y se considera \textit{probable} que sea verdad, aunque no haya sido rigurosamente probada. Por ejemplo, todo los cisnes que Emilia conoce son blancos. Emilia asume entonces que todos los cisnes son blancos. 
+
+Un \textbf{contraejemplo} es una excepción al patrón o al conjunto de observaciones que demuestra que la conjetura es falsa. Por ejemplo, si Emilia se topa por primera vez con un cisne negro, su conjetura de que todos los cisnes son blancos quedará demostrada como falsa.
+
+El \textbf{razonamiento deductivo}, por otra parte, utiliza hechos y afirmaciones para llegar a una conclusión de forma lógica. 
+
+El factor que influye en nuestra interpretación de un argumento como inductivo o deductivo es la fuerza real del vínculo inferencial entre las premisas y la conclusión. Si la conclusión realmente se sigue con estricta necesidad de las premisas, el argumento es claramente deductivo. En un argumento de este tipo es \textit{imposible} que las premisas sean verdaderas y la conclusión falsa. Por otra parte, si la conclusión no se sigue con estricta necesidad pero sí con \textit{probabilidad}, a menudo es mejor considerar el argumento como inductivo.
+
+\textbf{Ejemplos:}
+
+\textit{\textbf{Todos} los artistas son extrovertidos.} \\
+\textit{David Letterman es un artista.} \\
+\textit{Por lo tanto, David Letterman es extrovertido.}
+
+\textit{\textbf{La gran mayoría} de los artistas son extrovertidos.} \\ 
+\textit{David Letterman es un artista.} \\
+\textit{Por lo tanto, David Letterman es extrovertido.}
+
+En el primer ejemplo, la conclusión se sigue con estricta necesidad de las premisas. Si suponemos que todos los artistas son extrovertidos y que David Letterman es un artista, entonces es imposible que David Letterman no sea extrovertido. Por lo tanto, debemos interpretar este argumento como deductivo. En el segundo ejemplo, la conclusión no se sigue de las premisas con estricta necesidad, pero sí con cierto grado de probabilidad. Si suponemos que las premisas son verdaderas, entonces, basándonos en esa suposición, es probable que la conclusión sea verdadera. Por lo tanto, es mejor interpretar el segundo argumento como inductivo. En este caso, la conjetura se asume como verdadera hasta que se encuentre un contraejemplo que demuestre lo contrario.
+
+\subsection{Reglas de Inferencias}
+
+Una \textbf{regla de inferencia} es un principio o patrón lógico que permite derivar una conclusión a partir de una o más premisas. Es una herramienta formal que se utiliza para justificar los pasos dentro de un argumento. Las reglas de inferencia son utilizadas para asegurar que, si las premisas son verdaderas, la conclusión derivada mediante la aplicación de la regla también será verdadera. Un argumento es el conjunto completo (premisas y conclusión), mientras que la inferencia es el proceso que lleva de las premisas a la conclusión, en otras palabras el razonamiento que conecta esas partes. La inferencia es el mecanismo para demostrar que la conclusión de un argumento realmente se deriva de sus premisas.
+
+\subsubsection{Modus Ponens}
+
+\textbf{Modus ponens} es un regla de inferencia fundamental en la lógica proposicional. Su nombre proviene del latín y significa ``\textit{modo que afirma}'' y es una de las formas más básicas y fundamentales de razonamiento deductivo. \textit{Modus ponens} tiene la siguiente estructura lógica:
+
+\begin{equation*}
+    \begin{split}
+        & P \rightarrow Q \\
+        & P \\
+        & \text{\noindent\rule{4em}{0.4pt}} \\
+        & Q
+    \end{split}
+\end{equation*}
+
+Por ejemplo, consideremos el siguiente triángulo equilátero. 
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/triangulos/plot316}
+    \caption{Triángulo Equilátero}            
+    \label{fig:traing-cong-equilatero-inferencia}
+\end{figure}
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Si un triángulo es equilátero entonces el triángulo es equiángulo.} \\
+        & \textit{El triángulo en \cref{fig:traing-cong-equilatero-inferencia} es equilátero} \\
+        & \text{\noindent\rule{27em}{0.4pt}} \\
+        & \textit{El triángulo en \cref{fig:traing-cong-equilatero-inferencia} es equiángulo.}
+    \end{split}
+\end{equation*}
+
+Es importante notar de nuevo que la implicación podría escribirse también en la forma de un cuantificador universal, por ejemplo: \textit{todo triángulo equilátero es equiángulo}.
+
+\textbf{Modus tollens} es otra regla de inferencia fundamental en la lógica proposicional. Su nombre proviene del latín y significa ``\textit{modo que niega}'' y es otra de las formas más básicas y fundamentales de razonamiento deductivo. \textit{Modus tollens} tiene la siguiente estructura lógica:
+
+\begin{equation*}
+    \begin{split}
+        & P \rightarrow Q \\
+        & \neg Q \\
+        & \text{\noindent\rule{4em}{0.4pt}} \\
+        & \neg P
+    \end{split}
+\end{equation*}
+
+Por ejemplo, consideremos el siguiente triángulo isósceles. 
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/triangulos/plot317}
+    \caption{Triángulo Isósceles}            
+    \label{fig:traing-isosceles-inferencia}
+\end{figure}
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Si un triángulo es equilátero entonces el triángulo es equiángulo.} \\
+        & \textit{El triángulo en \cref{fig:traing-isosceles-inferencia} no es equiángulo} \\
+        & \text{\noindent\rule{27em}{0.4pt}} \\
+        & \textit{El triángulo en \cref{fig:traing-isosceles-inferencia} no es equilátero.}
+    \end{split}
+\end{equation*}
+
+En \textit{\color{blue} modus ponens}, si $P \rightarrow Q$ es verdad, y $P$ es verdad, entonces la única conclusión posible es que $Q$ es verdad. Por otro lado, en \textit{\color{red} modus tollens}, si si $P \rightarrow Q$ es verdad, pero $\neg Q$ ($Q$ es falso), entonces la única alternativa es que $\neg P$ ($P$ es falso) también. Todo esto se puede deducir de la primera y última fila de  la tabla de verdad de la condicional.
+
+\begin{center}
+    \begin{tabular}{c|c|c|l}
+        $P$ & $Q$ & $P \rightarrow Q$ & Inferencia \\
+        \hline
+        {\color{blue}V} & {\color{blue}V} & {\color{blue}V} & {\color{blue} ($P \rightarrow Q) \wedge P \rightarrow Q$ }\\
+        V & F & F \\
+        F & V & V \\
+        {\color{red} F} & {\color{red} F} & {\color{red} V} & {\color{red} ($P \rightarrow Q) \wedge \neg Q \rightarrow \neg P$}
+    \end{tabular}
+    \label{tab:condicional-tabla-inferencia}
+\end{center}
+
+Finalmente, un \textbf{silogismo hipotético} tiene la siguiente forma:
+
+\begin{equation*}
+    \begin{split}
+        & P \rightarrow Q \\
+        & Q \rightarrow R\\
+        & \text{\noindent\rule{4em}{0.4pt}} \\
+        & P \rightarrow R
+    \end{split}
+\end{equation*}
+
+Consideremos el siguiente ejemplo de un cuadrilátero:
+
+\begin{figure}[!h]
+    \centering
+    \input{plots/cuadrilateros/plot401}
+    \caption{Cuadrilátero}
+    \label{fig:theorem10-inferencia}
+\end{figure}
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Si un cuadrilátero tiene sus lados opuestos congruentes, entonces es un paralelogramo.} \\
+        & \textit{Si un cuadrilátero es un paralelogramo, entonces sus ángulos opuestos son congruentes.} \\
+        & \text{\noindent\rule{42em}{0.4pt}} \\
+        & \textit{Si un cuadrilátero tiene sus lados opuestos congruentes, entonces sus ángulos opuestos son congruentes.}
+    \end{split}
+\end{equation*}
+
+Nótese que la conclusión de este silogismo hipótetico ahora podría utilizarse en una inferencia de tipo \textit{modus ponens} para derivar una conclusión:
+
+\begin{equation*}
+    \begin{split}
+        & \textit{Si un cuadrilátero tiene sus lados opuestos congruentes, entonces sus ángulos opuestos son congruentes.} \\
+        & \textit{La \cref{fig:theorem10-inferencia} es un cuadrilátero con lados opuestos congruentes.} \\
+        & \text{\noindent\rule{42em}{0.4pt}} \\
+        & \textit{El cuadrilátero de la \cref{fig:theorem10-inferencia} tiene sus ángulos opuestos congruentes.}
+    \end{split}
+\end{equation*}
+
+\subsection{Demostraciones}
+
+La mayoría de los ejercicios de demostración matemática suele comenzar con una inferencia de tipo \textit{modus ponens}: se presenta una implicación de tipo $P \Rightarrow Q$, se asume que la hipótesis $P$ es verdadera, y de ahí  se infiere la conclusión $Q$.
+
+\begin{equation*}
+    \begin{split}
+        & P \Rightarrow Q \\
+        & P \\
+        & \text{\noindent\rule{5em}{0.4pt}} \\
+        & Q
+    \end{split}
+\end{equation*}
+
+El objetivo del ejercicio es demostrar, con una serie de inferencias, que la conclusión $Q$ verdaderamente se deriva de las premisas $(P \Rightarrow Q) \wedge P$. Es decir, se debe construir un puente de implicaciones que nos lleven desde las premisas a la conclusión, i.e. $(P \Rightarrow Q) \wedge P \Rightarrow P_{1} \Rightarrow P_{2} \Rightarrow \ldots \Rightarrow P_{n} \Rightarrow Q$ o que $(P \Rightarrow Q) \wedge \neg Q \Rightarrow Q_{1} \Rightarrow Q_{2} \Rightarrow \ldots \Rightarrow Q_{n} \Rightarrow \neg P$.
+
+
+\nocite{MGECED02}
+\nocite{MGECED03}
+\nocite{MGECED04}
+\nocite{MGECED06}
+\nocite{MGECED08}
+\nocite{MGECED09}
+\nocite{MGECED10}
+
+%Bibliografía de esta sección
+\printbibliography[heading=subbibliography,title={Bibliografía}]
